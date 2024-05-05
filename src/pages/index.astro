@@ -30,7 +30,7 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hallo, my name is Simón G. Flores"
+					title="Hello, my name is Simón G. Flores"
 					tagline="I am a FullStack Developer and it's a pleasure to meet you!"
 					align="start"
 				>
@@ -123,7 +123,10 @@ const projects = (await getCollection('work'))
 		object-fit: cover;
 		object-position: top;
 		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
+		box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+		background-color: 0;
+		/*para hacer un backgroundcolor de forma gradiente se hace asi */;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 100%);
 	}
 
 	@media (min-width: 50em) {

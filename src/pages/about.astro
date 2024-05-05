@@ -1,120 +1,135 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Simón Flores" description="About Simón Flores Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
+<BaseLayout
+  title="About | Simón Flores"
+  description="About Simón Flores Lorem Ipsum"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About me"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <!-- <img
 					width="1553"
 					height="873"
-					src="/assets/at-work.png"
+					src="/assets/FloresSimonG.png"
 					alt="Simón Flores at work with a colleague"
-				/>
-			</Hero>
+				/> -->
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            I have experience in software development, especially in web
+            development, focusing on frontend. Right now, I work as a teaching
+            assistant in the same field where I studied, helping students learn
+            and improve their skills.
+          </p>
+          <p>
+            Before I started programming, I graduated as a chemist in 2019. This
+            was my first experience with technology, through process
+            simulations. After that, I was president of a local branch for over
+            five years, and a football coach for two years. My chemistry
+            background gave me a solid understanding of math, physics,
+            chemistry, algebra, and calculus.
+          </p>
+          <p>
+            I believe in teamwork and growing together. I became a Full Stack
+            Developer with a focus on frontend through Platzi and SoyHenry. I
+            enjoy reading about Neuro-Linguistic Programming (NLP) and
+            psychology.
+          </p>
+          <p>
+            One of my key achievements was setting up a local branch in my city
+            in 2014, which became a meeting point for fans until 2019. I live in
+            Gelsenkirchen, my native language is Spanish, I speak Portuguese
+            fluently, I have a B1/B2 level in German, and a B1 level in English.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>Full-Stack Developer - Henry</p>
+          <p>Chemist - Universidad Tecnológica Argentina</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <p>
+            React | Tailwind | NextJS | Leadership | JavaScript | PostgreSQL |
+            NodeJS
+          </p>
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
