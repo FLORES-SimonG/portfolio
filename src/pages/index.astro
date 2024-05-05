@@ -15,6 +15,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import { Image } from 'astro:assets';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -41,11 +42,13 @@ const projects = (await getCollection('work'))
 					</div>
 				</Hero>
 
-				<img
-					alt="Simón Flores photo"
+				<Image
+					alt="Simonphoto"
 					width="480"
 					height="620"
 					src="/assets/FloresSimonG.png"
+					loading="eager"
+
 				/>
 			</header>
 
@@ -124,9 +127,8 @@ const projects = (await getCollection('work'))
 		object-position: top;
 		border-radius: 1.5rem;
 		box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
-		background-color: 0;
-		/*para hacer un backgroundcolor de forma gradiente se hace asi */;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 100%);
+		
 	}
 
 	@media (min-width: 50em) {
