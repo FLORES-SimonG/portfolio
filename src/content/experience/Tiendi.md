@@ -1,9 +1,9 @@
 ---
 title: "Tiendi: Your online store"
-publishDate: 2019-10-02 00:00:00
+publishDate: 2020-03-02 00:00:00
 img: /assets/tiendi0.jpg
 img_alt: Online store.
-description: "Academic Experience"
+description: "Work and Academic Experience"
 
 tags:
   - NextJS

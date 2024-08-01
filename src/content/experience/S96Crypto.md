@@ -6,9 +6,11 @@ img_alt: A bright pink sheet of paper used to wrap flowers curves in front of ri
 description: |
   Academica Experience
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - ReactJS
+  - TypeScript
+  - CSS Modules
+  - Styled Components
+  - PostgreSQL
 ---
 ## NGO - S96: Your CryptoBank
 

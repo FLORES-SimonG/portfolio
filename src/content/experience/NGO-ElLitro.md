@@ -1,6 +1,6 @@
 ---
 title: NGO - El Litro
-publishDate: 2020-03-02 00:00:00
+publishDate: 2019-10-02 00:00:00
 img: /assets/litro.jpg
 img_alt: Litro ONG
 description: |
