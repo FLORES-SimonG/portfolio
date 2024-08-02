@@ -12,7 +12,7 @@ tags:
   - Styled Components
   - PostgreSQL
 ---
-## NGO - S96: Your CryptoBank
+## S96: Your CryptoBank
 
 > In Progress
 
