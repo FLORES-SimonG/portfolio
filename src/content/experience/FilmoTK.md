@@ -16,3 +16,6 @@ tags:
 ## Filmo-TK
 
 > In Progress
+
+>Responsibility: 
+- **Fullstack | Frontend | Backend Development**

@@ -15,3 +15,6 @@ tags:
 ## NGO - S96: Your CryptoBank
 
 > In Progress
+
+>Responsibility: 
+- **Fullstack | Frontend | Backend Development**

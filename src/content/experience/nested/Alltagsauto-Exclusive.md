@@ -32,3 +32,5 @@ For the main website of Alltagsauto Group, which deals with used cars, visit: [A
 - **Figma**: Used for UI/UX design, creating a seamless and visually appealing user interface.
 - **PostgreSQL**: Employed as the database for its reliability and efficiency in handling complex queries and transactions.
 
+>Responsibility: 
+- **Frontend Development**
