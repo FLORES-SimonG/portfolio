@@ -12,6 +12,7 @@ tags:
   - ReactJS
   - Tailwind
   - PostgreSQL
+  - SCRUM
   
 ---
 

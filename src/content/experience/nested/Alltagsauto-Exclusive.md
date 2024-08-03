@@ -12,6 +12,7 @@ tags:
   - Tailwind
   - Figma
   - PostgreSQL
+  - SCRUM
 ---
 
 ## Alltagsauto-Exclusive
