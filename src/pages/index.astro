@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
-
+import Simon from "../../public/assets/SimonGF_1.jpg"
 import Skills from "../components/Skills.astro";
 import { Image } from "astro:assets";
 ---
@@ -29,7 +29,7 @@ import { Image } from "astro:assets";
           alt="Simonphoto"
           width="480"
           height="620"
-          src="/assets/FloresSimonG.png"
+          src={Simon}
           loading="eager"
         />
       </header>
