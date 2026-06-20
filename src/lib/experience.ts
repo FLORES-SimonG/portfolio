@@ -1,9 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { cache } from 'react';
 import matter from 'gray-matter';
 
 const CONTENT_DIR = path.join(process.cwd(), 'src/content/experience');
+
+let cachedEntries: ExperienceEntry[] | null = null;
+let cachedSignature = '';
 
 export type ExperienceEntry = {
   title: string;
@@ -25,6 +27,10 @@ function slugify(value: string) {
     .replace(/^-+|-+$/g, '');
 }
 
+function sortExperienceEntries(entries: ExperienceEntry[]) {
+  return entries.sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+}
+
 function readMarkdownFiles(directory: string): string[] {
   const entries = fs.readdirSync(directory, { withFileTypes: true });
   const files: string[] = [];
@@ -42,6 +48,13 @@ function readMarkdownFiles(directory: string): string[] {
   }
 
   return files;
+}
+
+function buildSignature(files: string[]) {
+  return files
+    .map((filePath) => `${filePath}:${fs.statSync(filePath).mtimeMs}`)
+    .sort()
+    .join('|');
 }
 
 function parseExperienceEntry(filePath: string): ExperienceEntry {
@@ -82,14 +95,17 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   };
 }
 
-const readExperienceEntries = cache(() => {
-  const files = readMarkdownFiles(CONTENT_DIR);
-  const entries = files.map(parseExperienceEntry);
-  return entries.sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
-});
-
 export function getExperienceEntries(): ExperienceEntry[] {
-  return process.env.NODE_ENV === 'development' ? readMarkdownFiles(CONTENT_DIR).map(parseExperienceEntry).sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf()) : readExperienceEntries();
+  const files = readMarkdownFiles(CONTENT_DIR);
+  const signature = buildSignature(files);
+
+  if (cachedEntries && cachedSignature === signature) {
+    return cachedEntries;
+  }
+
+  cachedEntries = sortExperienceEntries(files.map(parseExperienceEntry));
+  cachedSignature = signature;
+  return cachedEntries;
 }
 
 export function getExperienceBySlug(slug: string[]) {

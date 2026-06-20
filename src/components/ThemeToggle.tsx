@@ -13,6 +13,7 @@ export default function ThemeToggle() {
 
   const setTheme = (dark: boolean) => {
     document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
     setIsDark(dark);
   };
 
