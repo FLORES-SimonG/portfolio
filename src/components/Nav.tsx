@@ -5,8 +5,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations } from "./I18nProvider";
 import type { iconPaths } from "./IconPaths";
+import { Language } from "@/locales/interface";
+
+interface NavProps {
+  language: Language;
+}
 
 const iconLinks: {
   label: string;
@@ -24,7 +30,7 @@ const iconLinks: {
     icon: "linkedin-logo",
   },
 ];
-export default function Nav({ language }: { language: "de" | "en" | "es" }) {
+export default function Nav({ language }: NavProps) {
   const pathname = usePathname();
   const [expanded, setExpanded] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -57,15 +63,18 @@ export default function Nav({ language }: { language: "de" | "en" | "es" }) {
   return (
     <nav>
       <div className="menu-header">
-        <Link href="/" className="site-title">
-          <Icon
-            icon="terminal-window"
-            color="var(--accent-regular)"
-            size="1.6em"
-            gradient
-          />
-          Simón G. Flores
-        </Link>
+        <div className="bg-red-400 p-5">
+          <Link href="/" className="site-title">
+            <Icon
+              icon="terminal-window"
+              color="var(--accent-regular)"
+              size="1.6em"
+              gradient
+            />
+            Simón G. Flores
+          </Link>
+          <LanguageSwitcher current={language} />
+        </div>
         <button
           className="menu-button"
           aria-expanded={expanded}
@@ -79,13 +88,23 @@ export default function Nav({ language }: { language: "de" | "en" | "es" }) {
         id="menu-content"
         className={expanded ? "menu-content" : "menu-content hidden"}
       >
-  <ul className="nav-items" suppressHydrationWarning>
+        <ul className="nav-items" suppressHydrationWarning>
           {textLinks(t).map(({ label, href }) => {
-            const ariaCurrent = isMounted ? (currentPath === href ? 'page' : undefined) : undefined;
-            const classes = isMounted ? `link ${isActive(href) ? 'active' : ''}` : 'link';
+            const ariaCurrent = isMounted
+              ? currentPath === href
+                ? "page"
+                : undefined
+              : undefined;
+            const classes = isMounted
+              ? `link ${isActive(href) ? "active" : ""}`
+              : "link";
             return (
               <li key={href}>
-                <Link aria-current={ariaCurrent} className={classes} href={href}>
+                <Link
+                  aria-current={ariaCurrent}
+                  className={classes}
+                  href={href}
+                >
                   {label}
                 </Link>
               </li>
