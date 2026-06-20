@@ -15,7 +15,7 @@ const textLinks = [
 
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
   { label: 'GitHub', href: 'https://github.com/FLORES-SimonG', icon: 'github-logo' },
-  { label: 'linkedin-logo', href: 'https://www.linkedin.com/in/simongf94/', icon: 'linkedin-logo' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/simongf94/', icon: 'linkedin-logo' },
 ];
 
 export default function Nav() {

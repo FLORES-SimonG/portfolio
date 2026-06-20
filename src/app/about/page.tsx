@@ -23,7 +23,6 @@ export default function AboutPage() {
 
             <br />
             <p>
-              {' '}
               From 03/2024 to 06/2024 I have worked as a Teaching Assistant in the same field where I studied, helping students learn and
               improve their skills.
             </p>

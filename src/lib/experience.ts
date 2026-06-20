@@ -16,7 +16,12 @@ export type ExperienceEntry = {
 };
 
 function slugify(value: string) {
-  return value.toLowerCase();
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 function readMarkdownFiles(directory: string): string[] {
