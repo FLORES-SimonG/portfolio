@@ -7,7 +7,7 @@ export default function Skills() {
         <Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
         <h2>Full Stack</h2>
         <p>
-          I have experience working with JavaScript, Typescript, Angular, React.js, Vue.js (with AstroJS), Next.js, Tailwind CSS,
+          I have experience working with JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS,
           and Bootstrap, among others.
         </p>
       </div>

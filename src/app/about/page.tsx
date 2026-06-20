@@ -44,7 +44,7 @@ export default function AboutPage() {
           <h2 className="section-title">Education</h2>
           <div className="content">
             <p>Full-Stack Developer - Henry</p>
-            <p>University Technician in Chemistry - Universidad Tecnológica Argentina</p>
+            <p>University Technician in Chemistry - Universidad Tecnológica Nacional Villa María</p>
           </div>
         </section>
         <section>

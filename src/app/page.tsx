@@ -23,7 +23,7 @@ export default function HomePage() {
             </div>
           </Hero>
 
-          <Image alt="Simonphoto" width={480} height={620} src="/assets/SimonGF_1.jpg" priority />
+          <Image alt="Simon photo" width={480} height={620} src="/assets/SimonGF_1.jpg" priority />
         </header>
 
         <Skills />
