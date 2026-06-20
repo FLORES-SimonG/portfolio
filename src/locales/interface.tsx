@@ -1,4 +1,3 @@
-
 export const LANGUAGE_CODES = {
   German: "de",
   Spanish: "es",

@@ -1,9 +1,9 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { unstable_cache } from 'next/cache';
-import matter from 'gray-matter';
+import fs from "node:fs";
+import path from "node:path";
+import { unstable_cache } from "next/cache";
+import matter from "gray-matter";
 
-const CONTENT_DIR = path.join(process.cwd(), 'src/content/experience');
+const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
 
 export type ExperienceEntry = {
   title: string;
@@ -18,15 +18,17 @@ export type ExperienceEntry = {
 
 function slugify(value: string) {
   return value
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function sortExperienceEntries(entries: ExperienceEntry[]) {
-  return entries.sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+  return entries.sort(
+    (a, b) => b.publishDate.valueOf() - a.publishDate.valueOf(),
+  );
 }
 
 function readMarkdownFiles(directory: string): string[] {
@@ -40,7 +42,7 @@ function readMarkdownFiles(directory: string): string[] {
       continue;
     }
 
-    if (entry.name.endsWith('.md')) {
+    if (entry.name.endsWith(".md")) {
       files.push(fullPath);
     }
   }
@@ -49,7 +51,7 @@ function readMarkdownFiles(directory: string): string[] {
 }
 
 function parseExperienceEntry(filePath: string): ExperienceEntry {
-  const raw = fs.readFileSync(filePath, 'utf8');
+  const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
 
   const title = parsed.data.title;
@@ -58,21 +60,31 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   const tags = parsed.data.tags;
   const img = parsed.data.img;
 
-  if (typeof title !== 'string' || typeof description !== 'string' || typeof img !== 'string') {
-    throw new Error(`Invalid frontmatter in ${filePath}: title, description and img are required strings.`);
+  if (
+    typeof title !== "string" ||
+    typeof description !== "string" ||
+    typeof img !== "string"
+  ) {
+    throw new Error(
+      `Invalid frontmatter in ${filePath}: title, description and img are required strings.`,
+    );
   }
 
   const parsedPublishDate = new Date(publishDate as string);
   if (!publishDate || Number.isNaN(parsedPublishDate.getTime())) {
-    throw new Error(`Invalid frontmatter in ${filePath}: publishDate is required and must be a valid date.`);
+    throw new Error(
+      `Invalid frontmatter in ${filePath}: publishDate is required and must be a valid date.`,
+    );
   }
 
-  if (!Array.isArray(tags) || tags.some((tag) => typeof tag !== 'string')) {
-    throw new Error(`Invalid frontmatter in ${filePath}: tags must be an array of strings.`);
+  if (!Array.isArray(tags) || tags.some((tag) => typeof tag !== "string")) {
+    throw new Error(
+      `Invalid frontmatter in ${filePath}: tags must be an array of strings.`,
+    );
   }
 
   const relative = path.relative(CONTENT_DIR, filePath);
-  const withoutExtension = relative.replace(/\.md$/i, '');
+  const withoutExtension = relative.replace(/\.md$/i, "");
   const slug = withoutExtension.split(path.sep).map(slugify);
 
   return {
@@ -81,7 +93,8 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     publishDate: parsedPublishDate,
     tags,
     img,
-    imgAlt: typeof parsed.data.img_alt === 'string' ? parsed.data.img_alt : undefined,
+    imgAlt:
+      typeof parsed.data.img_alt === "string" ? parsed.data.img_alt : undefined,
     slug,
     content: parsed.content,
   };
@@ -92,13 +105,18 @@ function readExperienceEntries() {
   return sortExperienceEntries(files.map(parseExperienceEntry));
 }
 
-const getCachedExperienceEntries = unstable_cache(async () => readExperienceEntries(), ['experience-content']);
+const getCachedExperienceEntries = unstable_cache(
+  async () => readExperienceEntries(),
+  ["experience-content"],
+);
 
 export async function getExperienceEntries(): Promise<ExperienceEntry[]> {
-  return process.env.NODE_ENV === 'development' ? readExperienceEntries() : getCachedExperienceEntries();
+  return process.env.NODE_ENV === "development"
+    ? readExperienceEntries()
+    : getCachedExperienceEntries();
 }
 
 export async function getExperienceBySlug(slug: string[]) {
   const entries = await getExperienceEntries();
-  return entries.find((entry) => entry.slug.join('/') === slug.join('/'));
+  return entries.find((entry) => entry.slug.join("/") === slug.join("/"));
 }

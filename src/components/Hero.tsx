@@ -1,13 +1,18 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 type Props = {
   title: string;
   tagline?: string;
-  align?: 'start' | 'center';
+  align?: "start" | "center";
   children?: ReactNode;
 };
 
-export default function Hero({ align = 'center', tagline, title, children }: Props) {
+export default function Hero({
+  align = "center",
+  tagline,
+  title,
+  children,
+}: Props) {
   return (
     <div className={`hero stack gap-4 ${align}`}>
       <div className="stack gap-2">

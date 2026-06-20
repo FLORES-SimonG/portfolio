@@ -1,5 +1,5 @@
-import { useId, type CSSProperties } from 'react';
-import { iconPaths } from './IconPaths';
+import { useId, type CSSProperties } from "react";
+import { iconPaths } from "./IconPaths";
 
 type IconName = keyof typeof iconPaths;
 
@@ -10,11 +10,16 @@ type Props = {
   size?: string;
 };
 
-export default function Icon({ color = 'currentcolor', gradient, icon, size }: Props) {
+export default function Icon({
+  color = "currentcolor",
+  gradient,
+  icon,
+  size,
+}: Props) {
   const iconPath = iconPaths[icon];
   const reactId = useId();
   // React useId includes colons; remove them to keep SVG ids safe for URL fragment refs in browser CSS/SVG parsing.
-  const gradientId = `icon-gradient-${reactId.replace(/:/g, '')}`;
+  const gradientId = `icon-gradient-${reactId.replace(/:/g, "")}`;
 
   return (
     <svg
@@ -25,11 +30,20 @@ export default function Icon({ color = 'currentcolor', gradient, icon, size }: P
       aria-hidden="true"
       stroke={gradient ? `url(#${gradientId})` : color}
       fill={gradient ? `url(#${gradientId})` : color}
-      style={size ? ({ ['--size' as string]: size } as CSSProperties) : undefined}
+      style={
+        size ? ({ ["--size" as string]: size } as CSSProperties) : undefined
+      }
     >
       <g dangerouslySetInnerHTML={{ __html: iconPath }} />
       {gradient ? (
-        <linearGradient id={gradientId} x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id={gradientId}
+          x1="23"
+          x2="235"
+          y1="43"
+          y2="202"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="var(--gradient-stop-1)" />
           <stop offset=".5" stopColor="var(--gradient-stop-2)" />
           <stop offset="1" stopColor="var(--gradient-stop-3)" />

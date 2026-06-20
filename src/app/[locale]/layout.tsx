@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { I18nProvider } from "@/components/I18nProvider";
