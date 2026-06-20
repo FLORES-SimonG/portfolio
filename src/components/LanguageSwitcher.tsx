@@ -3,17 +3,17 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from './I18nProvider';
-import Icon from './Icon';
+import ReactCountryFlag from 'react-country-flag';
 import { Language, LANGUAGE_CODES } from '@/locales/interface';
 
 interface LanguageSwitcherProps {
   current: Language;
 }
 
-const SUPPORTED: { code: Language; labelKey: string; flagIcon: string }[] = [
-  { code: LANGUAGE_CODES.English, labelKey: 'lang.en', flagIcon: 'flag-en' },
-  { code: LANGUAGE_CODES.Spanish, labelKey: 'lang.es', flagIcon: 'flag-es' },
-  { code: LANGUAGE_CODES.German, labelKey: 'lang.de', flagIcon: 'flag-de' },
+const SUPPORTED: { code: Language; labelKey: string; countryCode: string }[] = [
+  { code: LANGUAGE_CODES.English, labelKey: 'lang.en', countryCode: 'GB' },
+  { code: LANGUAGE_CODES.Spanish, labelKey: 'lang.es', countryCode: 'ES' },
+  { code: LANGUAGE_CODES.German, labelKey: 'lang.de', countryCode: 'DE' },
 ];
 
 function buildPathWithLang(pathname: string, lang: Language) {
@@ -34,7 +34,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
   const pathname = usePathname() ?? '/';
 
   return (
-    <div className="language-switcher language-inline flex">
+    <div className="language-switcher language-inline">
       {SUPPORTED.map((s) => {
         const np = buildPathWithLang(pathname, s.code);
         const isCurrent = current === s.code;
@@ -42,7 +42,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
           <Link
             key={s.code}
             href={np}
-            className={`lang-link ${isCurrent ? 'active' : ''}`}
+            className={`lang-link p-px ${isCurrent ? 'active' : ''}`}
             onClick={() => {
               try {
                 localStorage.setItem('preferred-lang', s.code);
@@ -53,7 +53,12 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
             aria-current={isCurrent ? 'true' : undefined}
             title={t(s.labelKey)}
           >
-            <Icon icon={s.flagIcon as any} size="1.1em" />
+            <ReactCountryFlag
+              svg
+              countryCode={s.countryCode}
+              style={{ width: '1.1em', height: '1.1em' }}
+              title={t(s.labelKey)}
+            />
           </Link>
         );
       })}
