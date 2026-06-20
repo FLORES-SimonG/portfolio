@@ -16,13 +16,7 @@ export const metadata: Metadata = {
   description: "The personal site of Simón G. Flores",
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params?: { locale?: string };
-}) {
+export default function RootLayout({ children, params }: { children: React.ReactNode; params?: any }) {
   const localeParam = params?.locale;
   const locale: Locale = isSupportedLocale(localeParam)
     ? localeParam
