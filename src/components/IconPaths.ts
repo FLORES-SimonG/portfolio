@@ -39,7 +39,20 @@ export const iconPaths = {
 	'tiktok-logo': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M168 106a96 96 0 0 0 56 18V84a56 56 0 0 1-56-56h-40v128a28 28 0 1 1-40-25V89a68 68 0 1 0 80 67Z"/>`,
 
 	/* Simple flag icons (stylized rectangles) */
-	'flag-en': `<rect x="36" y="56" width="184" height="144" fill="#ffffff"/><rect x="108" y="56" width="40" height="144" fill="#d32f2f"/><rect x="36" y="128" width="184" height="40" fill="#d32f2f"/>`,
+	'flag-en': `
+		<rect x="36" y="56" width="184" height="144" fill="#012169"/>
+		<!-- white diagonals -->
+		<polygon points="36,56 56,56 220,200 200,200" fill="#ffffff"/>
+		<polygon points="36,200 56,200 220,56 200,56" fill="#ffffff"/>
+		<!-- red diagonals -->
+		<polygon points="36,56 46,56 220,190 210,200" fill="#C8102E"/>
+		<polygon points="36,200 46,200 220,66 210,56" fill="#C8102E"/>
+		<!-- central cross (white then red) -->
+		<rect x="36" y="118" width="184" height="24" fill="#ffffff"/>
+		<rect x="124" y="56" width="24" height="144" fill="#ffffff"/>
+		<rect x="36" y="128" width="184" height="12" fill="#C8102E"/>
+		<rect x="136" y="56" width="12" height="144" fill="#C8102E"/>
+	`,
 	'flag-es': `<rect x="36" y="56" width="184" height="144" fill="#c60b1e"/><rect x="36" y="96" width="184" height="64" fill="#ffcc00"/>`,
 	'flag-de': `<rect x="36" y="56" width="184" height="48" fill="#000000"/><rect x="36" y="104" width="184" height="48" fill="#dd0000"/><rect x="36" y="152" width="184" height="48" fill="#ffce00"/>`,
 };
