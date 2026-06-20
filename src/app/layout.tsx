@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { I18nProvider } from '@/components/I18nProvider';
+import { loadMessages, isSupportedLocale, getDefaultLocale, type Locale } from '@/lib/i18n';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -31,9 +33,13 @@ const loadedClassScript = `
 addEventListener('load', () => document.documentElement.classList.add('loaded'));
 `;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children, params }: { children: React.ReactNode; params?: { locale?: string } }) {
+  const localeParam = params?.locale;
+  const locale: Locale = isSupportedLocale(localeParam) ? localeParam : getDefaultLocale();
+  const messages = loadMessages(locale);
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,11 +52,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Script id="theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <Script id="loaded-class" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: loadedClassScript }} />
-        <div className="stack backgrounds">
-          <Nav />
-          {children}
-          <Footer />
-        </div>
+        <I18nProvider messages={messages}>
+          <div className="stack backgrounds">
+            <Nav language={locale} />
+            {children}
+            <Footer />
+          </div>
+        </I18nProvider>
       </body>
     </html>
   );

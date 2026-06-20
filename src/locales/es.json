@@ -1,0 +1,21 @@
+{
+  "nav.home": "Inicio",
+  "nav.experience": "Experiencia",
+  "nav.about": "Sobre mí",
+
+  "hero.greeting": "Hola, mi nombre es Simón G. Flores",
+  "hero.tagline": "Soy FullStack Developer, ¡un placer conocerte!",
+
+  "experience.title": "Mi experiencia",
+  "experience.tagline": "Mira mis proyectos más recientes abajo para hacerte una idea de mi experiencia.",
+
+  "contact.heading": "¿Interesado en trabajar juntos?",
+  "contact.button": "Envíame un mensaje",
+
+  "footer.location": "Gelsenkirchen, Renania del Norte-Westfalia, Alemania"
+  ,
+  "notfound.title": "Página no encontrada",
+  "notfound.tagline": "No encontrada"
+  ,
+  "about.title": "Sobre mí"
+}

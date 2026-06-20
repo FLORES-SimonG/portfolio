@@ -1,10 +1,15 @@
+"use client";
+
+import { useTranslations } from './I18nProvider';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations();
 
   return (
     <footer>
       <div className="group">
-        <p>Gelsenkirchen, Nordrhein-Westfalen, Deutschland</p>
+        <p>{t('footer.location')}</p>
         <p>&copy; {currentYear} Simón G. Flores</p>
       </div>
       <p className="socials">

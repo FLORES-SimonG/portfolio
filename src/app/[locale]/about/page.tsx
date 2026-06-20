@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Hero from '@/components/Hero';
+import TranslatedHero from '@/components/TranslatedHero';
 
 export const metadata: Metadata = {
   title: 'About | Simón G. Flores',
@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="stack gap-20">
       <main className="wrapper about">
-        <Hero title="About me" />
+  <TranslatedHero titleKey="about.title" />
 
         <section>
           <h2 className="section-title">Background</h2>

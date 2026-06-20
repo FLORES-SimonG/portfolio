@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Grid from '@/components/Grid';
-import Hero from '@/components/Hero';
+import TranslatedHero from '@/components/TranslatedHero';
 import PortfolioPreview from '@/components/PortfolioPreview';
 import { getExperienceEntries } from '@/lib/experience';
 
@@ -15,7 +15,7 @@ export default async function ExperiencePage() {
   return (
     <div className="stack gap-20">
       <main className="wrapper stack gap-8">
-        <Hero title="My Experience" tagline="See my most recent projects below to get an idea of my past experience." align="start" />
+  <TranslatedHero titleKey="experience.title" taglineKey="experience.tagline" align="start" />
         <Grid variant="offset">
           {projects.map((project) => (
             <li key={project.slug.join('/')}>
