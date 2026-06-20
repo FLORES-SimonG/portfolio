@@ -1,12 +1,12 @@
 @import '../styles/global.css';
 
 :root {
-	--_placeholder-bg: linear-gradient(transparent, transparent);
+	--bg-placeholder: linear-gradient(transparent, transparent);
 	--bg-image-main: url('/assets/backgrounds/bg-main-light-800w.jpg');
 	--bg-image-main-curves: url('/assets/backgrounds/bg-main-light.svg');
-	--bg-image-subtle-1: var(--_placeholder-bg);
-	--bg-image-subtle-2: var(--_placeholder-bg);
-	--bg-image-footer: var(--_placeholder-bg);
+	--bg-image-subtle-1: var(--bg-placeholder);
+	--bg-image-subtle-2: var(--bg-placeholder);
+	--bg-image-footer: var(--bg-placeholder);
 	--bg-svg-blend-mode: overlay;
 	--bg-blend-mode: darken;
 	--bg-image-aspect-ratio: 2.25;
