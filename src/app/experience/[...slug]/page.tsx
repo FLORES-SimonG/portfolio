@@ -15,12 +15,13 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return getExperienceEntries().map((entry) => ({ slug: entry.slug }));
+  const entries = await getExperienceEntries();
+  return entries.map((entry) => ({ slug: entry.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getExperienceBySlug(slug);
+  const entry = await getExperienceBySlug(slug);
 
   if (!entry) {
     return {
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ExperienceEntryPage({ params }: Props) {
   const { slug } = await params;
-  const entry = getExperienceBySlug(slug);
+  const entry = await getExperienceBySlug(slug);
 
   if (!entry) {
     notFound();

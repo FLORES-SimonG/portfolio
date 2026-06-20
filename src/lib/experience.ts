@@ -1,11 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { unstable_cache } from 'next/cache';
 import matter from 'gray-matter';
 
 const CONTENT_DIR = path.join(process.cwd(), 'src/content/experience');
-
-let cachedEntries: ExperienceEntry[] | null = null;
-let cachedSignature = '';
 
 export type ExperienceEntry = {
   title: string;
@@ -50,13 +48,6 @@ function readMarkdownFiles(directory: string): string[] {
   return files;
 }
 
-function buildSignature(files: string[]) {
-  return files
-    .map((filePath) => `${filePath}:${fs.statSync(filePath).mtimeMs}`)
-    .sort()
-    .join('|');
-}
-
 function parseExperienceEntry(filePath: string): ExperienceEntry {
   const raw = fs.readFileSync(filePath, 'utf8');
   const parsed = matter(raw);
@@ -71,7 +62,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     throw new Error(`Invalid frontmatter in ${filePath}: title, description and img are required strings.`);
   }
 
-  if (!publishDate || Number.isNaN(new Date(publishDate as string).valueOf())) {
+  if (!publishDate || Number.isNaN(new Date(publishDate as string).getTime())) {
     throw new Error(`Invalid frontmatter in ${filePath}: publishDate is required and must be a valid date.`);
   }
 
@@ -95,19 +86,18 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   };
 }
 
-export function getExperienceEntries(): ExperienceEntry[] {
+function readExperienceEntries() {
   const files = readMarkdownFiles(CONTENT_DIR);
-  const signature = buildSignature(files);
-
-  if (cachedEntries && cachedSignature === signature) {
-    return cachedEntries;
-  }
-
-  cachedEntries = sortExperienceEntries(files.map(parseExperienceEntry));
-  cachedSignature = signature;
-  return cachedEntries;
+  return sortExperienceEntries(files.map(parseExperienceEntry));
 }
 
-export function getExperienceBySlug(slug: string[]) {
-  return getExperienceEntries().find((entry) => entry.slug.join('/') === slug.join('/'));
+const getCachedExperienceEntries = unstable_cache(async () => readExperienceEntries(), ['experience-content']);
+
+export async function getExperienceEntries(): Promise<ExperienceEntry[]> {
+  return process.env.NODE_ENV === 'development' ? readExperienceEntries() : getCachedExperienceEntries();
+}
+
+export async function getExperienceBySlug(slug: string[]) {
+  const entries = await getExperienceEntries();
+  return entries.find((entry) => entry.slug.join('/') === slug.join('/'));
 }

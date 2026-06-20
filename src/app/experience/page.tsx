@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Learn about Simón G. Flores's most recent projects",
 };
 
-export default function ExperiencePage() {
-  const projects = getExperienceEntries();
+export default async function ExperiencePage() {
+  const projects = await getExperienceEntries();
 
   return (
     <div className="stack gap-20">
