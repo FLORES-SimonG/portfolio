@@ -27,6 +27,7 @@ const iconLinks: {
 export default function Nav({ language }: { language: "de" | "en" | "es" }) {
   const pathname = usePathname();
   const [expanded, setExpanded] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const textLinks = (t: (k: string) => string) => [
     { label: t("nav.home"), href: `/${language}` },
     { label: t("nav.experience"), href: `/${language}/experience/` },
@@ -44,6 +45,10 @@ export default function Nav({ language }: { language: "de" | "en" | "es" }) {
     return () => mediaQueries.removeEventListener("change", handleViewports);
   }, []);
 
+  useEffect(() => {
+    // mark hydrated
+    setIsMounted(true);
+  }, []);
   const currentPath = pathname ?? "/";
   const isActive = (href: string) =>
     currentPath === href || (href !== "/" && currentPath.startsWith(href));
@@ -74,18 +79,18 @@ export default function Nav({ language }: { language: "de" | "en" | "es" }) {
         id="menu-content"
         className={expanded ? "menu-content" : "menu-content hidden"}
       >
-        <ul className="nav-items">
-          {textLinks(t).map(({ label, href }) => (
-            <li key={href}>
-              <Link
-                aria-current={currentPath === href ? "page" : undefined}
-                className={`link ${isActive(href) ? "active" : ""}`}
-                href={href}
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
+  <ul className="nav-items" suppressHydrationWarning>
+          {textLinks(t).map(({ label, href }) => {
+            const ariaCurrent = isMounted ? (currentPath === href ? 'page' : undefined) : undefined;
+            const classes = isMounted ? `link ${isActive(href) ? 'active' : ''}` : 'link';
+            return (
+              <li key={href}>
+                <Link aria-current={ariaCurrent} className={classes} href={href}>
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <div className="menu-footer">
           <div className="socials">

@@ -4,7 +4,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { I18nProvider } from '@/components/I18nProvider';
 import { loadMessages, isSupportedLocale, getDefaultLocale, type Locale } from '@/lib/i18n';
-import './globals.css';
+import '../globals.css';
 
 export const metadata: Metadata = {
   title: 'Simón G. Flores: Personal Site',
