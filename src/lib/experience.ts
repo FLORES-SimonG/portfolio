@@ -4,6 +4,8 @@ import matter from 'gray-matter';
 
 const CONTENT_DIR = path.join(process.cwd(), 'src/content/experience');
 
+let cachedEntries: ExperienceEntry[] | null = null;
+
 export type ExperienceEntry = {
   title: string;
   description: string;
@@ -44,6 +46,10 @@ function readMarkdownFiles(directory: string): string[] {
 }
 
 export function getExperienceEntries(): ExperienceEntry[] {
+  if (cachedEntries) {
+    return cachedEntries;
+  }
+
   const files = readMarkdownFiles(CONTENT_DIR);
 
   const entries = files.map((filePath) => {
@@ -66,7 +72,8 @@ export function getExperienceEntries(): ExperienceEntry[] {
     };
   });
 
-  return entries.sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+  cachedEntries = entries.sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf());
+  return cachedEntries;
 }
 
 export function getExperienceBySlug(slug: string[]) {

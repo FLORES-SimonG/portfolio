@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -64,7 +65,7 @@ export default async function ExperienceEntryPage({ params }: Props) {
         </header>
         <main className="wrapper">
           <div className="stack gap-10 content">
-            {entry.img ? <img src={entry.img} alt={entry.imgAlt || ''} /> : null}
+            {entry.img ? <Image src={entry.img} alt={entry.imgAlt || ''} width={1200} height={800} /> : null}
             <div className="content markdown-content">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{entry.content}</ReactMarkdown>
             </div>
