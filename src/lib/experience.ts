@@ -62,7 +62,8 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     throw new Error(`Invalid frontmatter in ${filePath}: title, description and img are required strings.`);
   }
 
-  if (!publishDate || Number.isNaN(new Date(publishDate as string).getTime())) {
+  const parsedPublishDate = new Date(publishDate as string);
+  if (!publishDate || Number.isNaN(parsedPublishDate.getTime())) {
     throw new Error(`Invalid frontmatter in ${filePath}: publishDate is required and must be a valid date.`);
   }
 
@@ -77,7 +78,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   return {
     title,
     description,
-    publishDate: new Date(publishDate as string),
+    publishDate: parsedPublishDate,
     tags,
     img,
     imgAlt: typeof parsed.data.img_alt === 'string' ? parsed.data.img_alt : undefined,

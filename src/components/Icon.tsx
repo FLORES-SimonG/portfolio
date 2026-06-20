@@ -13,7 +13,7 @@ type Props = {
 export default function Icon({ color = 'currentcolor', gradient, icon, size }: Props) {
   const iconPath = iconPaths[icon];
   const reactId = useId();
-  // React useId includes colons; remove them for valid SVG id references across browsers.
+  // React useId includes colons; remove them to keep SVG ids safe for URL fragment refs in browser CSS/SVG parsing.
   const gradientId = `icon-gradient-${reactId.replace(/:/g, '')}`;
 
   return (
