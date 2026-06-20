@@ -34,7 +34,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
   const pathname = usePathname() ?? '/';
 
   return (
-    <div className="language-switcher language-inline">
+    <div className="language-switcher language-inline flex">
       {SUPPORTED.map((s) => {
         const np = buildPathWithLang(pathname, s.code);
         const isCurrent = current === s.code;

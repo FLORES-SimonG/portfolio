@@ -1,3 +1,6 @@
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
 @import '../styles/global.css';
 
 :root {
@@ -402,7 +405,7 @@ html:not(.theme-dark) .theme-toggle-button .icon.light,
 /* LanguageSwitcher styles */
 .language-switcher {
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
 	margin-right: 0.5rem;
 }
 
