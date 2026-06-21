@@ -1,32 +1,22 @@
+"use client";
+
+import { useTranslations } from "./I18nProvider";
 import Icon, { IconName } from "./Icon";
 import Pill from "./Pill";
 
-{
-  {
-    /* <Pill>
-                <Icon icon="code" size="1.33em" /> Developer
-              </Pill>
-              <Pill>
-                <Icon icon="pencil-line" size="1.33em" /> Frontend
-              </Pill>
-              <Pill>
-                <Icon icon="arrow-up" size="1.33em" /> Germany
-              </Pill>
- */
-  }
-}
 
-interface PillSectionProps {
-  items: {
-    icon: IconName;
-    label: string;
-  }[];
-}
 
-export default function PillSection({ items }: PillSectionProps) {
+export default function PillSection() {
+  const t = useTranslations();
+
+  const pillItems = [
+    { icon: "code" as IconName, label: t("roles.developer") },
+    { icon: "pencil-line" as IconName, label: t("roles.frontend") },
+    { icon: "arrow-up" as IconName, label: t("roles.location") },
+  ];
   return (
     <div className="roles">
-      {items.map((item, index) => (
+      {pillItems.map((item, index) => (
         <Pill key={index}>
           <Icon icon={item.icon} size="1.33em" /> {item.label}
         </Pill>

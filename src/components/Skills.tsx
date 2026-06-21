@@ -1,3 +1,5 @@
+"use client";
+
 import Icon from "./Icon";
 import { useTranslations } from "./I18nProvider";
 
