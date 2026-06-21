@@ -3,6 +3,15 @@
 import Hero from "./Hero";
 import { useTranslations } from "./I18nProvider";
 
+interface TranslatedHeroProps {
+  titleKey?: string;
+  taglineKey?: string;
+  title?: string;
+  tagline?: string;
+  align?: "start" | "center";
+  children?: React.ReactNode;
+}
+
 export default function TranslatedHero({
   titleKey,
   taglineKey,
@@ -10,14 +19,7 @@ export default function TranslatedHero({
   tagline,
   align = "center",
   children,
-}: {
-  titleKey?: string;
-  taglineKey?: string;
-  title?: string;
-  tagline?: string;
-  align?: "start" | "center";
-  children?: React.ReactNode;
-}) {
+}: TranslatedHeroProps) {
   const t = useTranslations();
 
   const finalTitle = titleKey ? t(titleKey, title) : title;

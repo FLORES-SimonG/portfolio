@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext } from "react";
 
-type Messages = Record<string, string>;
+type Messages = Record<string, any>;
 
 const I18nContext = createContext<Messages | null>(null);
 
@@ -24,7 +24,22 @@ export function useTranslations() {
     return (key: string, fallback?: string) => fallback ?? key;
   }
 
+  function lookup(key: string) {
+    const parts = key.split('.');
+    let cur: any = ctx;
+    for (const p of parts) {
+      if (cur && typeof cur === 'object' && p in cur) {
+        cur = cur[p];
+      } else {
+        return undefined;
+      }
+    }
+    return cur;
+  }
+
   return (key: string, fallback?: string) => {
-    return ctx[key] ?? fallback ?? key;
+    const found = lookup(key);
+    if (typeof found === 'string') return found;
+    return fallback ?? key;
   };
 }
