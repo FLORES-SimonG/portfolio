@@ -1,7 +1,7 @@
 import { useId, type CSSProperties } from "react";
 import { iconPaths } from "./IconPaths";
 
-type IconName = keyof typeof iconPaths;
+export type IconName = keyof typeof iconPaths;
 
 type Props = {
   icon: IconName;

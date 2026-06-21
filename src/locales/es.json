@@ -34,4 +34,27 @@
     "es": "Español",
     "de": "Alemán"
   }
+
+  ,
+  "roles": {
+    "developer": "Desarrollador",
+    "frontend": "Frontend",
+    "location": "Alemania"
+  }
+
+  ,
+  "skills": {
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "Tengo experiencia trabajando con JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS y Bootstrap, entre otros."
+    },
+    "leader": {
+      "title": "Líder experimentado",
+      "desc": "Fui presidente durante 5 años, liderando proyectos y haciendo crecer la organización. Como entrenador de fútbol durante 2 años, mejoré mi gestión de equipos y habilidades de comunicación."
+    },
+    "growth": {
+      "title": "Crecimiento y Aprendizaje",
+      "desc": "Siempre quiero mejorar y aprender sobre nuevas tecnologías en el mercado. Busco oportunidades para crecer mis habilidades y usar nuevas ideas en mi trabajo."
+    }
+  }
 }

@@ -35,4 +35,27 @@
     "es": "Spanisch",
     "de": "Deutsch"
   }
+
+  ,
+  "roles": {
+    "developer": "Entwickler",
+    "frontend": "Frontend",
+    "location": "Deutschland"
+  }
+
+  ,
+  "skills": {
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "Ich habe Erfahrung mit JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS und Bootstrap, unter anderem."
+    },
+    "leader": {
+      "title": "Erfahrener Leiter",
+      "desc": "Ich war 5 Jahre Präsident, leitete Projekte und brachte die Organisation voran. Als Fußballtrainer für 2 Jahre verbesserte ich meine Teamführung und Kommunikationsfähigkeiten."
+    },
+    "growth": {
+      "title": "Wachstum & Lernen",
+      "desc": "Ich möchte mich immer verbessern und neue Technologien auf dem Markt kennenlernen. Ich suche Chancen, meine Fähigkeiten zu erweitern und neue Ideen in meiner Arbeit anzuwenden."
+    }
+  }
 }

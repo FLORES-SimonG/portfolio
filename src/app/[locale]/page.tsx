@@ -1,10 +1,19 @@
 import Image from "next/image";
 import TranslatedHero from "@/components/TranslatedHero";
-import Icon from "@/components/Icon";
-import Pill from "@/components/Pill";
 import Skills from "@/components/Skills";
+import PillSection from "@/components/pill-section";
+import { IconName } from "@/components/Icon";
+import { useTranslations } from "@/components/I18nProvider";
 
 export default function HomePage() {
+  const t = useTranslations();
+  
+const pillItems = [
+    { icon: "code" as IconName, label: t('roles.developer') },
+    { icon: "pencil-line" as IconName, label: t('roles.frontend') },
+    { icon: "arrow-up" as IconName, label: t('roles.location') },
+  ];
+
   return (
     <div className="stack gap-20 lg:gap-48">
       <div className="wrapper stack gap-8 lg:gap-20">
@@ -14,17 +23,8 @@ export default function HomePage() {
             taglineKey="hero.tagline"
             align="start"
           >
-            <div className="roles">
-              <Pill>
-                <Icon icon="code" size="1.33em" /> Developer
-              </Pill>
-              <Pill>
-                <Icon icon="pencil-line" size="1.33em" /> Frontend
-              </Pill>
-              <Pill>
-                <Icon icon="arrow-up" size="1.33em" /> Germany
-              </Pill>
-            </div>
+            <PillSection items={pillItems} />
+            
           </TranslatedHero>
 
           <Image
