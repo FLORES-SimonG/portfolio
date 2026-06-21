@@ -11,14 +11,15 @@ export const metadata: Metadata = {
   description: "The personal site of Simón G. Flores",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params?: any;
 }) {
-  const localeParam = params?.locale;
+  const awaitedParams = await params;
+  const localeParam = awaitedParams?.locale;
   const locale: Language = isSupportedLocale(localeParam)
     ? localeParam
     : getDefaultLocale();
