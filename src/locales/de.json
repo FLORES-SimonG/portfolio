@@ -1,24 +1,38 @@
 {
-  "nav.home": "Start",
-  "nav.experience": "Erfahrung",
-  "nav.about": "Über mich",
+  "nav": {
+    "home": "Start",
+    "experience": "Erfahrung",
+    "about": "Über mich"
+  },
 
-  "hero.greeting": "Hallo, mein Name ist Simón G. Flores",
-  "hero.tagline": "Ich bin FullStack Developer und freue mich, Sie kennenzulernen!",
+  "hero": {
+    "greeting": "Hallo, mein Name ist Simón G. Flores",
+    "tagline": "Ich bin FullStack Developer und freue mich, Sie kennenzulernen!"
+  },
 
-  "experience.title": "Meine Erfahrung",
-  "experience.tagline": "Sehen Sie sich meine neuesten Projekte unten an, um einen Eindruck von meiner bisherigen Erfahrung zu bekommen.",
+  "experience": {
+    "title": "Meine Erfahrung",
+    "tagline": "Sehen Sie sich meine neuesten Projekte unten an, um einen Eindruck von meiner bisherigen Erfahrung zu bekommen."
+  },
 
-  "contact.heading": "Interessiert an einer Zusammenarbeit?",
-  "contact.button": "Schreib mir eine Nachricht",
+  "contact": {
+    "heading": "Interessiert an einer Zusammenarbeit?",
+    "button": "Schreib mir eine Nachricht"
+  },
 
-  "footer.location": "Gelsenkirchen, Nordrhein-Westfalen, Deutschland"
-  ,
-  "notfound.title": "Seite nicht gefunden",
-  "notfound.tagline": "Nicht gefunden"
-  ,
-  "about.title": "Über mich"
-  ,"lang.en": "Englisch",
-  "lang.es": "Spanisch",
-  "lang.de": "Deutsch"
+  "footer": {
+    "location": "Gelsenkirchen, Nordrhein-Westfalen, Deutschland"
+  },
+  "notfound": {
+    "title": "Seite nicht gefunden",
+    "tagline": "Nicht gefunden"
+  },
+  "about": {
+    "title": "Über mich"
+  },
+  "lang": {
+    "en": "Englisch",
+    "es": "Spanisch",
+    "de": "Deutsch"
+  }
 }

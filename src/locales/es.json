@@ -1,24 +1,37 @@
 {
-  "nav.home": "Inicio",
-  "nav.experience": "Experiencia",
-  "nav.about": "Sobre mí",
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "about": "Sobre mí"
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es Simón G. Flores",
+    "tagline": "Soy FullStack Developer, ¡un placer conocerte!"
+  },
 
-  "hero.greeting": "Hola, mi nombre es Simón G. Flores",
-  "hero.tagline": "Soy FullStack Developer, ¡un placer conocerte!",
+  "experience": {
+    "title": "Mi experiencia",
+    "tagline": "Mira mis proyectos más recientes abajo para hacerte una idea de mi experiencia."
+  },
 
-  "experience.title": "Mi experiencia",
-  "experience.tagline": "Mira mis proyectos más recientes abajo para hacerte una idea de mi experiencia.",
+  "contact": {
+    "heading": "¿Interesado en trabajar juntos?",
+    "button": "Envíame un mensaje"
+  },
 
-  "contact.heading": "¿Interesado en trabajar juntos?",
-  "contact.button": "Envíame un mensaje",
-
-  "footer.location": "Gelsenkirchen, Renania del Norte-Westfalia, Alemania"
-  ,
-  "notfound.title": "Página no encontrada",
-  "notfound.tagline": "No encontrada"
-  ,
-  "about.title": "Sobre mí"
-  ,"lang.en": "Inglés",
-  "lang.es": "Español",
-  "lang.de": "Alemán"
+  "footer": {
+    "location": "Gelsenkirchen, Renania del Norte-Westfalia, Alemania"
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "tagline": "No encontrada"
+  },
+  "about": {
+    "title": "Sobre mí"
+  },
+  "lang": {
+    "en": "Inglés",
+    "es": "Español",
+    "de": "Alemán"
+  }
 }
