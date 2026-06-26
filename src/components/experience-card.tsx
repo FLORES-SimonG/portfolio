@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ExperienceEntry } from "@/lib/experience";
 
-export default function PortfolioPreview({
-  project,
-}: {
+interface ExperienceCardProps {
   project: ExperienceEntry;
-}) {
+}
+
+export default function ExperienceCard({
+  project,
+}: ExperienceCardProps) {
   return (
     <Link className="card" href={`/experience/${project.slug.join("/")}`}>
       <span className="title">{project.title}</span>
