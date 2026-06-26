@@ -30,9 +30,5 @@ module.exports = {
       },
     },
   },
-  safelist: [
-    'bg-red-400',
-    'bg-red-500',
-  ],
   plugins: [],
 };

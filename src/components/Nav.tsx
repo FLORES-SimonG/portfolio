@@ -64,7 +64,7 @@ export default function Nav({ language }: NavProps) {
   return (
     <nav>
       <div className="menu-header">
-        <div className="bg-red-500 p-5">
+        <div className="p-5 flex flex-col">
           <Link href="/" className="site-title">
             <Icon
               icon="terminal-window"
