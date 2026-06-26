@@ -15,7 +15,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
       />
 
       <div className="relative border border-gray-100 bg-white p-6">
-        <span className="bg-yellow-400 px-3 py-1.5 text-xs font-medium whitespace-nowrap bg-red-500">
+        <span className="bg-yellow-400 px-3 py-1.5 text-xs font-medium whitespace-nowrap">
           {" "}
           New{" "}
         </span>

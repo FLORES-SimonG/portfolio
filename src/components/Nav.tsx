@@ -30,36 +30,66 @@ const iconLinks: {
     icon: "linkedin-logo",
   },
 ];
+
 export default function Nav({ language }: NavProps) {
   const pathname = usePathname();
   const [expanded, setExpanded] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-  const textLinks = (t: (k: string) => string) => [
+
+  const t = useTranslations();
+
+  const textLinks = [
     { label: t("nav.home"), href: `/${language}` },
-    { label: t("nav.experience"), href: `/${language}/experience/` },
-    { label: t("nav.about"), href: `/${language}/about/` },
-    { label: t("nav.certificates"), href: `/${language}/certificates/` },
+    { label: t("nav.experience"), href: `/${language}/experience` },
+    { label: t("nav.about"), href: `/${language}/about` },
+    { label: t("nav.certificates"), href: `/${language}/certificates` },
   ];
 
   useEffect(() => {
     const mediaQueries = window.matchMedia("(min-width: 50em)");
-    const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
+
+    const handleViewports = (
+      e: MediaQueryList | MediaQueryListEvent
+    ) => {
       setExpanded(e.matches);
     };
 
     handleViewports(mediaQueries);
+
     mediaQueries.addEventListener("change", handleViewports);
-    return () => mediaQueries.removeEventListener("change", handleViewports);
+
+    return () => {
+      mediaQueries.removeEventListener(
+        "change",
+        handleViewports
+      );
+    };
   }, []);
 
-  useEffect(() => {
-    // mark hydrated
-    setIsMounted(true);
-  }, []);
   const currentPath = pathname ?? "/";
-  const isActive = (href: string) =>
-    currentPath === href || (href !== "/" && currentPath.startsWith(href));
-  const t = useTranslations();
+
+  const normalize = (path: string) => {
+    if (path.length > 1 && path.endsWith("/")) {
+      return path.slice(0, -1);
+    }
+
+    return path;
+  };
+
+  const isActive = (href: string) => {
+    const normalizedHref = normalize(href);
+    const normalizedPath = normalize(currentPath);
+
+    // Home
+    if (normalizedHref === `/${language}`) {
+      return normalizedPath === normalizedHref;
+    }
+
+    // Secciones y subsecciones
+    return (
+      normalizedPath === normalizedHref ||
+      normalizedPath.startsWith(`${normalizedHref}/`)
+    );
+  };
 
   return (
     <nav>
@@ -74,8 +104,10 @@ export default function Nav({ language }: NavProps) {
             />
             Simón G. Flores
           </Link>
+
           <LanguageSwitcher current={language} />
         </div>
+
         <button
           className="menu-button"
           aria-expanded={expanded}
@@ -85,41 +117,52 @@ export default function Nav({ language }: NavProps) {
           <Icon icon="list" />
         </button>
       </div>
+
       <div
         id="menu-content"
-        className={expanded ? "menu-content" : "menu-content hidden"}
+        className={
+          expanded
+            ? "menu-content"
+            : "menu-content hidden"
+        }
       >
-        <ul className="nav-items" suppressHydrationWarning>
-          {textLinks(t).map(({ label, href }) => {
-            const ariaCurrent = isMounted
-              ? currentPath === href
-                ? "page"
-                : undefined
-              : undefined;
-            const classes = isMounted
-              ? `link ${isActive(href) ? "active" : ""}`
-              : "link";
-            return (
-              <li key={href}>
-                <Link
-                  aria-current={ariaCurrent}
-                  className={classes}
-                  href={href}
-                >
-                  {label}
-                </Link>
-              </li>
-            );
-          })}
+        <ul className="nav-items">
+          {textLinks.map(({ label, href }) => (
+            <li key={href}>
+              <Link
+                href={href}
+                aria-current={
+                  isActive(href) ? "page" : undefined
+                }
+                className={`link ${
+                  isActive(href) ? "active" : ""
+                }`}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
+
         <div className="menu-footer">
           <div className="socials">
-            {iconLinks.map(({ href, icon, label }) => (
-              <a key={href} href={href} className="social">
-                <span className="sr-only">{label}</span>
-                <Icon icon={icon} />
-              </a>
-            ))}
+            {iconLinks.map(
+              ({ href, icon, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="sr-only">
+                    {label}
+                  </span>
+
+                  <Icon icon={icon} />
+                </a>
+              )
+            )}
           </div>
 
           <div className="theme-toggle">
