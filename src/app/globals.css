@@ -1,7 +1,6 @@
+@import "../styles/global.css";
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
-
-@import "../styles/global.css";
 
 :root {
   --bg-placeholder: linear-gradient(transparent, transparent);

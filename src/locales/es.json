@@ -2,7 +2,8 @@
   "nav": {
     "home": "Inicio",
     "experience": "Experiencia",
-    "about": "Sobre mí"
+    "about": "Sobre mí",
+    "certificates": "Certificados"
   },
   "hero": {
     "greeting": "Hola, mi nombre es Simón G. Flores",

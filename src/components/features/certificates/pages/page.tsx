@@ -1,17 +1,25 @@
-import { certificates } from "@/lib/certificates";
+import CertificateCard from "@/components/certificate-card";
+import Grid from "@/components/Grid";
+import TranslatedHero from "@/components/TranslatedHero";
+import { certificatesWithTags } from "@/lib/certificates";
 
 export default function CertificatesPage() {
   return (
-    <div>
-      <h1>My Certificates</h1>
-      <ul>
-        {certificates.map((certificate) => (
-          <li key={certificate.title}>
-            <h2>{certificate.title}</h2>
-            <img src={certificate.src} alt={certificate.title} />
-          </li>
-        ))}
-      </ul>
+    <div className="stack gap-20">
+      <main className="wrapper stack gap-8">
+        <TranslatedHero
+          titleKey="certificate.title"
+          taglineKey="certificate.tagline"
+          align="start"
+        />
+        <Grid variant="small" >
+          {certificatesWithTags.map((certificate) => (
+            <li key={certificate.title}>
+              <CertificateCard certificate={certificate} />
+            </li>
+          ))}
+        </Grid>
+      </main>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Grid from "@/components/Grid";
 import TranslatedHero from "@/components/TranslatedHero";
-import PortfolioPreview from "@/components/experience-card";
 import { getExperienceEntries } from "@/lib/experience";
+import ExperienceCard from "@/components/experience-card";
 
 export const metadata: Metadata = {
   title: "My Experience | Simón G. Flores",
@@ -23,7 +23,7 @@ export default async function ExperiencePage() {
         <Grid variant="offset">
           {projects.map((project) => (
             <li key={project.slug.join("/")}>
-              <PortfolioPreview project={project} />
+              <ExperienceCard project={project} />
             </li>
           ))}
         </Grid>

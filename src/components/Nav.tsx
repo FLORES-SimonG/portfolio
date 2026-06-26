@@ -38,6 +38,7 @@ export default function Nav({ language }: NavProps) {
     { label: t("nav.home"), href: `/${language}` },
     { label: t("nav.experience"), href: `/${language}/experience/` },
     { label: t("nav.about"), href: `/${language}/about/` },
+    { label: t("nav.certificates"), href: `/${language}/certificates/` },
   ];
 
   useEffect(() => {
