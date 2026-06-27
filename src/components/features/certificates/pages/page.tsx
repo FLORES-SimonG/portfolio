@@ -13,7 +13,7 @@ export default function CertificatesPage() {
           align="start"
         />
         <Grid variant="small" >
-          {certificatesWithTags.map((certificate) => (
+          {certificatesWithTags.sort((a, b) => b.date.getTime() - a.date.getTime()).map((certificate) => (
             <li key={certificate.title}>
               <CertificateCard certificate={certificate} />
             </li>
