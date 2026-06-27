@@ -9,7 +9,9 @@ interface CertificateCardProps {
 }
 
 export default function CertificateCard({ certificate }: CertificateCardProps) {
-  const t = useTranslations("certificates.certificate");
+  const t = useTranslations();
+  const typeTranslation = t("certificates.certificate." + certificate.type);
+  console.log(typeTranslation);
   return (
     <a
       href={certificate.src}
@@ -27,7 +29,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
       <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent" />
 
       <span className="absolute top-4 right-4 rounded-full bg-(--accent-regular) px-3 py-1 text-xs font-medium text-white">
-        {t(certificate.type)}
+        {typeTranslation}
       </span>
       <div className="absolute bottom-0 left-0 right-0 p-5">
         <p className="text-lg font-semibold text-white">{certificate.title}</p>

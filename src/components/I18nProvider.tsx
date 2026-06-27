@@ -18,7 +18,7 @@ export function I18nProvider({
   );
 }
 
-export function useTranslations(p0?: string) {
+export function useTranslations() {
   const ctx = useContext(I18nContext);
   if (!ctx) {
     return (key: string, fallback?: string) => fallback ?? key;
