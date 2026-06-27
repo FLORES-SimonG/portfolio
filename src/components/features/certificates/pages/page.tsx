@@ -1,15 +1,19 @@
+"use client";
+
 import CertificateCard from "@/components/certificate-card";
 import Grid from "@/components/Grid";
+
 import TranslatedHero from "@/components/TranslatedHero";
 import { certificatesWithTags } from "@/lib/certificates";
 
 export default function CertificatesPage() {
+  
   return (
     <div className="stack gap-20">
       <main className="wrapper stack gap-8">
         <TranslatedHero
-          titleKey="certificate.title"
-          taglineKey="certificate.tagline"
+          titleKey="certificates.title"
+          taglineKey="certificates.tagline"
           align="start"
         />
         <Grid variant="small" >

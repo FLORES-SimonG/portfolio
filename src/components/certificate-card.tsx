@@ -1,16 +1,15 @@
+"use client";
+
+import { ICertificate } from "@/lib/certificates";
 import Image from "next/image";
+import { useTranslations } from "./I18nProvider";
 
 interface CertificateCardProps {
-  certificate: {
-    title: string;
-    src: string;
-    issuer?: string;
-  };
+  certificate: ICertificate;
 }
 
-export default function CertificateCard({
-  certificate,
-}: CertificateCardProps) {
+export default function CertificateCard({ certificate }: CertificateCardProps) {
+  const t = useTranslations("certificates.certificate");
   return (
     <a
       href={certificate.src}
@@ -28,18 +27,16 @@ export default function CertificateCard({
       <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent" />
 
       <span className="absolute top-4 right-4 rounded-full bg-(--accent-regular) px-3 py-1 text-xs font-medium text-white">
-        Certificate
+        {t(certificate.type)}
       </span>
       <div className="absolute bottom-0 left-0 right-0 p-5">
-        <p className="text-lg font-semibold text-white">
-          {certificate.title}
-        </p>
+        <p className="text-lg font-semibold text-white">{certificate.title}</p>
 
-        {certificate.issuer && (
+        {/* {certificate.title && (
           <p className="mt-1 text-sm text-gray-300">
-            {certificate.issuer}
+            {certificate.title}
           </p>
-        )}
+        )} */}
       </div>
     </a>
   );

@@ -6,6 +6,15 @@
     "certificates": "Zertifikate"
   },
 
+  "certificates": {
+    "title": "Zertifikate",
+    "tagline": "Hier sind einige meiner Zertifikate.",
+    "certificate":{
+      "learningPath":"Lernpfad",
+      "course":"Kurs"
+    }
+  },
+
   "hero": {
     "greeting": "Hallo, mein Name ist Simón G. Flores",
     "tagline": "Ich bin FullStack Developer und freue mich, Sie kennenzulernen!"

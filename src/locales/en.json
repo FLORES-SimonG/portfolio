@@ -10,6 +10,14 @@
     "greeting": "Hello, my name is Simón G. Flores",
     "tagline": "I am a FullStack Developer and it's a pleasure to meet you!"
   },
+  "certificates": {
+    "title": "Certificates",
+    "tagline": "Here are some of my certificates.",
+    "certificate": {
+      "course": "Course",
+      "learningPath": "Learning Path"
+    }
+  },
 
   "experience": {
     "title": "My Experience",
@@ -35,14 +43,12 @@
     "en": "English",
     "es": "Spanish",
     "de": "German"
-  }
-  ,
+  },
   "roles": {
     "developer": "Developer",
     "frontend": "Frontend",
     "location": "Germany"
-  }
-  ,
+  },
   "skills": {
     "fullstack": {
       "title": "Full Stack",

@@ -9,6 +9,14 @@
     "greeting": "Hola, mi nombre es Simón G. Flores",
     "tagline": "Soy FullStack Developer, ¡un placer conocerte!"
   },
+  "certificates": {
+    "title": "Certificados",
+    "tagline": "Aquí hay algunos de mis certificados.",
+    "certificate":{
+      "course":"Curso",
+      "learningPath":"Ruta de Aprendizaje"
+    }
+  },
 
   "experience": {
     "title": "Mi experiencia",
