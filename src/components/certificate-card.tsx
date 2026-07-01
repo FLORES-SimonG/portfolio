@@ -3,6 +3,7 @@
 import { ICertificate } from "@/lib/certificates";
 import Image from "next/image";
 import { useTranslations } from "./I18nProvider";
+import { encodeBase64 } from '@/lib/encoding';
 
 interface CertificateCardProps {
   certificate: ICertificate;
@@ -11,7 +12,6 @@ interface CertificateCardProps {
 export default function CertificateCard({ certificate }: CertificateCardProps) {
   const t = useTranslations();
   const typeTranslation = t("certificates.certificate." + certificate.type);
-  console.log(typeTranslation);
   return (
     <a
       href={certificate.src}
@@ -20,7 +20,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
       className="group relative block h-64 overflow-hidden rounded-2xl border border-(--gray-800) bg-(--gradient-subtle) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
       <Image
-        src={certificate.src}
+        src={`/api/image-proxy/${encodeBase64(certificate.src)}`}
         alt={certificate.title}
         fill
         className="object-cover transition-transform duration-500 group-hover:scale-105"

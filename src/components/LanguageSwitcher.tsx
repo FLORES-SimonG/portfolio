@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "./I18nProvider";
 import ReactCountryFlag from "react-country-flag";
-import { Language, LANGUAGE_CODES } from "@/locales/interface";
+import { Language, LANGUAGE_CODES } from "@/messages/interface";
 
 interface LanguageSwitcherProps {
   current: Language;

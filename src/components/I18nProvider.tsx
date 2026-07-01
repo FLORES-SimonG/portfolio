@@ -1,45 +1,31 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext } from "react";
+import React from "react";
+import {NextIntlClientProvider, useTranslations as nextUseTranslations} from 'next-intl';
 
-type Messages = Record<string, any>;
-
-const I18nContext = createContext<Messages | null>(null);
+// Thin wrapper that re-exports Next's client provider and hook so other
+// components can keep importing from the local path (`@/components/I18nProvider`).
+// This avoids updating many imports across the codebase.
 
 export function I18nProvider({
   messages,
+  locale,
+  timeZone,
   children,
 }: {
-  messages: Messages;
+  messages: Record<string, any>;
+  locale?: string;
+  timeZone?: string;
   children: React.ReactNode;
 }) {
   return (
-    <I18nContext.Provider value={messages}>{children}</I18nContext.Provider>
+    <NextIntlClientProvider locale={locale} messages={messages} timeZone={timeZone}>
+      {children}
+    </NextIntlClientProvider>
   );
 }
 
+// Re-export the next-intl client hook with the same name used in the codebase.
 export function useTranslations() {
-  const ctx = useContext(I18nContext);
-  if (!ctx) {
-    return (key: string, fallback?: string) => fallback ?? key;
-  }
-
-  function lookup(key: string) {
-    const parts = key.split('.');
-    let cur: any = ctx;
-    for (const p of parts) {
-      if (cur && typeof cur === 'object' && p in cur) {
-        cur = cur[p];
-      } else {
-        return undefined;
-      }
-    }
-    return cur;
-  }
-
-  return (key: string, fallback?: string) => {
-    const found = lookup(key);
-    if (typeof found === 'string') return found;
-    return fallback ?? key;
-  };
+  return nextUseTranslations();
 }

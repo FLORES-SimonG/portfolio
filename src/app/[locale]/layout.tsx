@@ -1,32 +1,32 @@
-import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { I18nProvider } from "@/components/I18nProvider";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { I18nProvider } from "@/components/I18nProvider";
-import { loadMessages, isSupportedLocale, getDefaultLocale } from "@/lib/i18n";
-import "../globals.css";
-import { Language } from "@/locales/interface";
 
-export const metadata: Metadata = {
-  title: "Simón G. Flores: Personal Site",
-  description: "The personal site of Simón G. Flores",
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params?: any;
-}) {
-  const awaitedParams = await params;
-  const localeParam = awaitedParams?.locale;
-  const locale: Language = isSupportedLocale(localeParam)
-    ? localeParam
-    : getDefaultLocale();
-  const messages = loadMessages(locale);
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  // Load locale messages from the messages folder
+  const messages = await import(`@/messages/${locale}.json`).then(
+    (m) => (m && (m as any).default ? (m as any).default : m)
+  );
 
   return (
-    <I18nProvider messages={messages}>
+    <I18nProvider locale={locale} messages={messages} timeZone="UTC">
       <div className="stack backgrounds">
         <Nav language={locale} />
         {children}

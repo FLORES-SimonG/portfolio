@@ -8,7 +8,7 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations } from "./I18nProvider";
 import type { iconPaths } from "./IconPaths";
-import { Language } from "@/locales/interface";
+import { Language } from "@/messages/interface";
 
 interface NavProps {
   language: Language;

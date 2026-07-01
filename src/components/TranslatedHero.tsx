@@ -22,8 +22,8 @@ export default function TranslatedHero({
 }: TranslatedHeroProps) {
   const t = useTranslations();
 
-  const finalTitle = titleKey ? t(titleKey, title) : title;
-  const finalTagline = taglineKey ? t(taglineKey, tagline) : tagline;
+  const finalTitle = titleKey ? t(titleKey) : title;
+  const finalTagline = taglineKey ? t(taglineKey) : tagline;
 
   return (
     <Hero title={finalTitle ?? ""} tagline={finalTagline} align={align}>
