@@ -36,7 +36,11 @@
     "tagline": "No encontrada"
   },
   "about": {
-    "title": "Sobre mí"
+    "title": "Sobre mí",
+    "firstParagraph": "Tengo experiencia en desarrollo de software, especialmente en desarrollo web con un enfoque en tecnologías frontend. Desde agosto de 2024, trabajo en RefineIT en Recklinghausen como parte del equipo frontend, centrándome en ReactJS/NextJS. Anteriormente, completé una pasantía como desarrollador de software en Alltagsauto.ch.",
+    "secondParagraph": "Desde 03/2024 hasta 06/2024 trabajé como asistente de enseñanza en el mismo campo en el que estudié, ayudando a los estudiantes a aprender y mejorar sus habilidades.",
+    "thirdParagraph": "Antes de comenzar a programar, me gradué como Técnico Universitario en Química en la Universidad Tecnológica Nacional Villa María en Argentina. Esta fue mi primera experiencia con la tecnología, a través de simulaciones de procesos. Al estudiar Ingeniería Química en la universidad, adquirí una sólida comprensión de matemáticas, física, química, álgebra y cálculo.",
+    "fourthParagraph": "Vivo en Gelsenkirchen desde abril de 2021. Mi lengua materna es el español, tengo un nivel B2 en alemán y un nivel B2 en inglés, y hablo portugués con fluidez."
   },
   "lang": {
     "en": "Inglés",
