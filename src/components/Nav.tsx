@@ -47,9 +47,7 @@ export default function Nav({ language }: NavProps) {
   useEffect(() => {
     const mediaQueries = window.matchMedia("(min-width: 50em)");
 
-    const handleViewports = (
-      e: MediaQueryList | MediaQueryListEvent
-    ) => {
+    const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
       setExpanded(e.matches);
     };
 
@@ -58,10 +56,7 @@ export default function Nav({ language }: NavProps) {
     mediaQueries.addEventListener("change", handleViewports);
 
     return () => {
-      mediaQueries.removeEventListener(
-        "change",
-        handleViewports
-      );
+      mediaQueries.removeEventListener("change", handleViewports);
     };
   }, []);
 
@@ -93,8 +88,8 @@ export default function Nav({ language }: NavProps) {
 
   return (
     <nav>
-      <div className="menu-header">
-        <div className="p-5 flex flex-col">
+      <div className="menu-header max-lg:items-center">
+        <div className="p-5 flex flex-col max-lg:items-center">
           <Link href="/" className="site-title">
             <Icon
               icon="terminal-window"
@@ -109,7 +104,7 @@ export default function Nav({ language }: NavProps) {
         </div>
 
         <button
-          className="menu-button"
+          className="menu-button h-fit"
           aria-expanded={expanded}
           onClick={() => setExpanded((prev) => !prev)}
         >
@@ -120,23 +115,15 @@ export default function Nav({ language }: NavProps) {
 
       <div
         id="menu-content"
-        className={
-          expanded
-            ? "menu-content"
-            : "menu-content hidden"
-        }
+        className={expanded ? "menu-content" : "menu-content hidden"}
       >
         <ul className="nav-items">
           {textLinks.map(({ label, href }) => (
-            <li key={href}>
+            <li key={href} className="flex items-center">
               <Link
                 href={href}
-                aria-current={
-                  isActive(href) ? "page" : undefined
-                }
-                className={`link ${
-                  isActive(href) ? "active" : ""
-                }`}
+                aria-current={isActive(href) ? "page" : undefined}
+                className={`link ${isActive(href) ? "active" : ""}`}
               >
                 {label}
               </Link>
@@ -146,23 +133,19 @@ export default function Nav({ language }: NavProps) {
 
         <div className="menu-footer">
           <div className="socials">
-            {iconLinks.map(
-              ({ href, icon, label }) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="social"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="sr-only">
-                    {label}
-                  </span>
+            {iconLinks.map(({ href, icon, label }) => (
+              <a
+                key={href}
+                href={href}
+                className="social"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="sr-only">{label}</span>
 
-                  <Icon icon={icon} />
-                </a>
-              )
-            )}
+                <Icon icon={icon} />
+              </a>
+            ))}
           </div>
 
           <div className="theme-toggle">
