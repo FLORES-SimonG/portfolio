@@ -14,6 +14,14 @@ interface NavProps {
   language: Language;
 }
 
+function normalize(path: string) {
+  if (path.length > 1 && path.endsWith("/")) {
+    return path.slice(0, -1);
+  }
+
+  return path;
+}
+
 const iconLinks: {
   label: string;
   href: string;
@@ -62,13 +70,6 @@ export default function Nav({ language }: NavProps) {
 
   const currentPath = pathname ?? "/";
 
-  const normalize = (path: string) => {
-    if (path.length > 1 && path.endsWith("/")) {
-      return path.slice(0, -1);
-    }
-
-    return path;
-  };
 
   const isActive = (href: string) => {
     const normalizedHref = normalize(href);
@@ -93,7 +94,7 @@ export default function Nav({ language }: NavProps) {
           <Link href="/" className="site-title">
             <Icon
               icon="terminal-window"
-              color="var(--accent-regular)"
+              color="bg-gradient-to-r from-blue-500 to-purple-500"
               size="1.6em"
               gradient
             />
@@ -104,6 +105,7 @@ export default function Nav({ language }: NavProps) {
         </div>
 
         <button
+          type="button"
           className="menu-button h-fit"
           aria-expanded={expanded}
           onClick={() => setExpanded((prev) => !prev)}

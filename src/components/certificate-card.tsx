@@ -23,6 +23,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
         src={`/api/image-proxy/${encodeBase64(certificate.src)}`}
         alt={certificate.title}
         fill
+        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
         className="object-cover transition-transform duration-500 group-hover:scale-105"
       />
 

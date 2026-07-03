@@ -93,14 +93,14 @@ export async function GET(_request: NextRequest, context: { params: Promise<{ pa
       return new Response('Image too large', { status: 413 });
     }
 
-    // Cache in memory for quick subsequent responses
-    cache.set(cacheKey, { expires: now + CACHE_TTL, buffer, contentType });
-
+    // NOTE: do NOT write to the in-memory cache inside GET to avoid side-effects
+    // that can be triggered by prefetching (CSRF). Cache population must be
+    // performed via a POST request to this endpoint (see POST handler below).
     return new Response(buffer, {
       status: 200,
       headers: {
         'Content-Type': contentType,
-        // Let CDNs cache the response for the same TTL and allow stale while revalidate
+        // Let CDNs cache the response; we don't mutate server cache here
         'Cache-Control': `public, s-maxage=${Math.floor(CACHE_TTL / 1000)}, stale-while-revalidate=${Math.floor(CACHE_TTL / 1000)}`,
       },
     });
@@ -110,3 +110,45 @@ export async function GET(_request: NextRequest, context: { params: Promise<{ pa
 }
 
 export const runtime = 'edge';
+
+// POST priming endpoint: accepts JSON { url } and will fetch+cache the image server-side.
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const urlStr: string | undefined = body?.url;
+    if (!urlStr || typeof urlStr !== 'string') {
+      return new Response('Missing url in body', { status: 400 });
+    }
+
+    const remoteUrl = new URL(urlStr);
+    if (!ALLOWED_HOSTS.has(remoteUrl.hostname)) {
+      return new Response('Host not allowed', { status: 403 });
+    }
+
+    const cacheKey = remoteUrl.toString();
+    const now = Date.now();
+
+    // If already cached and not expired, return 200
+    const existing = cache.get(cacheKey);
+    if (existing && existing.expires > now) {
+      return new Response('Already cached', { status: 200 });
+    }
+
+    const resp = await fetch(remoteUrl.toString(), { method: 'GET' });
+    if (!resp.ok) return new Response(`Upstream returned ${resp.status}`, { status: 502 });
+
+    const contentType = resp.headers.get('content-type');
+    if (!contentType || !contentType.startsWith('image/')) {
+      return new Response('The requested resource is not an image', { status: 502 });
+    }
+
+    const buffer = await resp.arrayBuffer();
+    if (buffer.byteLength > MAX_BYTES) return new Response('Image too large', { status: 413 });
+
+    cache.set(cacheKey, { expires: now + CACHE_TTL, buffer, contentType });
+
+    return new Response('Cached', { status: 200 });
+  } catch (err) {
+    return new Response(String(err), { status: 500 });
+  }
+}

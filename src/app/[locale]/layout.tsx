@@ -20,11 +20,15 @@ export default async function LocaleLayout({ children, params }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  // Load locale messages from the messages folder
-  const messages = await import(`@/messages/${locale}.json`).then(
-    (m) => (m && (m as any).default ? (m as any).default : m)
-  );
+  const messagesMap = {
+    en: () => import("@/messages/en.json"),
+    es: () => import("@/messages/es.json"),
+    de: () => import("@/messages/de.json"),
+  };
 
+  const messages = (await messagesMap[locale as keyof typeof messagesMap]())
+    .default;
+    
   return (
     <I18nProvider locale={locale} messages={messages} timeZone="UTC">
       <div className="stack backgrounds">
