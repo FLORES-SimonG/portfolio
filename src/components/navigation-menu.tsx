@@ -39,7 +39,7 @@ const iconLinks: {
   },
 ];
 
-export default function Nav({ language }: NavProps) {
+export default function NavigationMenu({ language }: NavProps) {
   const pathname = usePathname();
   const [expanded, setExpanded] = useState(false);
 

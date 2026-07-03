@@ -3,8 +3,8 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { I18nProvider } from "@/components/I18nProvider";
-import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import NavigationMenu from "@/components/navigation-menu";
 
 type Props = {
   children: React.ReactNode;
@@ -32,7 +32,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <I18nProvider locale={locale} messages={messages} timeZone="UTC">
       <div className="stack backgrounds">
-        <Nav language={locale} />
+        <NavigationMenu language={locale} />
         {children}
         <Footer />
       </div>
