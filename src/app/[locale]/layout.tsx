@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { I18nProvider } from "@/components/I18nProvider";
 import Footer from "@/components/Footer";
 import NavigationMenu from "@/components/navigation-menu";
+import "../globals.css";
 
 type Props = {
   children: React.ReactNode;
@@ -28,14 +29,18 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = (await messagesMap[locale as keyof typeof messagesMap]())
     .default;
-    
+
   return (
-    <I18nProvider locale={locale} messages={messages} timeZone="UTC">
-      <div className="stack backgrounds">
-        <NavigationMenu language={locale} />
-        {children}
-        <Footer />
-      </div>
-    </I18nProvider>
+    <html>
+      <body>
+        <I18nProvider locale={locale} messages={messages} timeZone="UTC">
+          <div className="stack backgrounds">
+            <NavigationMenu language={locale} />
+            {children}
+            <Footer />
+          </div>
+        </I18nProvider>
+      </body>
+    </html>
   );
 }
