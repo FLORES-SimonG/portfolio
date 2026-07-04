@@ -1,10 +1,9 @@
-"use client";
 
 import TranslatedHero from "@/components/TranslatedHero";
-import { useTranslations } from "@/components/I18nProvider";
+import { getTranslations } from "next-intl/server";
 
-export default function AboutPage() {
-  const t = useTranslations();
+export default async function AboutPage() {
+  const t = await getTranslations();
   return (
     <div className="stack gap-20">
       <main className="wrapper about">
