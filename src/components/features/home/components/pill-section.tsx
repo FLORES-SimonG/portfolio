@@ -1,11 +1,12 @@
-"use client";
+import Icon, { IconName } from "@/components/Icon";
+import { getTranslations } from "next-intl/server";
+import PillComponent from "../../common/pill-component";
 
-import { useTranslations } from "./I18nProvider";
-import Icon, { IconName } from "./Icon";
-import Pill from "./Pill";
 
-export default function PillSection() {
-  const t = useTranslations();
+
+
+export default async function PillSection() {
+  const t = await getTranslations();
 
   const pillItems = [
     {
@@ -27,9 +28,9 @@ export default function PillSection() {
   return (
     <div className="roles">
       {pillItems.map((item) => (
-        <Pill key={item.id}>
+        <PillComponent key={item.id}>
           <Icon icon={item.icon} size="1.33em" /> {item.label}
-        </Pill>
+        </PillComponent>
       ))}
     </div>
   );

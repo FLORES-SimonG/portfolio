@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
 
-export default function Pill({ children }: { children: ReactNode }) {
+export default function PillComponent({ children }: { children: ReactNode }) {
   return <div className="pill">{children}</div>;
 }

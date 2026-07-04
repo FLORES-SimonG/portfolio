@@ -6,9 +6,9 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Hero from '@/components/Hero';
 import Icon from '@/components/Icon';
-import Pill from '@/components/Pill';
 import ContactCTA from '@/components/ContactCTA';
 import { getExperienceBySlug, getExperienceEntries } from '@/lib/experience';
+import PillComponent from '@/components/features/common/pill-component';
 
 type Props = {
   params: Promise<{ slug: string[] }>;
@@ -56,7 +56,7 @@ export default async function ExperienceEntryPage({ params }: Props) {
               <div className="details">
                 <div className="tags">
                   {entry.tags.map((tag) => (
-                    <Pill key={tag}>{tag}</Pill>
+                    <PillComponent key={tag}>{tag}</PillComponent>
                   ))}
                 </div>
                 <p className="description">{entry.description}</p>
