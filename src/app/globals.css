@@ -767,8 +767,10 @@ html:not(.theme-dark) .theme-toggle-button .icon.light,
 }
 
 .content {
-  max-width: 65ch;
-  margin-inline: auto;
+      max-width: 65ch;
+      margin-inline: auto;
+      text-align: start;
+      width: 100%;
 }
 
 .markdown-content > * + * {

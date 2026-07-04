@@ -1,4 +1,3 @@
-
 import TranslatedHero from "@/components/TranslatedHero";
 import { getTranslations } from "next-intl/server";
 
