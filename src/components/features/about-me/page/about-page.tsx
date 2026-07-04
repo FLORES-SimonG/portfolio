@@ -1,5 +1,11 @@
 import TranslatedHero from "@/components/TranslatedHero";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "Learn more about me and my background.",
+};
 
 export default async function AboutPage() {
   const t = await getTranslations("about");

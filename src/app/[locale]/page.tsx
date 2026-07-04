@@ -3,6 +3,13 @@ import TranslatedHero from "@/components/TranslatedHero";
 import Skills from "@/components/Skills";
 import PillSection from "@/components/pill-section";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Simón G. Flores - Full-Stack Developer",
+};
+
 export default function HomePage() {
   return (
     <div className="stack gap-20 lg:gap-48">
