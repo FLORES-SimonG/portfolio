@@ -6,20 +6,17 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Hero from "@/components/features/common/hero";
 import Icon from "@/components/features/common/Icon";
-import { getExperienceBySlug, getExperienceEntries } from "@/lib/experience";
+import { getExperienceBySlug } from "@/lib/experience";
 import PillComponent from "@/components/features/common/pill-component";
 
 type Props = {
-  params: Promise<{ slug: string[] }>;
+  params: Promise<{ slug: string[]; language: string }>;
 };
 
-export async function generateStaticParams() {
-  const entries = await getExperienceEntries();
-  return entries.map((entry) => ({ slug: entry.slug }));
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, language } = await params;
+  console.log(slug);
   const entry = await getExperienceBySlug(slug);
 
   if (!entry) {
@@ -38,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ExperienceEntryPage({ params }: Props) {
   const { slug } = await params;
   const entry = await getExperienceBySlug(slug);
+  console.log(slug);
 
   if (!entry) {
     notFound();

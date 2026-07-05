@@ -19,19 +19,36 @@ const SUPPORTED: { code: Language; labelKey: string; countryCode: string }[] = [
 function buildPathWithLang(pathname: string, lang: Language) {
   const segments = pathname.split("/");
   let newPath = pathname;
-  if (
-    segments[1] &&
-    [
-      LANGUAGE_CODES.English,
-      LANGUAGE_CODES.Spanish,
-      LANGUAGE_CODES.German,
-    ].includes(segments[1] as Language)
-  ) {
+  const supportedLangs = [
+    LANGUAGE_CODES.English,
+    LANGUAGE_CODES.Spanish,
+    LANGUAGE_CODES.German,
+  ];
+
+  if (segments[1] && supportedLangs.includes(segments[1] as Language)) {
+    // replace the locale segment
     segments[1] = lang;
+
+    // If there is a slug after the section (e.g. /es/experience/slug-part),
+    // try to replace or add the language suffix on the last segment.
+    if (segments.length > 3) {
+      // find last non-empty segment index
+      let lastIndex = segments.length - 1;
+      while (lastIndex > 1 && segments[lastIndex] === "") lastIndex--;
+      const last = segments[lastIndex];
+      if (last) {
+        // Replace existing suffix like -es, .es, _es or add -<lang> if none.
+        const newLast = last.replace(/([._-])?(en|es|de)$/i, `-${lang}`);
+        segments[lastIndex] = newLast === last ? `${last}-${lang}` : newLast;
+      }
+    }
+
     newPath = segments.join("/") || "/";
   } else {
-    newPath = `/${lang}${pathname}`;
+    // no locale in path — prefix it
+    newPath = `/${lang}${pathname.startsWith("/") ? pathname : `/${pathname}`}`;
   }
+
   if (newPath === "") newPath = `/${lang}`;
   return newPath;
 }
