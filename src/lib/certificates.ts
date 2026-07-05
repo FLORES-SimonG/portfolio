@@ -50,13 +50,13 @@ export const certificates: ICertificate[] = [
   },
   {
     title: "InglesA1",
-    src: "https://platzi.com/simonflores_10/ruta/1-ruta/diploma-og/og.jpeg",
+    src: "https://platzi.com/simonflores_10/ruta/8309-ruta/diploma-og/og.jpeg",
     date: new Date("2023-06-29"),
     type: "learningPath",
   },
   {
     title: "InglesA2",
-    src: "https://platzi.com/simonflores_10/ruta/7049-ruta/diploma-og/og.jpeg",
+    src: "https://platzi.com/simonflores_10/ruta/12050-ruta/diploma-og/og.jpeg",
     date: new Date("2025-08-28"),
     type: "learningPath",
   },
