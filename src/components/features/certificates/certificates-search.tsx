@@ -6,12 +6,11 @@ import Grid from "@/components/Grid";
 import { useTranslations } from "@/components/I18nProvider";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import PillComponent from "../common/pill-component";
 
 type CertificateSerializable = {
   title: string;
   src: string;
-  date: string; // ISO
+  date: string;
   type: "learningPath" | "course";
   tags: string[];
 };
@@ -103,11 +102,11 @@ export default function CertificatesSearch({
             type="button"
             className="cursor-pointer"
             onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+            key={tag}
           >
             <Badge
               variant={activeTag === tag ? "default" : "secondary"}
               className=" border-primary/50"
-              key={tag}
             >
               {tag}
             </Badge>
