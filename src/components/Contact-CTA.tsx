@@ -1,9 +1,9 @@
 import CallToAction from "./CallToAction";
 import Icon from "./Icon";
-import { useTranslations } from "./I18nProvider";
+import { getTranslations } from "next-intl/server";
 
-export default function ContactCTA() {
-  const t = useTranslations();
+export default async function ContactCTA() {
+  const t = await getTranslations();
 
   return (
     <aside className="contact-cta">

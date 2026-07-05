@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Hero from '@/components/Hero';
 import Icon from '@/components/Icon';
-import ContactCTA from '@/components/ContactCTA';
+import ContactCTA from '@/components/Contact-CTA';
 import { getExperienceBySlug, getExperienceEntries } from '@/lib/experience';
 import PillComponent from '@/components/features/common/pill-component';
 

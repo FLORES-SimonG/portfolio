@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function CertificatesPage() {
   return (
-    <div className="stack gap-20">
+    <div className="stack gap-20 p-8">
       <main className="wrapper stack gap-8">
         <TranslatedHero
           titleKey="certificates.title"

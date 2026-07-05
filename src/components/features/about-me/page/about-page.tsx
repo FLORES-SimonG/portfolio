@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default async function AboutPage() {
   const t = await getTranslations("about");
   return (
-    <div className="stack gap-20">
+    <div className="stack gap-20 p-8">
       <main className="wrapper about">
         <TranslatedHero titleKey="about.title" />
         <section>

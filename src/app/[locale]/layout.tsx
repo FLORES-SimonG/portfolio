@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Footer from "@/components/Footer";
 import NavigationMenu from "@/components/navigation-menu";
+import ContactCTA from "@/components/Contact-CTA";
 
 type Props = {
   children: React.ReactNode;
@@ -18,15 +19,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
   setRequestLocale(locale);
 
-  // const messagesMap = {
-  //   en: () => import("@/messages/en.json"),
-  //   es: () => import("@/messages/es.json"),
-  //   de: () => import("@/messages/de.json"),
-  // };
-
-  // const messagesDefault = (await messagesMap[locale as keyof typeof messagesMap]())
-  //   .default;
-
   return (
     <html lang={locale} suppressContentEditableWarning>
       <body suppressContentEditableWarning>
@@ -34,6 +26,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="stack backgrounds">
             <NavigationMenu language={locale} />
             {children}
+            <ContactCTA />
             <Footer />
           </div>
         </NextIntlClientProvider>
