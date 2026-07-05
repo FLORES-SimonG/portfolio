@@ -1,5 +1,5 @@
 import TranslatedHero from "@/components/features/common/translated-hero";
-import CertificatesSearch from "@/components/features/certificates/certificates-search";
+import CertificatesSearch from "@/components/features/certificates/components/certificates-search";
 import { certificatesWithTags } from "@/lib/certificates";
 
 import { Metadata } from "next";
