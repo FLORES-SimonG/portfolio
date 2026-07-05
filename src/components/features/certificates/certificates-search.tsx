@@ -6,6 +6,7 @@ import Grid from "@/components/Grid";
 import { useTranslations } from "@/components/I18nProvider";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { Input } from "@/components/ui/input";
 
 type CertificateSerializable = {
   title: string;
@@ -51,12 +52,12 @@ export default function CertificatesSearch({
   return (
     <div className="stack gap-6">
       <div className="flex items-center gap-4">
-        <input
+        <Input
           aria-label={t("certificates.searchPlaceholder")}
           placeholder={t("certificates.searchPlaceholder")}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="input flex-1"
+          className=""
         />
         <button
           onClick={() => {
