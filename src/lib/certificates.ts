@@ -313,19 +313,19 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title: "CursoDeFuncionesEnC",
+    title: "CursoDeFuncionesEnCpp",
     src: "https://platzi.com/simonflores_10/curso/1968-course/diploma-og/og.jpeg",
     date: new Date("2023-04-09"),
     type: "course",
   },
   {
-    title: "CursoDeControlDeFlujoEnC",
+    title: "CursoDeControlDeFlujoEnCpp",
     src: "https://platzi.com/simonflores_10/curso/1957-course/diploma-og/og.jpeg",
     date: new Date("2023-04-09"),
     type: "course",
   },
   {
-    title: "CursoDeIntroduccionAC",
+    title: "CursoDeIntroduccionACpp",
     src: "https://platzi.com/simonflores_10/curso/1936-course/diploma-og/og.jpeg",
     date: new Date("2023-04-07"),
     type: "course",
@@ -481,26 +481,26 @@ const getTags = (title: string) => {
   const tags = [];
 
   const rules = [
-    { keywords: ["Next.js", "next"], tag: "nextjs" },
-    { keywords: ["React"], tag: "react" },
-    { keywords: ["TypeScript"], tag: "typescript" },
-    { keywords: ["JavaScript", "ECMAScript"], tag: "javascript" },
-    { keywords: ["C#"], tag: "csharp" },
-    { keywords: ["Java"], tag: "java" },
-    { keywords: ["Python"], tag: "python" },
-    { keywords: ["C++"], tag: "cpp" },
-    { keywords: ["C"], tag: "c" },
-    { keywords: ["Tailwind"], tag: "tailwind" },
-    { keywords: ["Figma"], tag: "figma" },
-    { keywords: ["Azure"], tag: "azure" },
-    { keywords: ["MySQL", "MariaDB", "Bases de Datos"], tag: "database" },
-    { keywords: ["Git"], tag: "git" },
-    { keywords: ["Linux"], tag: "linux" },
-    { keywords: ["Excel"], tag: "excel" },
-    { keywords: ["Inglés"], tag: "english" },
-    { keywords: ["UX/UI"], tag: "design" },
-    { keywords: ["Frontend"], tag: "frontend" },
-    { keywords: ["Programación"], tag: "programming" },
+    { keywords: ["Next.js", "next"], tag: "Nextjs" },
+    { keywords: ["React"], tag: "React" },
+    { keywords: ["TypeScript"], tag: "TypeScript" },
+    { keywords: ["JavaScript", "ECMAScript"], tag: "JavaScript" },
+    { keywords: ["CSharp"], tag: "C#" },
+    { keywords: ["Java"], tag: "Java" },
+    { keywords: ["Python"], tag: "Python" },
+    { keywords: ["C++"], tag: "C/C++" },
+    { keywords: ["Cpp"], tag: "C/C++" },
+    { keywords: ["Tailwind"], tag: "Tailwind" },
+    { keywords: ["Figma"], tag: "Figma" },
+    { keywords: ["Azure"], tag: "Azure" },
+    { keywords: ["MySQL", "MariaDB", "Bases de Datos"], tag: "Database" },
+    { keywords: ["Git"], tag: "Git" },
+    { keywords: ["Linux"], tag: "Linux" },
+    { keywords: ["Excel"], tag: "Excel" },
+    { keywords: ["Inglés"], tag: "English" },
+    { keywords: ["UX/UI"], tag: "Design" },
+    { keywords: ["Frontend"], tag: "Frontend" },
+    { keywords: ["Programación"], tag: "Programming" },
   ];
 
   rules.forEach((rule) => {
@@ -508,24 +508,24 @@ const getTags = (title: string) => {
       tags.push(rule.tag);
     }
   });
-  tags.push("software");
+  tags.push("Software");
 
   if (
-    tags.includes("react") ||
-    tags.includes("nextjs") ||
-    tags.includes("frontend")
+    tags.includes("React") ||
+    tags.includes("Nextjs") ||
+    tags.includes("Frontend")
   ) {
-    tags.push("web");
+    tags.push("Web");
   }
 
   if (
-    tags.includes("javascript") ||
-    tags.includes("typescript") ||
-    tags.includes("csharp") ||
-    tags.includes("java") ||
-    tags.includes("python")
+    tags.includes("JavaScript") ||
+    tags.includes("TypeScript") ||
+    tags.includes("C#") ||
+    tags.includes("Java") ||
+    tags.includes("Python")
   ) {
-    tags.push("programming");
+    tags.push("Programming");
   }
 
   return [...new Set(tags)].slice(0, 5);

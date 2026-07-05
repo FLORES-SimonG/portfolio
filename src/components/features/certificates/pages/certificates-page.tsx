@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function CertificatesPage() {
-  // serialize dates for client component
+  
   const serializable = certificatesWithTags.map((c) => ({
     ...c,
     date: c.date.toISOString(),

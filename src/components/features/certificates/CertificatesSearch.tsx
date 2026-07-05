@@ -4,6 +4,9 @@ import { useMemo, useState } from "react";
 import CertificateCard from "@/components/certificate-card";
 import Grid from "@/components/Grid";
 import { useTranslations } from "@/components/I18nProvider";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import PillComponent from "../common/pill-component";
 
 type CertificateSerializable = {
   title: string;
@@ -87,24 +90,27 @@ export default function CertificatesSearch({
 
       <div className="flex flex-wrap gap-2">
         <button
-          className={`btn-sm ${activeTag === null ? "btn-active" : ""}`}
+          className={cn(
+            activeTag === null ? "text-primary font-bold transition-all" : null,
+          )}
           onClick={() => setActiveTag(null)}
         >
-          {(() => {
-            try {
-              return t("certificates.allTags");
-            } catch (e) {
-              return "Todas";
-            }
-          })()}
+          {t("certificates.allTags")}
         </button>
+        |
         {allTags.map((tag) => (
           <button
-            key={tag}
-            className={`btn-sm ${activeTag === tag ? "btn-active" : ""}`}
+            type="button"
+            className="cursor-pointer"
             onClick={() => setActiveTag(activeTag === tag ? null : tag)}
           >
-            {tag}
+            <Badge
+              variant={activeTag === tag ? "default" : "secondary"}
+              className=" border-primary/50"
+              key={tag}
+            >
+              {tag}
+            </Badge>
           </button>
         ))}
       </div>
