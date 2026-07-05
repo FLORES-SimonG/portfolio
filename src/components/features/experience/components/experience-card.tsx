@@ -10,7 +10,7 @@ export default function ExperienceCard({
   project,
 }: ExperienceCardProps) {
   return (
-    <Link className="card" href={`/experience/${project.slug.join("/")}`}>
+    <Link className="card" href={`/experience/${project.slug.join(`-${project.language}`)}`}>
       <span className="title">{project.title}</span>
       <Image
         src={project.img}

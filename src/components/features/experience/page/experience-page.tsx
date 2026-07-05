@@ -3,17 +3,17 @@ import Grid from "@/components/features/common/grid";
 import TranslatedHero from "@/components/features/common/translated-hero";
 import { getExperienceEntries } from "@/lib/experience";
 import ExperienceCard from "@/components/features/experience/components/experience-card";
-  
+
 export const metadata: Metadata = {
   title: "My Experience | Simón G. Flores",
   description: "Learn about Simón G. Flores's most recent projects",
 };
 
-export default async function ExperiencePage(
-  { locale }: { locale: string }
-) {
+export default async function ExperiencePage({ locale }: { locale: string }) {
   const projects = await getExperienceEntries();
-  const filteredProjects = projects.filter((project) => project.language === locale);
+  const filteredProjects = projects.filter(
+    (project) => project.language === locale,
+  );
 
   return (
     <div className="stack gap-20">

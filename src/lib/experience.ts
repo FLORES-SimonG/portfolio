@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { routing } from "../i18n/routing";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
 
@@ -59,7 +60,6 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   const publishDate = parsed.data.publishDate;
   const tags = parsed.data.tags;
   const img = parsed.data.img;
-  const language = parsed.data.language;
 
   if (
     typeof title !== "string" ||
@@ -84,9 +84,20 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     );
   }
 
-  const relative = path.relative(CONTENT_DIR, filePath);
+  const relative = path.relative(CONTENT_DIR, filePath).replace(/\\/g, "/");
   const withoutExtension = relative.replace(/\.md$/i, "");
-  const slug = withoutExtension.split(path.sep).map(slugify);
+
+  // If filename ends with a locale suffix (e.g. Tiendi.en), strip it for the slug
+  const parts = withoutExtension.split(".");
+  let slugBase = withoutExtension;
+  let inferredLanguage: ExperienceEntry["language"] | undefined;
+  const possibleLocale = parts[parts.length - 1];
+  if (Array.from(routing.locales).includes(possibleLocale as any)) {
+    slugBase = parts.slice(0, parts.length - 1).join(".");
+    inferredLanguage = possibleLocale as ExperienceEntry["language"];
+  }
+
+  const slug = slugBase.split(path.sep).map(slugify);
 
   return {
     title,
@@ -94,7 +105,10 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     publishDate: parsedPublishDate,
     tags,
     img,
-    language,
+    language:
+      (typeof parsed.data.language === "string"
+        ? (parsed.data.language as ExperienceEntry["language"])
+        : inferredLanguage) ?? (Array.from(routing.locales)[0] as ExperienceEntry["language"]),
     imgAlt:
       typeof parsed.data.img_alt === "string" ? parsed.data.img_alt : undefined,
     slug,
