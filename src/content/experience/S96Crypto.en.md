@@ -1,6 +1,7 @@
 ---
 title: "S96: Your CryptoBank"
 publishDate: 2019-12-01 00:00:00
+language: en
 img: /assets/crypto.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |

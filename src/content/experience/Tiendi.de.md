@@ -3,6 +3,7 @@ title: "Tiendi: Your online store"
 publishDate: 2020-03-02 00:00:00
 img: /assets/tiendi0.jpg
 img_alt: Online store.
+language: de
 description: "Work and Academic Experience"
 
 tags:

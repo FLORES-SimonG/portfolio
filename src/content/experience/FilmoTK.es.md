@@ -1,10 +1,11 @@
 ---
 title: FilmoTK
+language: es
 publishDate: 2017-10-02 00:00:00
 img: /assets/filmo.jpg
 img_alt: Logo FilmoTK.
 description: |
-  Academic Experience
+  Experiencia académica
 tags:
   - MongoDB
   - Javascript
@@ -15,7 +16,7 @@ tags:
 
 ## Filmo-TK
 
-> In Progress
+> En progreso
 
->Responsibility: 
+>Responsabilidad: 
 - **Fullstack | Frontend | Backend Development**
