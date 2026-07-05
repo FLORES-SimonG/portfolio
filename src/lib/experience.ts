@@ -13,6 +13,7 @@ export type ExperienceEntry = {
   img: string;
   imgAlt?: string;
   slug: string[];
+  language: "de" | "es" | "en";
   content: string;
 };
 
@@ -59,6 +60,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   const publishDate = parsed.data.publishDate;
   const tags = parsed.data.tags;
   const img = parsed.data.img;
+  const language = parsed.data.language;
 
   if (
     typeof title !== "string" ||
@@ -93,6 +95,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
     publishDate: parsedPublishDate,
     tags,
     img,
+    language,
     imgAlt:
       typeof parsed.data.img_alt === "string" ? parsed.data.img_alt : undefined,
     slug,
