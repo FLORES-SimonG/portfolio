@@ -139,8 +139,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "CursoDeNextJsInternacionalizacionDeAplicacionesWebConI18n",
+    title: "CursoDeNextJsInternacionalizacionDeAplicacionesWebConI18n",
     src: "https://platzi.com/simonflores_10/curso/2364-course/diploma-og/og.jpeg",
     date: new Date("2024-09-23"),
     type: "course",
@@ -296,8 +295,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "CursoDeHistoriaDeLaInnovaciónYElEmprendimientoConDianaUribe",
+    title: "CursoDeHistoriaDeLaInnovaciónYElEmprendimientoConDianaUribe",
     src: "https://platzi.com/simonflores_10/curso/2329-course/diploma-og/og.jpeg",
     date: new Date("2023-04-13"),
     type: "course",
@@ -369,8 +367,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "CursoDeEticaYManejoDeDatosParaDataScienceEInteligenciaArtificial",
+    title: "CursoDeEticaYManejoDeDatosParaDataScienceEInteligenciaArtificial",
     src: "https://platzi.com/simonflores_10/curso/3156-course/diploma-og/og.jpeg",
     date: new Date("2023-02-28"),
     type: "course",
@@ -413,8 +410,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "GuiaParaEmpezarUnaCarreraEnDataScienceEInteligenciaArtificial",
+    title: "GuiaParaEmpezarUnaCarreraEnDataScienceEInteligenciaArtificial",
     src: "https://platzi.com/simonflores_10/curso/2807-course/diploma-og/og.jpeg",
     date: new Date("2022-07-26"),
     type: "course",
@@ -426,8 +422,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "CursoDeInglesBasicoA1ConversacionesCortasYHabituales2020",
+    title: "CursoDeInglesBasicoA1ConversacionesCortasYHabituales2020",
     src: "https://platzi.com/simonflores_10/curso/1945-course/diploma-og/og.jpeg",
     date: new Date("2022-07-22"),
     type: "course",
@@ -445,22 +440,19 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title:
-      "CursoDePreworkConfiguracionDeEntornoDeDesarrolloEnWindows",
+    title: "CursoDePreworkConfiguracionDeEntornoDeDesarrolloEnWindows",
     src: "https://platzi.com/simonflores_10/curso/2042-course/diploma-og/og.jpeg",
     date: new Date("2022-07-18"),
     type: "course",
   },
   {
-    title:
-      "CursoDePensamientoLogicoManejoDeDatosEstructurasYFunciones",
+    title: "CursoDePensamientoLogicoManejoDeDatosEstructurasYFunciones",
     src: "https://platzi.com/simonflores_10/curso/3222-course/diploma-og/og.jpeg",
     date: new Date("2022-07-16"),
     type: "course",
   },
   {
-    title:
-      "CursoDeIntroduccionALaWebHistoriaYFuncionamientoDeInternet",
+    title: "CursoDeIntroduccionALaWebHistoriaYFuncionamientoDeInternet",
     src: "https://platzi.com/simonflores_10/curso/2053-course/diploma-og/og.jpeg",
     date: new Date("2022-07-16"),
     type: "course",

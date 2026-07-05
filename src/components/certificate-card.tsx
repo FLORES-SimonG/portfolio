@@ -1,18 +1,17 @@
+"use client";
 import { ICertificate } from "@/lib/certificates";
 import Image from "next/image";
 import { encodeBase64 } from "@/lib/encoding";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 interface CertificateCardProps {
-  certificate: ICertificate;
+  certificate: ICertificate | (ICertificate & { date?: string });
 }
 
-export default async function CertificateCard({
-  certificate,
-}: CertificateCardProps) {
-  const t = await getTranslations();
-  const tTitle = await getTranslations("certificates.certificate.title");
+export default function CertificateCard({ certificate }: CertificateCardProps) {
+  const t = useTranslations();
   const typeTranslation = t("certificates.certificate." + certificate.type);
+
   return (
     <a
       href={certificate.src}
@@ -34,7 +33,7 @@ export default async function CertificateCard({
         {typeTranslation}
       </span>
       <div className="absolute bottom-0 left-0 right-0 p-5">
-        <p className="text-lg font-semibold text-white">{tTitle(certificate.title)}</p>
+  <p className="text-lg font-semibold text-white">{t(`certificates.certificate.title.${certificate.title}`)}</p>
       </div>
     </a>
   );

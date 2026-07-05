@@ -1,4 +1,7 @@
 {
+  "common": {
+    "clear": "Limpiar"
+  },
   "nav": {
     "home": "Inicio",
     "experience": "Experiencia",
@@ -10,6 +13,8 @@
     "tagline": "Soy FullStack Developer, ¡un placer conocerte!"
   },
   "certificates": {
+    "allTags": "Ver todos",
+    "searchPlaceholder": "Buscar certificados...",
     "title": "Certificados",
     "tagline": "Aquí hay algunos de mis certificados.",
     "certificate": {

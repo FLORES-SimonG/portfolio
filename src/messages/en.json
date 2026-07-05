@@ -1,4 +1,7 @@
 {
+  "common": {
+    "clear": "Clear"
+  },
   "nav": {
     "home": "Home",
     "experience": "Experience",
@@ -11,6 +14,8 @@
     "tagline": "I am a FullStack Developer and it's a pleasure to meet you!"
   },
   "certificates": {
+    "searchPlaceholder": "Search certificates...",
+    "allTags": "View all",
     "title": "Certificates",
     "tagline": "Here are some of my certificates.",
     "certificate": {

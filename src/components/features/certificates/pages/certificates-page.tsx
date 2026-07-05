@@ -1,6 +1,5 @@
-import CertificateCard from "@/components/certificate-card";
-import Grid from "@/components/Grid";
 import TranslatedHero from "@/components/TranslatedHero";
+import CertificatesSearch from "@/components/features/certificates/CertificatesSearch";
 import { certificatesWithTags } from "@/lib/certificates";
 
 import { Metadata } from "next";
@@ -11,6 +10,12 @@ export const metadata: Metadata = {
 };
 
 export default function CertificatesPage() {
+  // serialize dates for client component
+  const serializable = certificatesWithTags.map((c) => ({
+    ...c,
+    date: c.date.toISOString(),
+  }));
+
   return (
     <div className="stack gap-20 p-8">
       <main className="wrapper stack gap-8">
@@ -19,15 +24,7 @@ export default function CertificatesPage() {
           taglineKey="certificates.tagline"
           align="start"
         />
-        <Grid variant="small">
-          {certificatesWithTags
-            .sort((a, b) => b.date.getTime() - a.date.getTime())
-            .map((certificate) => (
-              <li key={certificate.title}>
-                <CertificateCard certificate={certificate} />
-              </li>
-            ))}
-        </Grid>
+        <CertificatesSearch certificates={serializable} />
       </main>
     </div>
   );

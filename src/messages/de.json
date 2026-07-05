@@ -1,4 +1,7 @@
 {
+  "common": {
+    "clear": "Löschen"
+  },
   "nav": {
     "home": "Start",
     "experience": "Erfahrung",
@@ -7,6 +10,8 @@
   },
 
   "certificates": {
+    "searchPlaceholder": "Zertifikate suchen...",
+    "allTags": "Alle anzeigen",
     "title": "Zertifikate",
     "tagline": "Hier sind einige meiner Zertifikate.",
     "certificate": {
