@@ -9,9 +9,90 @@
   "certificates": {
     "title": "Zertifikate",
     "tagline": "Hier sind einige meiner Zertifikate.",
-    "certificate":{
-      "learningPath":"Lernpfad",
-      "course":"Kurs"
+    "certificate": {
+      "learningPath": "Lernpfad",
+      "course": "Kurs",
+
+      "title": {
+        "CursoDeIntroduccionAReactNative": "Einführung in React Native",
+        "CursoDeSupabase": "Supabase Kurs",
+        "FullStackDeveloperconJavaScript": "FullStack-Entwickler mit JavaScript",
+        "CursoDeResponsiveDesignMaquetacionMobileFirst": "Responsive Design und Mobile-First Layout",
+        "FullStackConNextJs": "FullStack mit Next.js",
+        "FundamentosDeDataScienceEInteligenciaArtificial": "Grundlagen von Data Science und KI",
+        "FundamentosDeProgramacion": "Programmierungsgrundlagen",
+        "InglesA1": "Englisch A1",
+        "InglesA2": "Englisch A2",
+        "CursoDeBasesDeDatosConMySQLLyMariaDB": "Datenbanken mit MySQL & MariaDB",
+        "CursoDeNextJsAvanzado": "Fortgeschrittener Next.js Kurs",
+        "CursoDeTailwindCSS": "Tailwind CSS Kurs",
+        "CursoDeProgramacionOrientadaAObjetosConCSharp": "Objektorientierte Programmierung mit C#",
+        "CursoDeIntroduccionALaNubeConAzure": "Einführung in Cloud mit Azure",
+        "CursoDeFigmaTecnicasAvanzadasDeDiseno": "Figma: Fortgeschrittene Design-Techniken",
+        "CursoDeFigma": "Figma Kurs",
+        "CursoDeInglesBasicoA2ConectoresYArticulos": "Grundlegendes Englisch A2: Konnektoren & Artikel",
+        "CursoDeReactJsConTypeScript": "React.js mit TypeScript",
+        "CursoDeFigmaPrototipadoEInterfaces": "Figma: Prototyping und Interfaces",
+        "CursoDeReactJsPatronesDeRenderYComposicion": "React.js: Rendering-Patterns und Komposition",
+        "CursoDeNextJsOptimizacionYManejoDeGrandesDatasets": "Next.js: Optimierung & Umgang mit großen Datensätzen",
+        "CursoDeNextJsSeguridadWebConOWASP": "Next.js: Web-Sicherheit mit OWASP",
+        "CursoDeNextJsInternacionalizacionDeAplicacionesWebConI18n": "Next.js: Internationalisierung von Webanwendungen mit i18n",
+        "CursoDeIntroduccionAJava": "Einführung in Java",
+        "CursoDeReactJsConViteJsYTailwindCSS": "React.js mit Vite.js und Tailwind CSS",
+        "CursoDeAsincronismoConJavaScript": "Asynchrones JavaScript",
+        "CursoDeFundamentosDeDisenoDeInterfacesUXUI": "Grundlagen des UX/UI Interface-Designs",
+        "CursoDeCleanCodeYBuenasPracticasConJavaScript": "Clean Code und Best Practices in JavaScript",
+        "CursoDeManipulacionDeArraysEnJavaScript": "Array-Manipulation in JavaScript",
+        "CursoDeJavaScriptDesdeCero": "JavaScript von Grund auf",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnLinux": "Einrichtung der Entwicklungsumgebung unter Linux",
+        "CursoBásicoDeProgramaciónOrientadaAObjetosConJavaScript": "Einführung in OOP mit JavaScript",
+        "CursoDeNPMGestionDePaquetesYDependenciasEnJavaScript": "NPM: Paket- & Abhängigkeitsverwaltung",
+        "CursoPrácticoDeJavaScript": "Praktischer JavaScript-Kurs",
+        "CursoPrácticoDeFrontendDeveloper": "Praktischer Frontend Developer Kurs",
+        "CursoProfesionalDeGitYGitHub": "Professioneller Git & GitHub Kurs",
+        "CursoDeECMAScriptHistoriaYVersionesDeJavaScript": "ECMAScript: Geschichte und Versionen von JavaScript",
+        "CursoDeInglesBasicoA2PreguntasYRespuestasComunes": "Grundlegendes Englisch A2: Häufige Fragen & Antworten",
+        "CursoDeInglesPracticoSobreElementosDeTrabajo": "Praktisches Englisch für Arbeitsumgebungen",
+        "CursoDeJavaScriptEngineV8YElNavegador": "JavaScript Engine V8 und der Browser",
+        "CursoBásicoDeJavaScript": "Grundkurs JavaScript",
+        "CursoDeC++Basico": "Grundkurs C++",
+        "CursoDeInglesBasicoParaPrincipiantes2022": "Grundlegendes Englisch für Anfänger (2022)",
+        "CursoDeInglesPracticoParaDescripcionesPersonales2020": "Praktisches Englisch für persönliche Beschreibungen (2020)",
+        "CursoDeExpresionesRegulares": "Kurs zu regulären Ausdrücken",
+        "CursoDeBuenasPracticasYCodigoLimpioEnCSharp": "Best Practices & Clean Code in C#",
+        "CursoDeHistoriaDeLaProgramacionLenguajesYParadigmas": "Geschichte der Programmierung: Sprachen & Paradigmen",
+        "FundamentosDeIngenieriaDeSoftware": "Grundlagen der Software-Engineering",
+        "CursoDeHistoriaDeLaInnovaciónYElEmprendimientoConDianaUribe": "Geschichte von Innovation & Unternehmertum (Diana Uribe)",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnWindows": "Einrichtung der Entwicklungsumgebung unter Windows",
+        "CursoBasicoDeProgramacionConCSharp": "Grundkurs Programmierung mit C#",
+        "CursoDeFuncionesEnC": "Funktionen in C",
+        "CursoDeControlDeFlujoEnC": "Kontrollfluss in C",
+        "CursoDeIntroduccionAC": "Einführung in C",
+        "CursoDePythonComprehensionsFuncionesYManejoDeErrores": "Python: Comprehensions, Funktionen & Fehlerbehandlung",
+        "CursoDeFundamentosDePython": "Grundlagen von Python",
+        "CursoDeFundamentosDePensamientoLogico": "Grundlagen logischen Denkens",
+        "CursoDeLenguajeYNotacionMatematica": "Sprache und mathematische Notation",
+        "CursoDeFundamentosDeMatematicasParaFisica": "Mathematische Grundlagen für die Physik",
+        "CursoDePensamientoLogicoLenguajesDeProgramacion": "Logisches Denken für Programmiersprachen",
+        "CursoDeEticaYManejoDeDatosParaDataScienceEInteligenciaArtificial": "Ethik und Datenmanagement für Data Science & KI",
+        "CursoDeAlgebra": "Algebra Kurs",
+        "CursoDeIntroduccionAExcelParaPrincipiantesFundamentosYFormatoDeHojasDeCalculo": "Einführung in Excel für Anfänger: Grundlagen & Tabellenformatierung",
+        "CursoDeAnalisisDeNegociosParaCienciaDeDatos": "Business-Analyse für Data Science",
+        "CursoBasicoDePython": "Grundkurs Python",
+        "AudiotallerDeEstrategiasParaAprenderPortugues": "Audio-Workshop: Strategien zum Portugiesischlernen",
+        "CursoDeExcelBasico": "Grundkurs Excel",
+        "GuiaParaEmpezarUnaCarreraEnDataScienceEInteligenciaArtificial": "Leitfaden zum Start einer Karriere in Data Science & KI",
+        "CursoDeFundamentosDeMatematicas": "Grundlagen der Mathematik",
+        "CursoDeInglesBasicoA1ConversacionesCortasYHabituales2020": "Englisch A1: Kurze, übliche Gespräche (2020)",
+        "CursoDeIntroduccionALaTerminalYLíneaDeComandos": "Einführung in Terminal und Kommandozeile",
+        "CursoDeFrontendDeveloper": "Frontend-Developer Kurs",
+        "CursoDePreworkConfiguracionDeEntornoDeDesarrolloEnWindows": "Prework: Einrichtung der Dev-Umgebung unter Windows",
+        "CursoDePensamientoLogicoManejoDeDatosEstructurasYFunciones": "Logisches Denken: Datenverarbeitung, Strukturen & Funktionen",
+        "CursoDeIntroduccionALaWebHistoriaYFuncionamientoDeInternet": "Einführung ins Web: Geschichte & Funktionsweise des Internets",
+        "CursoDePensamientoLogicoAlgoritmosYDiagramasDeFlujo": "Logisches Denken: Algorithmen und Flussdiagramme",
+        "CursoBasicoDeComputadoresEInformatica": "Grundkurs Computer & Informatik",
+        "CursoBasicoDeProgramacion": "Grundkurs Programmierung"
+      }
     }
   },
 
@@ -39,7 +120,7 @@
   },
   "about": {
     "title": "Über mich",
-   "firstParagraph": "Ich habe Erfahrung in der Softwareentwicklung, insbesondere in der Webentwicklung mit einem Fokus auf Frontend-Technologien. Seit August 2024 arbeite ich bei RefineIT in Recklinghausen als Teil des Frontend-Teams und konzentriere mich auf ReactJS/NextJS. Zuvor habe ich ein Praktikum als Softwareentwickler bei Alltagsauto.ch absolviert.",
+    "firstParagraph": "Ich habe Erfahrung in der Softwareentwicklung, insbesondere in der Webentwicklung mit einem Fokus auf Frontend-Technologien. Seit August 2024 arbeite ich bei RefineIT in Recklinghausen als Teil des Frontend-Teams und konzentriere mich auf ReactJS/NextJS. Zuvor habe ich ein Praktikum als Softwareentwickler bei Alltagsauto.ch absolviert.",
     "secondParagraph": "Von 03/2024 bis 06/2024 habe ich als Lehrassistent in dem Bereich gearbeitet, in dem ich studiert habe, und habe den Schülern geholfen, zu lernen und ihre Fähigkeiten zu verbessern.",
     "thirdParagraph": "Bevor ich mit dem Programmieren begann, habe ich als Universitäts-Techniker in Chemie an der Universidad Tecnológica Nacional Villa María in Argentinien abgeschlossen. Dies war meine erste Erfahrung mit Technologie, durch Prozesssimulationen. Durch das Studium des Chemieingenieurwesens an der Universität habe ich ein solides Verständnis für Mathematik, Physik, Chemie, Algebra und Analysis gewonnen.",
     "fourthParagraph": "Ich lebe seit April 2021 in Gelsenkirchen. Meine Muttersprache ist Spanisch, ich habe ein B2-Niveau in Deutsch und ein B2-Niveau in Englisch und spreche fließend Portugiesisch."
@@ -48,16 +129,14 @@
     "en": "Englisch",
     "es": "Spanisch",
     "de": "Deutsch"
-  }
+  },
 
-  ,
   "roles": {
     "developer": "Entwickler",
     "frontend": "Frontend",
     "location": "Deutschland"
-  }
+  },
 
-  ,
   "skills": {
     "fullstack": {
       "title": "Full Stack",

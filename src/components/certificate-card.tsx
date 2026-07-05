@@ -11,6 +11,7 @@ export default async function CertificateCard({
   certificate,
 }: CertificateCardProps) {
   const t = await getTranslations();
+  const tTitle = await getTranslations("certificates.certificate.title");
   const typeTranslation = t("certificates.certificate." + certificate.type);
   return (
     <a
@@ -33,7 +34,7 @@ export default async function CertificateCard({
         {typeTranslation}
       </span>
       <div className="absolute bottom-0 left-0 right-0 p-5">
-        <p className="text-lg font-semibold text-white">{certificate.title}</p>
+        <p className="text-lg font-semibold text-white">{tTitle(certificate.title)}</p>
       </div>
     </a>
   );
