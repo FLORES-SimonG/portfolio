@@ -1,4 +1,4 @@
-import Icon, { IconName } from "@/components/Icon";
+import Icon, { IconName } from "@/components/features/common/Icon";
 import { getTranslations } from "next-intl/server";
 import PillComponent from "../../common/pill-component";
 

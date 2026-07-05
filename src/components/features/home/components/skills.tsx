@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Icon from "./Icon";
+import Icon from "../../common/Icon";
 
 export default async function Skills() {
   const t = await getTranslations();

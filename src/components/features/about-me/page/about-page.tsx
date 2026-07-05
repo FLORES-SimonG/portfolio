@@ -1,4 +1,4 @@
-import TranslatedHero from "@/components/TranslatedHero";
+import TranslatedHero from "@/components/features/common/translated-hero";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 

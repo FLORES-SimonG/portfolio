@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Grid from "@/components/Grid";
-import TranslatedHero from "@/components/TranslatedHero";
+import Grid from "@/components/features/common/grid";
+import TranslatedHero from "@/components/features/common/translated-hero";
 import { getExperienceEntries } from "@/lib/experience";
-import ExperienceCard from "@/components/experience-card";
+import ExperienceCard from "@/components/features/experience/components/experience-card";
 
 export const metadata: Metadata = {
   title: "My Experience | Simón G. Flores",

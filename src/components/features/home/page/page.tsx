@@ -1,6 +1,6 @@
 import PillSection from "@/components/features/home/components/pill-section";
-import Skills from "@/components/Skills";
-import TranslatedHero from "@/components/TranslatedHero";
+import Skills from "@/components/features/home/components/skills";
+import TranslatedHero from "@/components/features/common/translated-hero";
 import Image from "next/image";
 import { Metadata } from "next";
 

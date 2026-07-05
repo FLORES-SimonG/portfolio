@@ -3,9 +3,9 @@ import { setRequestLocale } from "next-intl/server";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import NavigationMenu from "@/components/navigation-menu";
-import Footer from "@/components/footer";
-import ContactCTA from "@/components/contact-CTA";
+import NavigationMenu from "@/components/features/common/navigation-menu";
+import Footer from "@/components/features/common/footer";
+import ContactCTA from "@/components/features/common/contact-CTA";
 
 
 type Props = {
