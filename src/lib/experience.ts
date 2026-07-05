@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import { unstable_cache } from "next/cache";
 import matter from "gray-matter";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
@@ -108,15 +107,8 @@ function readExperienceEntries() {
   return sortExperienceEntries(files.map(parseExperienceEntry));
 }
 
-const getCachedExperienceEntries = unstable_cache(
-  async () => readExperienceEntries(),
-  ["experience-content"],
-);
-
 export async function getExperienceEntries(): Promise<ExperienceEntry[]> {
-  return process.env.NODE_ENV === "development"
-    ? readExperienceEntries()
-    : getCachedExperienceEntries();
+  return readExperienceEntries();
 }
 
 export async function getExperienceBySlug(slug: string[]) {
