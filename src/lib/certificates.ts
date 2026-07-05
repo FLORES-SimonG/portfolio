@@ -145,7 +145,7 @@ export const certificates: ICertificate[] = [
     type: "course",
   },
   {
-    title: "CursoDeIntroduccionAJava",
+    title: "CursoDeIntroduccionAJavaSE",
     src: "https://platzi.com/simonflores_10/curso/1631-course/diploma-og/og.jpeg",
     date: new Date("2024-07-06"),
     type: "course",
@@ -478,28 +478,31 @@ export const certificates: ICertificate[] = [
 ];
 
 const getTags = (title: string) => {
-  const tags = [];
+  const tags: string[] = [];
 
   const rules = [
-    { keywords: ["Next.js", "next"], tag: "Nextjs" },
-    { keywords: ["React"], tag: "React" },
-    { keywords: ["TypeScript"], tag: "TypeScript" },
-    { keywords: ["JavaScript", "ECMAScript"], tag: "JavaScript" },
+    { keywords: ["NextJs", "next", "nextjs"], tag: "Nextjs" },
+    { keywords: ["Matematica", "Algebra"], tag: "Mathematics & Algebra" },
+    { keywords: ["ReactJs"], tag: "React" },
+    { keywords: ["ReactNative"], tag: "React Native" },
+    { keywords: ["TypeScript"], tag: "TypeScript & JavaScript" },
+    { keywords: ["JavaScript", "ECMAScript"], tag: "TypeScript & JavaScript" },
     { keywords: ["CSharp"], tag: "C#" },
-    { keywords: ["Java"], tag: "Java" },
+    { keywords: ["JavaSE"], tag: "Java" },
     { keywords: ["Python"], tag: "Python" },
     { keywords: ["C++"], tag: "C/C++" },
     { keywords: ["Cpp"], tag: "C/C++" },
     { keywords: ["Tailwind"], tag: "Tailwind" },
-    { keywords: ["Figma"], tag: "Figma" },
-    { keywords: ["Azure"], tag: "Azure" },
+    { keywords: ["Figma"], tag: "Design & Figma" },
+    { keywords: ["Azure"], tag: "Cloud Technologies" },
     { keywords: ["MySQL", "MariaDB", "Bases de Datos"], tag: "Database" },
     { keywords: ["Git"], tag: "Git" },
     { keywords: ["Linux"], tag: "Linux" },
     { keywords: ["Excel"], tag: "Excel" },
-    { keywords: ["Inglés"], tag: "English" },
-    { keywords: ["UX/UI"], tag: "Design" },
+    { keywords: ["UXUI"], tag: "Design & Figma" },
     { keywords: ["Frontend"], tag: "Frontend" },
+    { keywords: ["Ingles"], tag: "Languages" },
+    { keywords: ["Portugues"], tag: "Languages" },
     { keywords: ["Programación"], tag: "Programming" },
   ];
 
@@ -508,22 +511,41 @@ const getTags = (title: string) => {
       tags.push(rule.tag);
     }
   });
-  tags.push("Software");
 
   if (
     tags.includes("React") ||
+    tags.includes("JavaScript") ||
+    tags.includes("TypeScript") ||
     tags.includes("Nextjs") ||
-    tags.includes("Frontend")
+    tags.includes("Frontend") ||
+    tags.includes("Design & Figma") ||
+    tags.includes("Git")
   ) {
-    tags.push("Web");
+    tags.push("Frontend");
+  }
+  if (
+    tags.includes("React") ||
+    tags.includes("JavaScript") ||
+    tags.includes("TypeScript") ||
+    tags.includes("Nextjs") 
+  ) {
+    tags.push("TypeScript & JavaScript");
+  }
+  if (
+    tags.includes("Frontend") ||
+    tags.includes("FullStack") ||
+    tags.includes("Azure")
+  ) {
+    tags.push("FullStack");
   }
 
   if (
     tags.includes("JavaScript") ||
     tags.includes("TypeScript") ||
     tags.includes("C#") ||
-    tags.includes("Java") ||
-    tags.includes("Python")
+    tags.includes("JavaSE") ||
+    tags.includes("Python") ||
+    tags.includes("Git")
   ) {
     tags.push("Programming");
   }

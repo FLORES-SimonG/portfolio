@@ -52,20 +52,8 @@ export default function CertificatesSearch({
     <div className="stack gap-6">
       <div className="flex items-center gap-4">
         <input
-          aria-label={(() => {
-            try {
-              return t("certificates.searchPlaceholder");
-            } catch (e) {
-              return "Buscar certificados...";
-            }
-          })()}
-          placeholder={(() => {
-            try {
-              return t("certificates.searchPlaceholder");
-            } catch (e) {
-              return "Buscar certificados...";
-            }
-          })()}
+          aria-label={t("certificates.searchPlaceholder")}
+          placeholder={t("certificates.searchPlaceholder")}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="input flex-1"
@@ -77,13 +65,7 @@ export default function CertificatesSearch({
           }}
           className="btn"
         >
-          {(() => {
-            try {
-              return t("common.clear");
-            } catch (e) {
-              return "Limpiar";
-            }
-          })()}
+          {t("common.clear")}
         </button>
       </div>
 
