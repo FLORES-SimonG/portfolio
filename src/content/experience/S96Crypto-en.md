@@ -1,5 +1,5 @@
 ---
-title: "S96: Your CryptoBank-en"
+title: "S96: Your CryptoBank"
 publishDate: 2019-12-01 00:00:00
 language: en
 img: /assets/crypto.jpg
