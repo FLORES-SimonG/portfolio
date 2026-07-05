@@ -3,6 +3,7 @@ title: Alltagsauto-Exclusive
 publishDate: 2020-03-04 00:00:00
 img: /assets/photo_alltags.jpg
 img_alt: Alltagsauto
+language: en
 description: |
   Work experience in Switzerland (Remote)
 tags:
@@ -34,4 +35,4 @@ For the main website of Alltagsauto Group, which deals with used cars, visit: [A
 - **PostgreSQL**: Employed as the database for its reliability and efficiency in handling complex queries and transactions.
 
 >Responsibility: 
-- **Frontend Development**
+- **Frontend Development**n
