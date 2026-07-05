@@ -3,10 +3,10 @@
 import { useMemo, useState } from "react";
 import CertificateCard from "@/components/certificate-card";
 import Grid from "@/components/Grid";
-import { useTranslations } from "@/components/I18nProvider";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
+import { useTranslations } from "next-intl";
 
 type CertificateSerializable = {
   title: string;

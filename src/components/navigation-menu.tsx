@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslations } from "./I18nProvider";
+import LanguageSwitcher from "./LanguageSwitcher";;
 import type { iconPaths } from "./IconPaths";
 import { Language } from "@/messages/interface";
+import { useTranslations } from "next-intl";
 
 interface NavProps {
   language: Language;

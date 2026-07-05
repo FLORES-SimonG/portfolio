@@ -1,10 +1,8 @@
-"use client";
-
+import { getTranslations } from "next-intl/server";
 import Icon from "./Icon";
-import { useTranslations } from "./I18nProvider";
 
-export default function Skills() {
-  const t = useTranslations();
+export default async function Skills() {
+  const t = await getTranslations();
 
   return (
     <section className="box skills">

@@ -1,10 +1,9 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "./I18nProvider";
 
-export default function Footer() {
+export default async function Footer() {
   const currentYear = new Date().getFullYear();
-  const t = useTranslations();
+  const t = await getTranslations();
 
   return (
     <footer>

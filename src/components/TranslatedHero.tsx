@@ -1,7 +1,7 @@
-"use client";
 
+import { getTranslations } from "next-intl/server";
 import Hero from "./hero";
-import { useTranslations } from "./I18nProvider";
+
 
 interface TranslatedHeroProps {
   titleKey?: string;
@@ -12,7 +12,7 @@ interface TranslatedHeroProps {
   children?: React.ReactNode;
 }
 
-export default function TranslatedHero({
+export default async function TranslatedHero({
   titleKey,
   taglineKey,
   title,
@@ -20,7 +20,7 @@ export default function TranslatedHero({
   align = "center",
   children,
 }: TranslatedHeroProps) {
-  const t = useTranslations();
+  const t = await getTranslations();
 
   const finalTitle = titleKey ? t(titleKey) : title;
   const finalTagline = taglineKey ? t(taglineKey) : tagline;
