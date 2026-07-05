@@ -3,9 +3,10 @@ import { setRequestLocale } from "next-intl/server";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Footer from "@/components/Footer";
 import NavigationMenu from "@/components/navigation-menu";
-import ContactCTA from "@/components/Contact-CTA";
+import Footer from "@/components/footer";
+import ContactCTA from "@/components/contact-CTA";
+
 
 type Props = {
   children: React.ReactNode;

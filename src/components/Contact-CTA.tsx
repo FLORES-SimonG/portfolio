@@ -1,4 +1,4 @@
-import CallToAction from "./CallToAction";
+import CallToAction from "./call-to-action";
 import Icon from "./Icon";
 import { getTranslations } from "next-intl/server";
 

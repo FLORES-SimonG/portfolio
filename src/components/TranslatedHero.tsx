@@ -1,6 +1,6 @@
 "use client";
 
-import Hero from "./Hero";
+import Hero from "./hero";
 import { useTranslations } from "./I18nProvider";
 
 interface TranslatedHeroProps {

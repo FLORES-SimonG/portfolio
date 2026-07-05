@@ -4,9 +4,9 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import Hero from '@/components/Hero';
+import Hero from '@/components/hero';
 import Icon from '@/components/Icon';
-import ContactCTA from '@/components/Contact-CTA';
+import ContactCTA from '@/components/contact-CTA';
 import { getExperienceBySlug, getExperienceEntries } from '@/lib/experience';
 import PillComponent from '@/components/features/common/pill-component';
 
