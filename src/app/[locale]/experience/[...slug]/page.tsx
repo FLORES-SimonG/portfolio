@@ -13,10 +13,9 @@ type Props = {
   params: Promise<{ slug: string[]; language: string }>;
 };
 
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug, language } = await params;
-  console.log(slug);
+  const { slug } = await params;
+
   const entry = await getExperienceBySlug(slug);
 
   if (!entry) {
@@ -35,7 +34,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ExperienceEntryPage({ params }: Props) {
   const { slug } = await params;
   const entry = await getExperienceBySlug(slug);
-  console.log(slug);
 
   if (!entry) {
     notFound();
