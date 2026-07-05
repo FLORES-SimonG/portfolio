@@ -12,7 +12,6 @@
     "certificate": {
       "learningPath": "Lernpfad",
       "course": "Kurs",
-
       "title": {
         "CursoDeIntroduccionAReactNative": "Einführung in React Native",
         "CursoDeSupabase": "Supabase Kurs",
