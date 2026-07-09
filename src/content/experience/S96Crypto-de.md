@@ -1,9 +1,9 @@
 ---
-title: "S96: Ihre KryptoBank"
+title: "S96: Your CryptoBank"
 publishDate: 2019-12-01 00:00:00
-language: de
 img: /assets/crypto.jpg
-img_alt: Virtuelle Kryptowährungs-Bankkarte.
+language: de
+img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
   Akademische Erfahrung
 tags:
@@ -15,38 +15,60 @@ tags:
   - JavaScript
 ---
 
-## S96: Ihre KryptoBank
+## S96: Your CryptoBank
 
-Im Projekt **„S96: Ihre KryptoBank“** habe ich Technologien wie ReactJS, TypeScript, JavaScript, PostgreSQL, CSS Modules und Styled Components eingesetzt. Dieses persönliche Projekt diente dazu, den Einsatz von React und PostgreSQL zu demonstrieren. Dabei wurden Funktionen wie kontrollierte Formulare für Anmeldung und Registrierung sowie ein mit der Datenbank verbundenes Terminverwaltungssystem implementiert.
+Im Projekt **„S96: Your CryptoBank“** habe ich Technologien wie **ReactJS**, **TypeScript**, **JavaScript**, **PostgreSQL**, **CSS Modules** und **Styled Components** eingesetzt. Das Hauptziel bestand darin, eine Kryptowährungs-Banking-Anwendung mit React und einer relationalen Datenbank zu entwickeln und Funktionen wie Benutzerauthentifizierung, kontrollierte Formulare sowie eine mit der Datenbank verbundene Terminverwaltung zu implementieren.
 
-### Projektübersicht
+Dazu entwickelte ich eine dynamische Benutzeroberfläche mit **ReactJS**, verbesserte die Codesicherheit durch **TypeScript**, verwaltete die Kommunikation mit der **PostgreSQL**-Datenbank und verwendete **CSS Modules** zusammen mit **Styled Components**, um eine moderne, modulare und responsive Oberfläche zu erstellen.
 
-**„S96: Ihre KryptoBank“** ist ein Bankensystem für Kryptowährungen, in dem Benutzer ein Konto erstellen und anschließend eine virtuelle Bankkarte mit ihren persönlichen Daten, einschließlich Vor- und Nachname, erhalten. Die Anwendung bietet eine benutzerfreundliche Oberfläche und unterstützt zentrale Funktionen zur Kontoverwaltung sowie zur Terminplanung.
+### Projektbeschreibung
 
-### Funktionen
+**„S96: Your CryptoBank“** ist eine auf Kryptowährungen basierende Banking-Anwendung, die es Benutzern ermöglicht, sich zu registrieren, sich anzumelden und eine personalisierte virtuelle Karte mit ihren persönlichen Daten zu erhalten. Die Plattform ermöglicht die Verwaltung von Benutzerinformationen sowie das Erstellen von Terminen über ein mit der Datenbank verbundenes System.
 
-- **Benutzerregistrierung und Anmeldung**: Benutzer müssen zunächst ein Konto erstellen. Nach der Anmeldung können sie ihre virtuelle Bankkarte einsehen und ihre Kontodaten verwalten.
+Das Projekt wurde entwickelt, um die Entwicklung von Fullstack-Anwendungen zu vertiefen, die Kommunikation zwischen Frontend, Backend und Datenbank umzusetzen und dabei bewährte Methoden für eine strukturierte und wartbare Codebasis anzuwenden.
 
-- **Terminverwaltung**: Registrierte Benutzer können Termine erstellen. Ein Termin kann bestätigt werden (grün dargestellt) oder storniert werden (rot dargestellt).
+### Hauptfunktionen
 
-![Online-Shop.](/assets/crypto2.jpg)
+- **Benutzerregistrierung und Anmeldung**: Benutzer können ein Konto erstellen und sich anmelden, um auf geschützte Funktionen der Anwendung zuzugreifen und ihre persönlichen Daten zu verwalten.
 
-*Darstellung der Terminverwaltungsfunktion. Benutzer können ihre Termine einsehen und je nach Status entsprechende Aktionen durchführen.*
+- **Personalisierte virtuelle Karte**: Nach der Anmeldung kann jeder Benutzer eine virtuelle Karte mit seinen persönlichen Informationen anzeigen lassen, wodurch eine digitale Banking-Erfahrung simuliert wird.
 
-- **Anzeige der virtuellen Bankkarte**: Nach der Anmeldung können Benutzer ihre virtuelle Bankkarte mit ihren persönlichen Informationen anzeigen.
+![Online card.](/assets/crypto3.jpg)
 
-![Virtuelle Bankkarte.](/assets/crypto3.jpg)
+*Darstellung der personalisierten virtuellen Karte, die registrierten Benutzern zur Verfügung steht.*
 
-*Ansicht der virtuellen Bankkarte, die nach der Anmeldung angezeigt wird.*
+- **Terminverwaltung**: Authentifizierte Benutzer können innerhalb der Plattform Termine erstellen und verwalten. Die verschiedenen Terminstatus werden visuell durch unterschiedliche Farben dargestellt, wodurch aktive oder stornierte Termine einfach erkannt werden können.
 
->Verwendete Technologien und Werkzeuge:
+![Online store.](/assets/crypto2.jpg)
 
-- **ReactJS**: Ermöglichte die Entwicklung dynamischer und interaktiver Benutzeroberflächen.
-- **TypeScript**: Gewährleistete typsicheren, gut wartbaren und robusten Code.
-- **JavaScript**: Eingesetzt zur Implementierung zentraler Funktionen und clientseitiger Interaktionen.
-- **PostgreSQL**: Als Datenbank verwendet, da sie zuverlässig ist und komplexe Abfragen effizient verarbeitet.
-- **CSS Modules**: Ermöglichten modularisierte und gekapselte CSS-Stile für eine bessere Wartbarkeit der Komponenten.
-- **Styled Components**: Verwendet, um moderne und flexibel gestaltete Benutzeroberflächen effizient zu erstellen.
+*Visuelle Darstellung des Terminverwaltungssystems und seiner verschiedenen Status.*
 
->Verantwortungsbereich:
-- **Fullstack-Entwicklung | Frontend-Entwicklung | Backend-Entwicklung | Design | API Integration**
+### Verwendete Technologien und Werkzeuge
+
+- **ReactJS**: Eingesetzt zur Entwicklung einer dynamischen, wiederverwendbaren und interaktiven Benutzeroberfläche.
+- **TypeScript**: Implementiert, um die Codesicherheit durch statische Typisierung zu verbessern und die Wartbarkeit des Projekts zu erhöhen.
+- **JavaScript**: Verwendet zur Entwicklung zentraler Funktionen und clientseitiger Interaktionen.
+- **PostgreSQL**: Als Datenbanksystem eingesetzt, um Benutzer- und Termininformationen zu speichern und zu verwalten.
+- **CSS Modules**: Verwendet zur Erstellung gekapselter Styles und zur Verbesserung der CSS-Code-Organisation.
+- **Styled Components**: Eingesetzt zur Entwicklung moderner visueller Komponenten und einer flexiblen Strukturierung der Styles.
+
+### Herausforderungen und Lernerfahrungen
+
+Während der Entwicklung dieses Projekts konnte ich meine Kenntnisse in folgenden Bereichen erweitern und vertiefen:
+
+- [x] **Entwicklung von Fullstack-Anwendungen mit ReactJS.**
+- [x] **State-Management und wiederverwendbare Komponenten.**
+- [x] **Erstellung kontrollierter Formulare mit React.**
+- [x] **Integration von Frontend, Backend und Datenbank.**
+- [x] **Modernes Interface-Design mit Styled Components und CSS Modules.**
+- [x] **Verwendung von TypeScript zur Verbesserung der Codequalität und Wartbarkeit.**
+- [x] **Datenverwaltung mit PostgreSQL.**
+
+### Verantwortlichkeiten
+
+- [x] **Frontend-Entwicklung**
+- [x] **Backend-Entwicklung**
+- [x] **Fullstack-Entwicklung**
+- [x] **Datenbankintegration**
+- [x] **UI/UX-Design**
+- [x] **API-Integration**

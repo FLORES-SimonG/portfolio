@@ -1,11 +1,11 @@
 ---
 title: "S96: Your CryptoBank"
 publishDate: 2019-12-01 00:00:00
-language: en
 img: /assets/crypto.jpg
+language: en
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
-  Academica Experience
+  Academic Experience
 tags:
   - ReactJS
   - TypeScript
@@ -14,37 +14,61 @@ tags:
   - PostgreSQL
   - JavaScript
 ---
+
 ## S96: Your CryptoBank
 
-In the "S96:Your CryptoBank" project, I leveraged technologies such as ReactJS, TypeScript, JavaScript, PostgreSQL, CSS Modules, and Styled Components. This personal project aimed to showcase the use of React and PostgreSQL, implementing features like controlled forms for login and registration, as well as a scheduling system integrated with the database.
+In the **"S96: Your CryptoBank"** project, I used technologies such as **ReactJS**, **TypeScript**, **JavaScript**, **PostgreSQL**, **CSS Modules**, and **Styled Components**. The main objective was to develop a cryptocurrency banking application using React and a relational database, implementing features such as user authentication, controlled forms, and appointment management connected to the database.
 
-### Product Overview
+To achieve this, I developed a dynamic interface using **ReactJS**, implemented type safety through **TypeScript**, managed communication with the **PostgreSQL** database, and used **CSS Modules** together with **Styled Components** to create a modern, modular, and responsive interface.
 
-"S96: Your CryptoBank" is a cryptocurrency banking system where users can register to receive a virtual card with their personal details, including name and surname. The application provides a user-friendly interface and handles essential functionalities for managing user accounts and creating appointments.
+### Project Overview
 
-### Features
+**"S96: Your CryptoBank"** is a cryptocurrency-based banking application that allows users to register, log in, and receive a personalized virtual card containing their personal information. The platform enables users to manage their account information and create appointments through a system connected to the database.
 
-- **User Registration & Login**: Users must register to create an account. After logging in, they can access their virtual card and manage their account details.
+The project was developed with the goal of practicing Fullstack application development, working on communication between the frontend, backend, and database, while applying good practices in code organization and maintainability.
 
-- **Appointment Scheduling**: Registered users can create appointments. An appointment can be enabled (displayed in green) or canceled (displayed in red).
+### Key Features
 
-![Online store.](/assets/crypto2.jpg)
-*Visual representation of the appointment scheduling feature. Users can see their appointments and take action based on their status.*
+- **User Registration and Login**: Users can create an account and log in to access private application features and manage their personal information.
 
-- **User Card Display**: Once logged in, users can view their virtual card with personal information.
+- **Personalized Virtual Card**: After logging in, each user can view a virtual card containing their personal details, simulating a digital banking experience.
+
 ![Online card.](/assets/crypto3.jpg)
 
-*Snapshot of the virtual card users see after logging in.*
+*Visualization of the personalized virtual card available for registered users.*
 
+- **Appointment Management**: Authenticated users can create and manage appointments within the platform. Appointment statuses are visually represented through different colors, making it easy to identify whether an appointment is active or canceled.
 
->Key Technologies and Tools Used:
+![Online store.](/assets/crypto2.jpg)
 
-- **ReactJS**: Enabled the development of dynamic and interactive user interfaces.
-- **TypeScript**: Ensured type safety and maintainable code throughout the project.
-- **JavaScript**: Utilized for implementing core functionalities and client-side interactions.
-- **PostgreSQL**: Employed as the database for its robustness and ability to handle complex queries.
-- **CSS Modules**: Provided modular and scoped CSS, enhancing the styling and maintenance of components.
-- **Styled Components**: Used for creating a styled and modern user interface with ease.
+*Visual representation of the appointment management system and its different statuses.*
 
->Responsibility: 
-- **Fullstack | Frontend | Backend Development | Design | API Integration**
+### Technologies and Tools Used
+
+- **ReactJS**: Used to develop a dynamic, reusable, and interactive user interface.
+- **TypeScript**: Implemented to improve code safety through static typing and facilitate project maintenance.
+- **JavaScript**: Used to develop core functionalities and client-side interactions.
+- **PostgreSQL**: Used as the database system to store and manage user and appointment information.
+- **CSS Modules**: Used to create scoped styles and improve CSS code organization.
+- **Styled Components**: Implemented to develop modern visual components and maintain a flexible styling structure.
+
+### Challenges and Learnings
+
+During the development of this project, I learned and strengthened my knowledge in:
+
+- [x] **Fullstack application development with ReactJS.**
+- [x] **State management and reusable components.**
+- [x] **Creating controlled forms in React.**
+- [x] **Frontend, backend, and database integration.**
+- [x] **Modern interface design using Styled Components and CSS Modules.**
+- [x] **Using TypeScript to improve code quality and maintainability.**
+- [x] **Data management with PostgreSQL.**
+
+### Responsibilities
+
+- [x] **Frontend Development**
+- [x] **Backend Development**
+- [x] **Fullstack Development**
+- [x] **Database Integration**
+- [x] **UI/UX Design**
+- [x] **API Integration**
