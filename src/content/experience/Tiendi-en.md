@@ -23,7 +23,7 @@ I designed Tiendi to be responsive, ensuring it works perfectly on mobile phones
 
 ![Online store.](/assets/tiendi1.jpg)
 
-Additionally, I developed key skills in using Figma for design purposes. This project is part of my specialization in Frontend development, as required by the curriculum of the school where I studied. The site is not deployed yet because I want to implement Testing first, as I want to use it to make the project even more complete.
+Additionally, I developed key skills in using Figma for design purposes. This project is part of my specialization in Frontend development, as required by the curriculum of the school where I studied.
 
 
 >Key Technologies and Tools Used:
@@ -36,4 +36,4 @@ Additionally, I developed key skills in using Figma for design purposes. This pr
 
 
 >Responsibility: 
-- **Frontend Development**
+- **Frontend Development | Design | API Integration**

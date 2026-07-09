@@ -1,10 +1,10 @@
 ---
-title: "Tiendi: Your online store"
+title: "Tiendi: Ihr Online-Shop"
 publishDate: 2020-03-02 00:00:00
 img: /assets/tiendi0.jpg
-img_alt: Online store.
+img_alt: Online-Shop.
 language: de
-description: "Work and Academic Experience"
+description: "Berufliche und akademische Erfahrung"
 
 tags:
   - NextJS
@@ -15,25 +15,23 @@ tags:
   - PostgreSQL
 ---
 
-## Tiendi Project
+## Tiendi-Projekt
 
-In this Tiendi project, I used technologies such as Javascript, NextJS, Typescript, Tailwind, PostgreSQL, and more. Tiendi aims to sell computer products, where users can make purchases and receive an order with a specific date, ID, time, and other details.
+Im Tiendi-Projekt habe ich Technologien wie JavaScript, NextJS, TypeScript, Tailwind, PostgreSQL und weitere eingesetzt. Tiendi ist ein Online-Shop für Computerprodukte, in dem Benutzer Einkäufe tätigen und anschließend eine Bestellung mit Datum, Bestell-ID, Uhrzeit und weiteren Informationen erhalten können.
 
-I designed Tiendi to be responsive, ensuring it works perfectly on mobile phones, tablets, and desktop computers. One unique feature of NextJS is its server-side rendering, which makes it ideal for e-commerce websites due to improved performance and SEO benefits.
+Ich habe Tiendi responsiv entwickelt, sodass die Anwendung auf Smartphones, Tablets und Desktop-Computern einwandfrei funktioniert. Eine der wichtigsten Eigenschaften von NextJS ist das Server-Side Rendering (SSR), wodurch es sich besonders für E-Commerce-Websites eignet. Dies verbessert sowohl die Leistung als auch die Suchmaschinenoptimierung (SEO).
 
-![Online store.](/assets/tiendi1.jpg)
+![Online-Shop.](/assets/tiendi1.jpg)
 
-Additionally, I developed key skills in using Figma for design purposes. This project is part of my specialization in Frontend development, as required by the curriculum of the school where I studied. The site is not deployed yet because I want to implement Testing first, as I want to use it to make the project even more complete.
+Darüber hinaus habe ich wichtige Kenntnisse im Umgang mit Figma für das UI/UX-Design erworben. Dieses Projekt ist Teil meiner Spezialisierung im Frontend-Bereich und wurde im Rahmen des Lehrplans der Bildungseinrichtung entwickelt, an der ich studiert habe.
 
+>Verwendete Technologien und Werkzeuge:
+- **NextJS**: Aufgrund seiner hohen Leistung und Skalierbarkeit ausgewählt und daher ideal für moderne E-Commerce-Plattformen.
+- **TypeScript**: Sorgt für robusten, wartbaren und gut strukturierten Code.
+- **JavaScript**: Eingesetzt für dynamische Funktionen und Interaktionen auf der Client-Seite.
+- **Tailwind**: Modernes CSS-Framework für responsives und flexibles Design.
+- **Figma**: Verwendet für das UI/UX-Design und die Gestaltung einer benutzerfreundlichen Oberfläche.
+- **PostgreSQL**: Als Datenbank eingesetzt, da sie zuverlässig ist und komplexe Abfragen sowie Transaktionen effizient verarbeitet.
 
->Key Technologies and Tools Used:
-- **NextJS**: Chosen for its performance and scalability, making it ideal for a specialized high-end platform.
-- **TypeScript**: Ensured robust and maintainable code, enhancing the development process.
-- **JavaScript**: Utilized for dynamic functionalities and client-side interactions.
-- **Tailwind**: Provided a modern and flexible CSS framework for responsive and stylish design.
-- **Figma**: Used for UI/UX design, creating a seamless and visually appealing user interface.
-- **PostgreSQL**: Employed as the database for its reliability and efficiency in handling complex queries and transactions.
-
-
->Responsibility: 
-- **Frontend Development**
+>Verantwortungsbereich:
+- **Frontend-Entwicklung | Design | API Integration**

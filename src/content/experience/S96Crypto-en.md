@@ -47,4 +47,4 @@ In the "S96:Your CryptoBank" project, I leveraged technologies such as ReactJS, 
 - **Styled Components**: Used for creating a styled and modern user interface with ease.
 
 >Responsibility: 
-- **Fullstack | Frontend | Backend Development**
+- **Fullstack | Frontend | Backend Development | Design | API Integration**

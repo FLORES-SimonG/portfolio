@@ -46,4 +46,4 @@ En el proyecto "S96:Your CryptoBank", aproveché tecnologías como ReactJS, Type
 - **Styled Components**: Utilizado para crear una interfaz estilizada y moderna con facilidad.
 
 >Responsabilidad: 
-- **Fullstack | Frontend | Backend Development**
+- **Fullstack | Frontend | Backend Development | Design | API Integration**

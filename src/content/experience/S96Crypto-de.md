@@ -1,11 +1,11 @@
 ---
-title: "S96: Your CryptoBank"
+title: "S96: Ihre KryptoBank"
 publishDate: 2019-12-01 00:00:00
 language: de
 img: /assets/crypto.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Virtuelle Kryptowährungs-Bankkarte.
 description: |
-  Academica Experience
+  Akademische Erfahrung
 tags:
   - ReactJS
   - TypeScript
@@ -14,37 +14,39 @@ tags:
   - PostgreSQL
   - JavaScript
 ---
-## S96: Your CryptoBank
 
-In the "S96:Your CryptoBank" project, I leveraged technologies such as ReactJS, TypeScript, JavaScript, PostgreSQL, CSS Modules, and Styled Components. This personal project aimed to showcase the use of React and PostgreSQL, implementing features like controlled forms for login and registration, as well as a scheduling system integrated with the database.
+## S96: Ihre KryptoBank
 
-### Product Overview
+Im Projekt **„S96: Ihre KryptoBank“** habe ich Technologien wie ReactJS, TypeScript, JavaScript, PostgreSQL, CSS Modules und Styled Components eingesetzt. Dieses persönliche Projekt diente dazu, den Einsatz von React und PostgreSQL zu demonstrieren. Dabei wurden Funktionen wie kontrollierte Formulare für Anmeldung und Registrierung sowie ein mit der Datenbank verbundenes Terminverwaltungssystem implementiert.
 
-"S96: Your CryptoBank" is a cryptocurrency banking system where users can register to receive a virtual card with their personal details, including name and surname. The application provides a user-friendly interface and handles essential functionalities for managing user accounts and creating appointments.
+### Projektübersicht
 
-### Features
+**„S96: Ihre KryptoBank“** ist ein Bankensystem für Kryptowährungen, in dem Benutzer ein Konto erstellen und anschließend eine virtuelle Bankkarte mit ihren persönlichen Daten, einschließlich Vor- und Nachname, erhalten. Die Anwendung bietet eine benutzerfreundliche Oberfläche und unterstützt zentrale Funktionen zur Kontoverwaltung sowie zur Terminplanung.
 
-- **User Registration & Login**: Users must register to create an account. After logging in, they can access their virtual card and manage their account details.
+### Funktionen
 
-- **Appointment Scheduling**: Registered users can create appointments. An appointment can be enabled (displayed in green) or canceled (displayed in red).
+- **Benutzerregistrierung und Anmeldung**: Benutzer müssen zunächst ein Konto erstellen. Nach der Anmeldung können sie ihre virtuelle Bankkarte einsehen und ihre Kontodaten verwalten.
 
-![Online store.](/assets/crypto2.jpg)
-*Visual representation of the appointment scheduling feature. Users can see their appointments and take action based on their status.*
+- **Terminverwaltung**: Registrierte Benutzer können Termine erstellen. Ein Termin kann bestätigt werden (grün dargestellt) oder storniert werden (rot dargestellt).
 
-- **User Card Display**: Once logged in, users can view their virtual card with personal information.
-![Online card.](/assets/crypto3.jpg)
+![Online-Shop.](/assets/crypto2.jpg)
 
-*Snapshot of the virtual card users see after logging in.*
+*Darstellung der Terminverwaltungsfunktion. Benutzer können ihre Termine einsehen und je nach Status entsprechende Aktionen durchführen.*
 
+- **Anzeige der virtuellen Bankkarte**: Nach der Anmeldung können Benutzer ihre virtuelle Bankkarte mit ihren persönlichen Informationen anzeigen.
 
->Key Technologies and Tools Used:
+![Virtuelle Bankkarte.](/assets/crypto3.jpg)
 
-- **ReactJS**: Enabled the development of dynamic and interactive user interfaces.
-- **TypeScript**: Ensured type safety and maintainable code throughout the project.
-- **JavaScript**: Utilized for implementing core functionalities and client-side interactions.
-- **PostgreSQL**: Employed as the database for its robustness and ability to handle complex queries.
-- **CSS Modules**: Provided modular and scoped CSS, enhancing the styling and maintenance of components.
-- **Styled Components**: Used for creating a styled and modern user interface with ease.
+*Ansicht der virtuellen Bankkarte, die nach der Anmeldung angezeigt wird.*
 
->Responsibility: 
-- **Fullstack | Frontend | Backend Development**
+>Verwendete Technologien und Werkzeuge:
+
+- **ReactJS**: Ermöglichte die Entwicklung dynamischer und interaktiver Benutzeroberflächen.
+- **TypeScript**: Gewährleistete typsicheren, gut wartbaren und robusten Code.
+- **JavaScript**: Eingesetzt zur Implementierung zentraler Funktionen und clientseitiger Interaktionen.
+- **PostgreSQL**: Als Datenbank verwendet, da sie zuverlässig ist und komplexe Abfragen effizient verarbeitet.
+- **CSS Modules**: Ermöglichten modularisierte und gekapselte CSS-Stile für eine bessere Wartbarkeit der Komponenten.
+- **Styled Components**: Verwendet, um moderne und flexibel gestaltete Benutzeroberflächen effizient zu erstellen.
+
+>Verantwortungsbereich:
+- **Fullstack-Entwicklung | Frontend-Entwicklung | Backend-Entwicklung | Design | API Integration**
