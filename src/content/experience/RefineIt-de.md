@@ -1,7 +1,7 @@
 ---
 title: RefineIT
 publishDate: 2024-01-01 00:00:00
-img: /assets/refineit.jpg
+img: /assets/refineit-logo-centered.svg
 img_alt: RefineIT
 language: de
 description: |
