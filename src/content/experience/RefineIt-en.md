@@ -19,29 +19,37 @@ tags:
 
 ## RefineIT
 
-At **RefineIT**, a company located in **Recklinghausen, Germany**, I have been part of the **Frontend** team since 2024. My work focuses on developing web applications using **NextJS**, **TypeScript**, **JavaScript**, **Tailwind CSS**, **Storybook**, **Figma**, and **Azure DevOps**, following **SCRUM** methodologies and professional software development standards.
+At **RefineIT**, a software development company located in **Recklinghausen, Germany**, I have been part of the **Frontend** team since 2024. My work focuses on developing modern web applications using **NextJS**, **TypeScript**, **JavaScript**, **Tailwind CSS**, **Storybook**, **Figma**, and **Azure DevOps**, following **SCRUM** methodologies and professional software engineering standards.
 
-My primary responsibility is contributing to the development of a **large-scale enterprise CRM**, implementing new features, integrating **AI agents**, consuming APIs, developing reusable components, and maintaining a scalable and maintainable architecture. I also actively participate in **Pull Request** reviews, technical documentation, and continuous code quality improvements by applying **Clean Code** principles and software engineering best practices.
+Throughout my experience at RefineIT, I have participated in both the development of internal company products and different projects for external clients, adapting to various requirements, architectures, and business needs.
 
-### Project Overview
+Currently, I actively contribute to the development of a **large-scale enterprise CRM**, implementing new features, integrating **AI agents**, consuming APIs, developing reusable components, and supporting a scalable and maintainable architecture. Additionally, I participate in **Pull Request** reviews, technical documentation, and continuous code quality improvements by applying **Clean Code** principles and software development best practices.
 
-I am currently involved in the development of an **enterprise CRM**, a platform designed to centralize and optimize different business processes. The application includes specialized modules, **AI agents, chatbots**, and several tools aimed at improving productivity, automating workflows, and assisting users through AI-powered features.
+### Experience Overview
 
-The project follows a professional architecture based on reusable components, technical documentation, continuous integration, and close collaboration between the Frontend, Backend, and Design teams.
+My work at RefineIT takes place within a professional environment where I participate in different stages of the software development lifecycle, from implementing new features to optimizing and maintaining existing applications.
+
+Within the development of the **enterprise CRM**, I contribute to a platform designed to centralize business processes, including specialized modules, **AI agents, chatbots**, and AI-powered functionalities aimed at improving productivity and process automation.
+
+Additionally, I have participated in different client projects, working with new requirements, UI/UX designs, external integrations, and different frontend architectures depending on each project's needs.
 
 ### Key Features
 
-- **CRM Development**: Implementation of new features and maintenance of a large-scale enterprise platform.
+- **Enterprise Application Development**: Implementation and maintenance of professional web applications used in real business environments.
 
-- **Reusable Component Development**: Building and maintaining shared components using **Storybook**, ensuring consistency across the design system and improving code reusability.
+- **CRM Development**: Participation in the development of a large-scale enterprise platform with AI agent integration and process automation.
 
-- **API Integration**: Developing and integrating services for communication between the frontend and backend systems.
+- **Client Project Development**: Adaptation to different business requirements, technical specifications, and architectures depending on each project.
 
-- **Custom Hooks Development**: Creating reusable hooks to encapsulate business logic, improve code organization, and simplify application maintenance.
+- **Reusable Component Development**: Building and maintaining shared components using **Storybook**, improving code consistency and reusability.
 
-- **AI Agents & Chatbots Integration**: Participating in the development and integration of intelligent assistants, AI agents, and automation features within the CRM.
+- **API Integration**: Developing and integrating services for communication between frontend and backend systems.
 
-- **Responsive Design**: Developing adaptive interfaces that provide a consistent user experience across mobile devices, tablets, and desktop computers.
+- **Custom Hooks Development**: Creating reusable hooks to encapsulate business logic and improve application maintainability.
+
+- **AI Agents & Chatbots Integration**: Participating in the development of intelligent assistants, AI agents, and automation features.
+
+- **Responsive Design**: Developing adaptive interfaces for different devices and screen sizes.
 
 - **Code Reviews**: Actively participating in Pull Request reviews to ensure code quality, consistency, and maintainability.
 
@@ -49,37 +57,40 @@ The project follows a professional architecture based on reusable components, te
 
 ### Technologies and Tools Used
 
-- **NextJS**: Used to develop modern, scalable, and high-performance web applications.
-- **TypeScript**: Implemented to ensure type safety, maintainability, and robust code.
-- **JavaScript**: Used to build dynamic functionalities and client-side interactions.
-- **Tailwind CSS**: Used to create modern, flexible, and fully responsive user interfaces.
-- **Storybook**: Used to develop, document, and maintain reusable UI components within the design system.
+- **NextJS**: Used to develop modern, scalable, and optimized web applications.
+- **TypeScript**: Used to ensure type-safe, maintainable, and robust code.
+- **JavaScript**: Used to implement dynamic functionalities and client-side interactions.
+- **Tailwind CSS**: Used to create modern and fully responsive user interfaces.
+- **Storybook**: Used for developing and documenting reusable components.
 - **Figma**: Used to implement UI/UX designs provided by the design team.
-- **Azure DevOps**: Used for development lifecycle management, task tracking, version control, and team collaboration.
-- **SCRUM**: Agile methodology used for sprint planning, backlog refinement, retrospectives, and continuous team collaboration.
+- **Azure DevOps**: Used for development lifecycle management, task tracking, repositories, and team collaboration.
+- **SCRUM**: Agile methodology used for sprint planning, refinements, retrospectives, and continuous collaboration.
 
 ### Challenges and Learnings
 
 During my experience at RefineIT, I have strengthened and expanded my knowledge in:
 
-- [x] **Large-scale enterprise application development.**
-- [x] **Professional frontend software architecture.**
-- [x] **Building reusable component libraries with Storybook.**
-- [x] **Applying Clean Code principles and software engineering best practices.**
-- [x] **REST API integration and consumption.**
-- [x] **Developing reusable Custom Hooks.**
-- [x] **Integrating AI agents and chatbots into enterprise applications.**
+- [x] **Development of large-scale enterprise applications.**
+- [x] **Participation in multiple professional projects for different clients.**
+- [x] **Professional frontend and fullstack software architecture.**
+- [x] **Development of reusable components with Storybook.**
+- [x] **Application of Clean Code principles and software engineering best practices.**
+- [x] **REST API integration.**
+- [x] **Development of reusable Custom Hooks.**
+- [x] **Integration of AI agents and chatbots.**
 - [x] **Code reviews through Pull Requests.**
-- [x] **Collaborative development using the SCRUM methodology.**
-- [x] **First professional experience working with Azure DevOps.**
-- [x] **Professional communication in German within an international environment.**
+- [x] **Professional usage of Azure DevOps.**
+- [x] **Technical communication in German within an international environment.**
 
-This experience has allowed me to strengthen my expertise in modern frontend technologies and understand how large-scale enterprise products are developed and maintained. In addition to improving my technical skills, it significantly enhanced my professional German communication by participating daily in SCRUM meetings, backlog refinements, code reviews, and architectural discussions conducted entirely in German.
+This experience has allowed me to understand how professional applications are developed and maintained in a real enterprise environment. In addition to strengthening my technical skills, I have significantly improved my professional German communication by participating daily in SCRUM meetings, technical refinements, code reviews, and architectural discussions entirely in German.
 
 ### Responsibilities
 
 - [x] **Frontend Development**
+- [x] **Fullstack Development**
+- [x] **Enterprise Application Development**
 - [x] **CRM Development**
+- [x] **Client Projects Development**
 - [x] **AI Agents & Chatbots Integration**
 - [x] **Component Library Development**
 - [x] **Storybook**

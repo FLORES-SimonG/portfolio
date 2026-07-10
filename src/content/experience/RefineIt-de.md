@@ -19,69 +19,80 @@ tags:
 
 ## RefineIT
 
-Bei **RefineIT** in **Recklinghausen (Deutschland)** bin ich seit 2024 Mitglied des **Frontend-Teams**. Mein Schwerpunkt liegt auf der Entwicklung moderner Webanwendungen mit **NextJS**, **TypeScript**, **JavaScript**, **Tailwind CSS**, **Storybook**, **Figma** und **Azure DevOps**. Dabei arbeite ich nach der **SCRUM**-Methodik und orientiere mich an professionellen Standards der Softwareentwicklung.
+Bei **RefineIT**, einem Softwareentwicklungsunternehmen mit Sitz in **Recklinghausen (Deutschland)**, bin ich seit 2024 Teil des **Frontend-Teams**. Mein Schwerpunkt liegt auf der Entwicklung moderner Webanwendungen mit **NextJS**, **TypeScript**, **JavaScript**, **Tailwind CSS**, **Storybook**, **Figma** und **Azure DevOps**. Dabei arbeite ich nach der **SCRUM**-Methodik und orientiere mich an professionellen Standards der Softwareentwicklung.
 
-Zu meinen Hauptaufgaben gehört die Mitarbeit an der Entwicklung eines **unternehmensweiten CRM-Systems**, bei dem ich neue Funktionen implementiere, **KI-Agenten** integriere, APIs anbinde, wiederverwendbare Komponenten entwickle und eine skalierbare sowie wartbare Architektur unterstütze. Darüber hinaus beteilige ich mich aktiv an **Code Reviews** über Pull Requests, der technischen Dokumentation sowie der kontinuierlichen Verbesserung der Codequalität durch die Anwendung von **Clean-Code-Prinzipien** und Best Practices.
+Während meiner Tätigkeit bei RefineIT habe ich sowohl an internen Produkten des Unternehmens als auch an verschiedenen Projekten für externe Kunden mitgearbeitet. Dabei konnte ich mich an unterschiedliche Anforderungen, Architekturen und Geschäftsanforderungen anpassen.
 
-### Projektbeschreibung
+Aktuell arbeite ich aktiv an der Entwicklung eines **groß angelegten Enterprise-CRM-Systems** mit. Dabei implementiere ich neue Funktionen, integriere **KI-Agenten**, binde APIs an, entwickle wiederverwendbare Komponenten und unterstütze eine skalierbare sowie wartbare Architektur. Zusätzlich beteilige ich mich an **Pull-Request-Reviews**, technischer Dokumentation und der kontinuierlichen Verbesserung der Codequalität durch die Anwendung von **Clean-Code-Prinzipien** und professionellen Entwicklungsstandards.
 
-Ich arbeite derzeit an der Entwicklung eines **Enterprise-CRM**, das verschiedene Geschäftsprozesse zentralisiert und optimiert. Die Plattform umfasst spezialisierte Module, **KI-Agenten, Chatbots** sowie weitere Werkzeuge zur Produktivitätssteigerung, Prozessautomatisierung und Unterstützung der Benutzer durch KI-gestützte Funktionen.
+### Beschreibung der Erfahrung
 
-Das Projekt basiert auf einer professionellen Softwarearchitektur mit wiederverwendbaren Komponenten, technischer Dokumentation, Continuous Integration und einer engen Zusammenarbeit zwischen den Frontend-, Backend- und Design-Teams.
+Meine Arbeit bei RefineIT findet in einem professionellen Entwicklungsumfeld statt, in dem ich verschiedene Phasen des Softwareentwicklungsprozesses begleite – von der Implementierung neuer Funktionen bis hin zur Optimierung und Wartung bestehender Anwendungen.
+
+Innerhalb der Entwicklung des **Enterprise-CRM-Systems** arbeite ich an einer Plattform, die Geschäftsprozesse zentralisiert und optimiert. Das System beinhaltet spezialisierte Module, **KI-Agenten, Chatbots** sowie KI-gestützte Funktionen zur Verbesserung der Produktivität und Automatisierung von Prozessen.
+
+Zusätzlich habe ich an verschiedenen Kundenprojekten mitgewirkt und dabei unterschiedliche Anforderungen, UI/UX-Designs, externe Integrationen und Frontend-Architekturen entsprechend den jeweiligen Projektanforderungen umgesetzt.
 
 ### Hauptfunktionen
 
-- **CRM-Entwicklung**: Implementierung neuer Funktionen sowie kontinuierliche Weiterentwicklung einer unternehmensweiten Plattform.
+- **Entwicklung von Unternehmensanwendungen**: Implementierung und Wartung professioneller Webanwendungen, die in realen Geschäftsumgebungen eingesetzt werden.
 
-- **Entwicklung wiederverwendbarer Komponenten**: Erstellung und Pflege gemeinsamer Komponenten mit **Storybook**, um Konsistenz im Designsystem und eine hohe Wiederverwendbarkeit des Codes sicherzustellen.
+- **CRM-Entwicklung**: Mitarbeit an der Entwicklung einer groß angelegten Unternehmensplattform mit Integration von KI-Agenten und Prozessautomatisierung.
 
-- **API-Integration**: Entwicklung und Integration verschiedener Schnittstellen zur Kommunikation zwischen Frontend und Backend.
+- **Entwicklung von Kundenprojekten**: Anpassung an unterschiedliche Geschäftsanforderungen, technische Spezifikationen und Architekturen je nach Projekt.
 
-- **Entwicklung von Custom Hooks**: Erstellung wiederverwendbarer Hooks zur Kapselung von Geschäftslogik und Verbesserung der Wartbarkeit des Projekts.
+- **Entwicklung wiederverwendbarer Komponenten**: Erstellung und Pflege gemeinsamer Komponenten mit **Storybook**, um Codequalität, Konsistenz und Wiederverwendbarkeit zu verbessern.
 
-- **Integration von KI-Agenten und Chatbots**: Mitarbeit an der Entwicklung und Integration intelligenter Assistenten, KI-Agenten und Automatisierungsfunktionen innerhalb des CRM.
+- **API-Integration**: Entwicklung und Integration von Schnittstellen für die Kommunikation zwischen Frontend- und Backend-Systemen.
 
-- **Responsives Design**: Entwicklung adaptiver Benutzeroberflächen für eine konsistente Nutzung auf Smartphones, Tablets und Desktop-Computern.
+- **Entwicklung von Custom Hooks**: Erstellung wiederverwendbarer Hooks zur Kapselung von Geschäftslogik und Verbesserung der Wartbarkeit.
+
+- **Integration von KI-Agenten und Chatbots**: Mitarbeit an der Entwicklung intelligenter Assistenten, KI-Agenten und Automatisierungsfunktionen.
+
+- **Responsives Design**: Entwicklung adaptiver Benutzeroberflächen für verschiedene Geräte und Bildschirmgrößen.
 
 - **Code Reviews**: Aktive Teilnahme an Pull-Request-Reviews zur Sicherstellung von Codequalität, Konsistenz und Wartbarkeit.
 
-- **Technische Dokumentation**: Erstellung und Pflege technischer Dokumentationen für Komponenten, Funktionen und interne Entwicklungsprozesse.
+- **Technische Dokumentation**: Erstellung und Pflege von Dokumentationen für Komponenten, Funktionen und interne Entwicklungsprozesse.
 
 ### Verwendete Technologien und Werkzeuge
 
-- **NextJS**: Eingesetzt zur Entwicklung moderner, skalierbarer und leistungsstarker Webanwendungen.
-- **TypeScript**: Verwendet, um typsicheren, robusten und wartbaren Code zu gewährleisten.
+- **NextJS**: Eingesetzt zur Entwicklung moderner, skalierbarer und optimierter Webanwendungen.
+- **TypeScript**: Verwendet zur Sicherstellung von typsicherem, wartbarem und robustem Code.
 - **JavaScript**: Eingesetzt für dynamische Funktionen und clientseitige Interaktionen.
-- **Tailwind CSS**: Verwendet zur Entwicklung moderner, flexibler und vollständig responsiver Benutzeroberflächen.
-- **Storybook**: Eingesetzt zur Entwicklung, Dokumentation und Pflege wiederverwendbarer UI-Komponenten.
-- **Figma**: Verwendet zur Umsetzung der vom Design-Team erstellten UI/UX-Entwürfe.
-- **Azure DevOps**: Eingesetzt für das Entwicklungsmanagement, Aufgabenverwaltung, Versionskontrolle und die Zusammenarbeit im Team.
-- **SCRUM**: Agile Methodik für Sprintplanung, Backlog-Refinement, Retrospektiven und die tägliche Zusammenarbeit im Entwicklungsteam.
+- **Tailwind CSS**: Verwendet zur Erstellung moderner und vollständig responsiver Benutzeroberflächen.
+- **Storybook**: Eingesetzt zur Entwicklung und Dokumentation wiederverwendbarer Komponenten.
+- **Figma**: Verwendet zur Umsetzung der vom Design-Team bereitgestellten UI/UX-Entwürfe.
+- **Azure DevOps**: Eingesetzt für Entwicklungsprozesse, Aufgabenverwaltung, Repository-Management und Teamzusammenarbeit.
+- **SCRUM**: Agile Methodik für Sprintplanung, Refinements, Retrospektiven und kontinuierliche Zusammenarbeit.
 
 ### Herausforderungen und Lernerfahrungen
 
-Während meiner Tätigkeit bei RefineIT konnte ich meine Kenntnisse in folgenden Bereichen vertiefen und erweitern:
+Während meiner Tätigkeit bei RefineIT konnte ich meine Kenntnisse in folgenden Bereichen erweitern und vertiefen:
 
 - [x] **Entwicklung großer Unternehmensanwendungen.**
-- [x] **Professionelle Frontend-Softwarearchitektur.**
+- [x] **Mitarbeit an mehreren professionellen Projekten für verschiedene Kunden.**
+- [x] **Professionelle Frontend und Fullstack-Softwarearchitektur.**
 - [x] **Entwicklung wiederverwendbarer Komponenten mit Storybook.**
-- [x] **Anwendung von Clean-Code-Prinzipien und Softwareentwicklungsstandards.**
-- [x] **Integration und Nutzung von REST-APIs.**
+- [x] **Anwendung von Clean-Code-Prinzipien und professionellen Entwicklungsstandards.**
+- [x] **Integration von REST-APIs.**
 - [x] **Entwicklung wiederverwendbarer Custom Hooks.**
-- [x] **Integration von KI-Agenten und Chatbots in Unternehmensanwendungen.**
+- [x] **Integration von KI-Agenten und Chatbots.**
 - [x] **Code Reviews über Pull Requests.**
-- [x] **Zusammenarbeit nach der SCRUM-Methodik.**
-- [x] **Erste Berufserfahrung mit Azure DevOps.**
-- [x] **Professionelle Kommunikation auf Deutsch in einem internationalen Arbeitsumfeld.**
+- [x] **Professioneller Einsatz von Azure DevOps.**
+- [x] **Technische Kommunikation auf Deutsch in einem internationalen Arbeitsumfeld.**
 
-Diese Tätigkeit hat es mir ermöglicht, meine Kenntnisse moderner Frontend-Technologien weiter auszubauen und ein tiefes Verständnis für die Entwicklung und Wartung großer Unternehmensanwendungen zu gewinnen. Darüber hinaus konnte ich meine berufliche Kommunikation auf Deutsch erheblich verbessern, da ich täglich an SCRUM-Meetings, Backlog-Refinements, Code Reviews und Architekturgesprächen vollständig auf Deutsch teilnehme.
+Diese Erfahrung hat mir ermöglicht, ein tiefes Verständnis dafür zu entwickeln, wie professionelle Anwendungen in realen Unternehmensumgebungen entwickelt und gewartet werden. Neben der Weiterentwicklung meiner technischen Fähigkeiten konnte ich auch meine berufliche Kommunikation auf Deutsch deutlich verbessern, da ich täglich an SCRUM-Meetings, technischen Refinements, Code Reviews und Architekturgesprächen vollständig auf Deutsch teilnehme.
 
 ### Verantwortlichkeiten
 
 - [x] **Frontend-Entwicklung**
+- [x] **Fullstack-Entwicklung**
+- [x] **Entwicklung von Unternehmensanwendungen**
 - [x] **CRM-Entwicklung**
+- [x] **Entwicklung von Kundenprojekten**
 - [x] **Integration von KI-Agenten und Chatbots**
-- [x] **Entwicklung einer Komponentenbibliothek**
+- [x] **Entwicklung von Komponentenbibliotheken**
 - [x] **Storybook**
 - [x] **API-Integration**
 - [x] **Responsives Design**
