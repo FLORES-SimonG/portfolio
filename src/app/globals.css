@@ -1091,16 +1091,22 @@ footer .socials {
   }
 
   .grid.offset {
-    --row-offset: 7.5rem;
+    --row-offset: -15rem;
     padding-bottom: var(--row-offset);
-    
+  }
+
+
+  .grid.offset > :nth-child(odd) {
+    grid-column: 2 / 3;
+    transform: none;
   }
 
   .grid.offset > :nth-child(even) {
+    grid-column: 1 / 2;
     transform: translateY(var(--row-offset));
   }
 
-  .grid.offset > :last-child:nth-child(even) {
+  .grid.offset > :last-child:nth-child(odd) {
     grid-column: 2 / 3;
     transform: none;
   }
