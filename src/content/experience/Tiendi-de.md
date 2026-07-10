@@ -5,7 +5,7 @@ img: /assets/tiendi0.jpg
 img_alt: Online-Shop.
 language: de
 description: |
-  Berufliche und akademische Erfahrung
+  Akademische Erfahrung
 tags:
   - NextJS
   - TypeScript
@@ -37,7 +37,7 @@ Das Projekt wurde entwickelt, um fortgeschrittene Konzepte der Frontend-Entwickl
 
 ![Online store.](/assets/tiendi1.jpg)
 
-*Darstellung der Hauptoberfläche des Online-Shops.*
+_Darstellung der Hauptoberfläche des Online-Shops._
 
 - **NextJS-Optimierung**: Die Anwendung nutzt Server-Side Rendering (SSR), um die Performance, die anfängliche Ladezeit und die SEO-Optimierung zu verbessern.
 

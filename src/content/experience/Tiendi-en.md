@@ -5,7 +5,7 @@ img: /assets/tiendi0.jpg
 img_alt: Online store.
 language: en
 description: |
-  Professional and Academic Experience
+    Academic Experience
 tags:
   - NextJS
   - TypeScript

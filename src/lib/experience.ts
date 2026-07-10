@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { routing } from "../i18n/routing";
+import { Language } from "@/messages/interface";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
 
@@ -13,7 +14,7 @@ export type ExperienceEntry = {
   img: string;
   imgAlt?: string;
   slug: string[];
-  language: "de" | "es" | "en";
+  language: Language;
   content: string;
 };
 

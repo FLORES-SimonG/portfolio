@@ -5,7 +5,7 @@ img: /assets/tiendi0.jpg
 img_alt: Tienda online.
 language: es
 description: |
-  Experiencia laboral y académica
+  Experiencia académica
 tags:
   - NextJS
   - TypeScript
