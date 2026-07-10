@@ -44,7 +44,8 @@ export default async function ExperienceEntryPage({ params }: Props) {
       <header className="experience-entry-header">
         <div className="wrapper stack gap-2">
           <Link className="back-link" href="/experience/">
-            <Icon icon="arrow-left" /> Experience
+            <Icon icon="arrow-left" /> 
+            <p>Experience</p>
           </Link>
           <Hero title={entry.title} align="start">
             <div className="details">

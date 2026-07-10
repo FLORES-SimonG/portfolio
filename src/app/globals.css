@@ -697,10 +697,6 @@ html:not(.theme-dark) .theme-toggle-button .icon.light,
   border-bottom: 1px solid var(--gray-800);
 }
 
-.back-link {
-  display: none;
-}
-
 .details {
   display: flex;
   flex-direction: column;
@@ -1146,7 +1142,9 @@ footer .socials {
   }
 
   .back-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     align-self: flex-start;
   }
 
