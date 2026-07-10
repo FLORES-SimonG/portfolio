@@ -709,7 +709,7 @@ html:not(.theme-dark) .theme-toggle-button .icon.light,
 .tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 0.5rem;
 }
 
