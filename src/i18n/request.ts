@@ -11,6 +11,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const baseMessages = (await import(`../messages/${locale}.json`)).default;
 
   return {
+    timeZone: 'Europe/Vienna',
     locale,
     messages: {
       ...baseMessages,

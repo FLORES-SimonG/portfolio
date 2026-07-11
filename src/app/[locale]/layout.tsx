@@ -19,6 +19,7 @@ export default async function LocaleLayout({ children, params, messages }: Props
     notFound();
   }
   setRequestLocale(locale);
+  let timeZone = 'Europe/Vienna';
 
   let messagesData = messages ?? {};
   if (!messagesData || Object.keys(messagesData).length === 0) {
@@ -32,7 +33,7 @@ export default async function LocaleLayout({ children, params, messages }: Props
   return (
     <html lang={locale} suppressContentEditableWarning>
       <body suppressContentEditableWarning>
-        <LayoutWrapper locale={locale} messages={messagesData}>
+        <LayoutWrapper locale={locale} messages={messagesData} timeZone={timeZone}>
           {children}
           <ContactCTA />
           <Footer />
