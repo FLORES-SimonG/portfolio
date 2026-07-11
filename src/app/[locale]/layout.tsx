@@ -10,27 +10,29 @@ import LayoutWrapper from "@/components/features/common/layout-wrapper";
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
-  messages: Record<string, string>;
+  messages?: Record<string, string>;
 };
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, params, messages }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   setRequestLocale(locale);
 
-  let messages = {};
-  try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (err) {
-    console.warn(`No se encontraron mensajes para el locale "${locale}".`, err);
+  let messagesData = messages ?? {};
+  if (!messagesData || Object.keys(messagesData).length === 0) {
+    try {
+      messagesData = (await import(`../../messages/${locale}.json`)).default;
+    } catch (err) {
+      console.warn(`No se encontraron mensajes para el locale "${locale}".`, err);
+    }
   }
 
   return (
     <html lang={locale} suppressContentEditableWarning>
       <body suppressContentEditableWarning>
-        <LayoutWrapper locale={locale} messages={messages}>
+        <LayoutWrapper locale={locale} messages={messagesData}>
           {children}
           <ContactCTA />
           <Footer />
