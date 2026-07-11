@@ -1,0 +1,156 @@
+{
+  "common": {
+    "clear": "Limpiar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "about": "Sobre mí",
+    "certificates": "Certificados"
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es Simón G. Flores",
+    "tagline": "Soy FullStack Developer, ¡un placer conocerte!"
+  },
+  "certificates": {
+    "allTags": "Ver todos",
+    "searchPlaceholder": "Buscar certificados...",
+    "title": "Certificados",
+    "tagline": "Aquí hay algunos de mis certificados.",
+    "certificate": {
+      "course": "Curso",
+      "learningPath": "Ruta de Aprendizaje",
+      "title": {
+        "CursoDeIntroduccionAReactNative": "Curso de Introducción a React Native",
+        "CursoDeSupabase": "Curso de Supabase",
+        "FullStackDeveloperconJavaScript": "FullStack Developer con JavaScript",
+        "CursoDeResponsiveDesignMaquetacionMobileFirst": "Curso de Responsive Design y Maquetación Mobile First",
+        "FullStackConNextJs": "FullStack con Next.js",
+        "FundamentosDeDataScienceEInteligenciaArtificial": "Fundamentos de Data Science e Inteligencia Artificial",
+        "FundamentosDeProgramacion": "Fundamentos de Programación",
+        "InglesA1": "Inglés A1",
+        "InglesA2": "Inglés A2",
+        "CursoDeBasesDeDatosConMySQLLyMariaDB": "Curso de Bases de Datos con MySQL y MariaDB",
+        "CursoDeNextJsAvanzado": "Curso de Next.js Avanzado",
+        "CursoDeTailwindCSS": "Curso de Tailwind CSS",
+        "CursoDeProgramacionOrientadaAObjetosConCSharp": "Curso de Programación Orientada a Objetos con C#",
+        "CursoDeIntroduccionALaNubeConAzure": "Curso de Introducción a la Nube con Azure",
+        "CursoDeFigmaTecnicasAvanzadasDeDiseno": "Curso de Figma - Técnicas Avanzadas de Diseño",
+        "CursoDeFigma": "Curso de Figma",
+        "CursoDeInglesBasicoA2ConectoresYArticulos": "Curso de Inglés Básico A2: Conectores y Artículos",
+        "CursoDeReactJsConTypeScript": "Curso de React.js con TypeScript",
+        "CursoDeFigmaPrototipadoEInterfaces": "Curso de Figma - Prototipado e Interfaces",
+        "CursoDeReactJsPatronesDeRenderYComposicion": "Curso de React.js - Patrones de Render y Composición",
+        "CursoDeNextJsOptimizacionYManejoDeGrandesDatasets": "Curso de Next.js - Optimización y Manejo de Grandes Datasets",
+        "CursoDeNextJsSeguridadWebConOWASP": "Curso de Next.js - Seguridad Web con OWASP",
+        "CursoDeNextJsInternacionalizacionDeAplicacionesWebConI18n": "Curso de Next.js - Internacionalización de Aplicaciones Web con i18n",
+        "CursoDeIntroduccionAJavaSE": "Curso de Introducción a Java",
+        "CursoDeReactJsConViteJsYTailwindCSS": "Curso de React.js con Vite.js y Tailwind CSS",
+        "CursoDeAsincronismoConJavaScript": "Curso de Asincronismo con JavaScript",
+        "CursoDeFundamentosDeDisenoDeInterfacesUXUI": "Curso de Fundamentos de Diseño de Interfaces UX/UI",
+        "CursoDeCleanCodeYBuenasPracticasConJavaScript": "Curso de Clean Code y Buenas Prácticas con JavaScript",
+        "CursoDeManipulacionDeArraysEnJavaScript": "Curso de Manipulación de Arrays en JavaScript",
+        "CursoDeJavaScriptDesdeCero": "Curso de JavaScript desde Cero",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnLinux": "Curso de Configuración de Entorno de Desarrollo en Linux",
+        "CursoBásicoDeProgramaciónOrientadaAObjetosConJavaScript": "Curso Básico de Programación Orientada a Objetos con JavaScript",
+        "CursoDeNPMGestionDePaquetesYDependenciasEnJavaScript": "Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript",
+        "CursoPrácticoDeJavaScript": "Curso Práctico de JavaScript",
+        "CursoPrácticoDeFrontendDeveloper": "Curso Práctico de Frontend Developer",
+        "CursoProfesionalDeGitYGitHub": "Curso Profesional de Git y GitHub",
+        "CursoDeECMAScriptHistoriaYVersionesDeJavaScript": "Curso de ECMAScript: Historia y Versiones de JavaScript",
+        "CursoDeInglesBasicoA2PreguntasYRespuestasComunes": "Curso de Inglés Básico A2: Preguntas y Respuestas Comunes",
+        "CursoDeInglesPracticoSobreElementosDeTrabajo": "Curso de Inglés Práctico sobre Elementos de Trabajo",
+        "CursoDeJavaScriptEngineV8YElNavegador": "Curso de JavaScript: Engine V8 y el Navegador",
+        "CursoBásicoDeJavaScript": "Curso Básico de JavaScript",
+        "CursoDeC++Basico": "Curso de C++ Básico",
+        "CursoDeInglesBasicoParaPrincipiantes2022": "Curso de Inglés Básico para Principiantes (2022)",
+        "CursoDeInglesPracticoParaDescripcionesPersonales2020": "Curso de Inglés Práctico para Descripciones Personales (2020)",
+        "CursoDeExpresionesRegulares": "Curso de Expresiones Regulares",
+        "CursoDeBuenasPracticasYCodigoLimpioEnCSharp": "Curso de Buenas Prácticas y Código Limpio en C#",
+        "CursoDeHistoriaDeLaProgramacionLenguajesYParadigmas": "Curso de Historia de la Programación: Lenguajes y Paradigmas",
+        "FundamentosDeIngenieriaDeSoftware": "Fundamentos de Ingeniería de Software",
+        "CursoDeHistoriaDeLaInnovaciónYElEmprendimientoConDianaUribe": "Curso de Historia de la Innovación y el Emprendimiento (con Diana Uribe)",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnWindows": "Curso de Configuración de Entorno de Desarrollo en Windows",
+        "CursoBasicoDeProgramacionConCSharp": "Curso Básico de Programación con C#",
+        "CursoDeFuncionesEnCpp": "Curso de Funciones en C",
+        "CursoDeControlDeFlujoEnCpp": "Curso de Control de Flujo en C",
+        "CursoDeIntroduccionACpp": "Curso de Introducción a C",
+        "CursoDePythonComprehensionsFuncionesYManejoDeErrores": "Curso de Python: Comprehensions, Funciones y Manejo de Errores",
+        "CursoDeFundamentosDePython": "Curso de Fundamentos de Python",
+        "CursoDeFundamentosDePensamientoLogico": "Curso de Fundamentos de Pensamiento Lógico",
+        "CursoDeLenguajeYNotacionMatematica": "Curso de Lenguaje y Notación Matemática",
+        "CursoDeFundamentosDeMatematicasParaFisica": "Curso de Fundamentos de Matemáticas para Física",
+        "CursoDePensamientoLogicoLenguajesDeProgramacion": "Curso de Pensamiento Lógico: Lenguajes de Programación",
+        "CursoDeEticaYManejoDeDatosParaDataScienceEInteligenciaArtificial": "Curso de Ética y Manejo de Datos para Data Science e Inteligencia Artificial",
+        "CursoDeAlgebra": "Curso de Álgebra",
+        "CursoDeIntroduccionAExcelParaPrincipiantesFundamentosYFormatoDeHojasDeCalculo": "Curso de Introducción a Excel para Principiantes: Fundamentos y Formato de Hojas de Cálculo",
+        "CursoDeAnalisisDeNegociosParaCienciaDeDatos": "Curso de Análisis de Negocios para Ciencia de Datos",
+        "CursoBasicoDePython": "Curso Básico de Python",
+        "AudiotallerDeEstrategiasParaAprenderPortugues": "Audiotaller de Estrategias para Aprender Portugués",
+        "CursoDeExcelBasico": "Curso de Excel Básico",
+        "GuiaParaEmpezarUnaCarreraEnDataScienceEInteligenciaArtificial": "Guía para Empezar una Carrera en Data Science e Inteligencia Artificial",
+        "CursoDeFundamentosDeMatematicas": "Curso de Fundamentos de Matemáticas",
+        "CursoDeInglesBasicoA1ConversacionesCortasYHabituales2020": "Curso de Inglés Básico A1: Conversaciones Cortas y Habituales (2020)",
+        "CursoDeIntroduccionALaTerminalYLíneaDeComandos": "Curso de Introducción a la Terminal y Línea de Comandos",
+        "CursoDeFrontendDeveloper": "Curso de Frontend Developer",
+        "CursoDePreworkConfiguracionDeEntornoDeDesarrolloEnWindows": "Curso Prework: Configuración de Entorno de Desarrollo en Windows",
+        "CursoDePensamientoLogicoManejoDeDatosEstructurasYFunciones": "Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones",
+        "CursoDeIntroduccionALaWebHistoriaYFuncionamientoDeInternet": "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
+        "CursoDePensamientoLogicoAlgoritmosYDiagramasDeFlujo": "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo",
+        "CursoBasicoDeComputadoresEInformatica": "Curso Básico de Computadores e Informática",
+        "CursoBasicoDeProgramacion": "Curso Básico de Programación"
+      }
+    }
+  },
+
+  "experience": {
+    "title": "Mi experiencia",
+    "tagline": "Aquí encontrarás mi experiencia laboral y proyectos destacados desde el 2023 hasta el día de hoy."
+  },
+
+  "contact": {
+    "heading": "¿Interesado en trabajar juntos?",
+    "button": "Envíame un mensaje"
+  },
+
+  "footer": {
+    "location": "Gelsenkirchen, Renania del Norte-Westfalia, Alemania"
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "tagline": "No encontrada"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "firstParagraph": "Tengo experiencia en desarrollo de software, especialmente en desarrollo web con un enfoque en tecnologías frontend. Desde agosto de 2024, trabajo en RefineIT en Recklinghausen como parte del equipo frontend, centrándome en ReactJS/NextJS. Anteriormente, completé una pasantía como desarrollador de software en Alltagsauto.ch.",
+    "secondParagraph": "Desde 03/2024 hasta 06/2024 trabajé como asistente de enseñanza en el mismo campo en el que estudié, ayudando a los estudiantes a aprender y mejorar sus habilidades.",
+    "thirdParagraph": "Antes de comenzar a programar, me gradué como Técnico Universitario en Química en la Universidad Tecnológica Nacional Villa María en Argentina. Esta fue mi primera experiencia con la tecnología, a través de simulaciones de procesos. Al estudiar Ingeniería Química en la universidad, adquirí una sólida comprensión de matemáticas, física, química, álgebra y cálculo.",
+    "fourthParagraph": "Vivo en Gelsenkirchen desde abril de 2021. Mi lengua materna es el español, tengo un nivel C1 en alemán y un nivel B2 en inglés, y hablo portugués con fluidez."
+  },
+  "lang": {
+    "en": "Inglés",
+    "es": "Español",
+    "de": "Alemán"
+  },
+
+  "roles": {
+    "developer": "Desarrollador",
+    "frontend": "Frontend",
+    "location": "Alemania"
+  },
+
+  "skills": {
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "Tengo experiencia trabajando con JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS y Bootstrap, entre otros."
+    },
+    "leader": {
+      "title": "Líder experimentado",
+      "desc": "Fui presidente durante 5 años, liderando proyectos y haciendo crecer la organización. Como entrenador de fútbol durante 2 años, mejoré mi gestión de equipos y habilidades de comunicación."
+    },
+    "growth": {
+      "title": "Crecimiento y Aprendizaje",
+      "desc": "Siempre quiero mejorar y aprender sobre nuevas tecnologías en el mercado. Busco oportunidades para crecer mis habilidades y usar nuevas ideas en mi trabajo."
+    }
+  }
+}

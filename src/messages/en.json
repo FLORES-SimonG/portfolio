@@ -1,0 +1,155 @@
+{
+  "common": {
+    "clear": "Clear"
+  },
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "about": "About Me",
+    "certificates": "Certificates"
+  },
+
+  "hero": {
+    "greeting": "Hello, my name is Simón G. Flores",
+    "tagline": "I am a FullStack Developer and it's a pleasure to meet you!"
+  },
+  "certificates": {
+    "searchPlaceholder": "Search certificates...",
+    "allTags": "View all",
+    "title": "Certificates",
+    "tagline": "Here are some of my certificates.",
+    "certificate": {
+      "course": "Course",
+      "learningPath": "Learning Path",
+      "title": {
+        "CursoDeIntroduccionAReactNative": "Introduction to React Native",
+        "CursoDeSupabase": "Supabase Course",
+        "FullStackDeveloperconJavaScript": "FullStack Developer with JavaScript",
+        "CursoDeResponsiveDesignMaquetacionMobileFirst": "Responsive Design and Mobile-First Layout",
+        "FullStackConNextJs": "FullStack with Next.js",
+        "FundamentosDeDataScienceEInteligenciaArtificial": "Foundations of Data Science & AI",
+        "FundamentosDeProgramacion": "Programming Fundamentals",
+        "InglesA1": "English A1",
+        "InglesA2": "English A2",
+        "CursoDeBasesDeDatosConMySQLLyMariaDB": "Databases with MySQL & MariaDB",
+        "CursoDeNextJsAvanzado": "Advanced Next.js Course",
+        "CursoDeTailwindCSS": "Tailwind CSS Course",
+        "CursoDeProgramacionOrientadaAObjetosConCSharp": "Object-Oriented Programming with C#",
+        "CursoDeIntroduccionALaNubeConAzure": "Introduction to Cloud with Azure",
+        "CursoDeFigmaTecnicasAvanzadasDeDiseno": "Figma: Advanced Design Techniques",
+        "CursoDeFigma": "Figma Course",
+        "CursoDeInglesBasicoA2ConectoresYArticulos": "Basic English A2: Connectors & Articles",
+        "CursoDeReactJsConTypeScript": "React.js with TypeScript",
+        "CursoDeFigmaPrototipadoEInterfaces": "Figma: Prototyping and Interfaces",
+        "CursoDeReactJsPatronesDeRenderYComposicion": "React.js: Rendering Patterns and Composition",
+        "CursoDeNextJsOptimizacionYManejoDeGrandesDatasets": "Next.js: Optimization & Large Dataset Handling",
+        "CursoDeNextJsSeguridadWebConOWASP": "Next.js: Web Security with OWASP",
+        "CursoDeNextJsInternacionalizacionDeAplicacionesWebConI18n": "Next.js: Internationalization of Web Apps with i18n",
+        "CursoDeIntroduccionAJavaSE": "Introduction to Java",
+        "CursoDeReactJsConViteJsYTailwindCSS": "React.js with Vite.js and Tailwind CSS",
+        "CursoDeAsincronismoConJavaScript": "Asynchronous JavaScript",
+        "CursoDeFundamentosDeDisenoDeInterfacesUXUI": "Foundations of UX/UI Interface Design",
+        "CursoDeCleanCodeYBuenasPracticasConJavaScript": "Clean Code and Best Practices in JavaScript",
+        "CursoDeManipulacionDeArraysEnJavaScript": "Array Manipulation in JavaScript",
+        "CursoDeJavaScriptDesdeCero": "JavaScript from Scratch",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnLinux": "Setting Up Development Environment on Linux",
+        "CursoBásicoDeProgramaciónOrientadaAObjetosConJavaScript": "Intro to OOP with JavaScript",
+        "CursoDeNPMGestionDePaquetesYDependenciasEnJavaScript": "NPM: Package & Dependency Management",
+        "CursoPrácticoDeJavaScript": "Practical JavaScript Course",
+        "CursoPrácticoDeFrontendDeveloper": "Practical Frontend Developer Course",
+        "CursoProfesionalDeGitYGitHub": "Professional Git & GitHub Course",
+        "CursoDeECMAScriptHistoriaYVersionesDeJavaScript": "ECMAScript: History and Versions of JavaScript",
+        "CursoDeInglesBasicoA2PreguntasYRespuestasComunes": "Basic English A2: Common Q&A",
+        "CursoDeInglesPracticoSobreElementosDeTrabajo": "Practical English for Work Elements",
+        "CursoDeJavaScriptEngineV8YElNavegador": "JavaScript Engine V8 and the Browser",
+        "CursoBásicoDeJavaScript": "Basic JavaScript Course",
+        "CursoDeC++Basico": "Basic C++ Course",
+        "CursoDeInglesBasicoParaPrincipiantes2022": "Basic English for Beginners (2022)",
+        "CursoDeInglesPracticoParaDescripcionesPersonales2020": "Practical English for Personal Descriptions (2020)",
+        "CursoDeExpresionesRegulares": "Regular Expressions Course",
+        "CursoDeBuenasPracticasYCodigoLimpioEnCSharp": "Best Practices & Clean Code in C#",
+        "CursoDeHistoriaDeLaProgramacionLenguajesYParadigmas": "History of Programming: Languages & Paradigms",
+        "FundamentosDeIngenieriaDeSoftware": "Fundamentals of Software Engineering",
+        "CursoDeHistoriaDeLaInnovaciónYElEmprendimientoConDianaUribe": "History of Innovation & Entrepreneurship (Diana Uribe)",
+        "CursoDeConfiguracionDeEntornoDeDesarrolloEnWindows": "Setting Up Dev Environment on Windows",
+        "CursoBasicoDeProgramacionConCSharp": "Basic Programming with C#",
+        "CursoDeFuncionesEnCpp": "Functions in C",
+        "CursoDeControlDeFlujoEnCpp": "Control Flow in C",
+        "CursoDeIntroduccionACpp": "Introduction to C",
+        "CursoDePythonComprehensionsFuncionesYManejoDeErrores": "Python: Comprehensions, Functions & Error Handling",
+        "CursoDeFundamentosDePython": "Foundations of Python",
+        "CursoDeFundamentosDePensamientoLogico": "Foundations of Logical Thinking",
+        "CursoDeLenguajeYNotacionMatematica": "Language and Mathematical Notation",
+        "CursoDeFundamentosDeMatematicasParaFisica": "Mathematics Foundations for Physics",
+        "CursoDePensamientoLogicoLenguajesDeProgramacion": "Logical Thinking for Programming Languages",
+        "CursoDeEticaYManejoDeDatosParaDataScienceEInteligenciaArtificial": "Ethics and Data Handling for Data Science & AI",
+        "CursoDeAlgebra": "Algebra Course",
+        "CursoDeIntroduccionAExcelParaPrincipiantesFundamentosYFormatoDeHojasDeCalculo": "Introduction to Excel for Beginners: Basics & Spreadsheet Formatting",
+        "CursoDeAnalisisDeNegociosParaCienciaDeDatos": "Business Analysis for Data Science",
+        "CursoBasicoDePython": "Basic Python Course",
+        "AudiotallerDeEstrategiasParaAprenderPortugues": "Audio Workshop: Strategies to Learn Portuguese",
+        "CursoDeExcelBasico": "Basic Excel Course",
+        "GuiaParaEmpezarUnaCarreraEnDataScienceEInteligenciaArtificial": "Guide to Start a Career in Data Science & AI",
+        "CursoDeFundamentosDeMatematicas": "Foundations of Mathematics",
+        "CursoDeInglesBasicoA1ConversacionesCortasYHabituales2020": "Basic English A1: Short, Common Conversations (2020)",
+        "CursoDeIntroduccionALaTerminalYLíneaDeComandos": "Introduction to the Terminal and Command Line",
+        "CursoDeFrontendDeveloper": "Frontend Developer Course",
+        "CursoDePreworkConfiguracionDeEntornoDeDesarrolloEnWindows": "Prework: Dev Environment Setup on Windows",
+        "CursoDePensamientoLogicoManejoDeDatosEstructurasYFunciones": "Logical Thinking: Data Handling, Structures & Functions",
+        "CursoDeIntroduccionALaWebHistoriaYFuncionamientoDeInternet": "Introduction to the Web: History & How the Internet Works",
+        "CursoDePensamientoLogicoAlgoritmosYDiagramasDeFlujo": "Logical Thinking: Algorithms and Flowcharts",
+        "CursoBasicoDeComputadoresEInformatica": "Basic Computers & IT Course",
+        "CursoBasicoDeProgramacion": "Basic Programming Course"
+      }
+    }
+  },
+
+  "experience": {
+    "title": "My Experience",
+    "tagline": "Here you will find my work experience and highlighted projects from 2023 to the present."
+  },
+
+  "contact": {
+    "heading": "Interested in working together?",
+    "button": "Send Me a Message"
+  },
+
+  "footer": {
+    "location": "Gelsenkirchen, North Rhine-Westphalia, Germany"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "tagline": "Not found"
+  },
+  "about": {
+    "title": "About me",
+    "firstParagraph": "I have experience in software development, especially in web development with a focus on frontend technologies. Since August 2024, I am working at RefineIT in Recklinghausen as part of the frontend team, focusing on ReactJS/NextJS. I previously completed an internship as a software developer at Alltagsauto.ch.",
+    "secondParagraph": "From 03/2024 to 06/2024 I have worked as a Teaching Assistant in the same field where I studied, helping students learn and improve their skills.",
+    "thirdParagraph": "Before I started programming, I graduated as a University Technician in Chemistry from Universidad Tecnológica Nacional Villa María in Argentina. This was my first experience with technology, through process simulations. By studying Chemical Engineering at university, I gained a solid understanding of mathematics, physics, chemistry, algebra, and calculus.",
+    "fourthParagraph": "I live in Gelsenkirchen since April 2021. My native language is Spanish, I have a C1 level in German and a B2 level in English, and I speak Portuguese fluently."
+  },
+  "lang": {
+    "en": "English",
+    "es": "Spanish",
+    "de": "German"
+  },
+  "roles": {
+    "developer": "Developer",
+    "frontend": "Frontend",
+    "location": "Germany"
+  },
+  "skills": {
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "I have experience working with JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS, and Bootstrap, among others."
+    },
+    "leader": {
+      "title": "Experienced Leader",
+      "desc": "I was a president for 5 years, leading projects and growing the organization. As a football coach for 2 years, I improved my team management and communication skills."
+    },
+    "growth": {
+      "title": "Growth & Learning",
+      "desc": "I always want to get better and learn about new technology in the market. I look for chances to grow my skills and use new ideas in my work."
+    }
+  }
+}
