@@ -33,20 +33,28 @@ export default function CertificatesSearch({
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return certificates
-      .filter((c) => (activeTag ? c.tags.includes(activeTag) : true))
-      .filter((c) => {
-        if (!q) return true;
+
+    const matched = certificates.reduce<CertificateSerializable[]>((acc, c) => {
+      // tag filter
+      if (activeTag && !c.tags.includes(activeTag)) return acc;
+
+      // text filter
+      if (q) {
         let translated = c.title;
         try {
-          translated =
-            t(`certificates.certificate.title.${c.title}`) || c.title;
+          translated = t(`certificates.certificate.title.${c.title}`) || c.title;
         } catch (e) {
           translated = c.title;
         }
-        return translated.toLowerCase().includes(q);
-      })
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+        if (!translated.toLowerCase().includes(q)) return acc;
+      }
+
+      acc.push(c);
+      return acc;
+    }, []);
+
+    return matched.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [certificates, query, activeTag, t]);
 
   return (
