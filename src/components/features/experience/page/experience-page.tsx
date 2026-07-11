@@ -3,11 +3,16 @@ import Grid from "@/components/features/common/grid";
 import TranslatedHero from "@/components/features/common/translated-hero";
 import { getExperienceEntries } from "@/lib/experience";
 import ExperienceCard from "@/components/features/experience/components/experience-card";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "My Experience | Simón G. Flores",
-  description: "Learn about Simón G. Flores's most recent projects",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("experience");
+
+  return {
+    title: t("title"),
+    description: t("tagline"),
+  };
+}
 
 export default async function ExperiencePage({ locale }: { locale: string }) {
   const projects = await getExperienceEntries();

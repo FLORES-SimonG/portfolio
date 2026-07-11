@@ -60,6 +60,7 @@ export default function CertificatesSearch({
           className=""
         />
         <button
+          type="button"
           onClick={() => {
             setQuery("");
             setActiveTag(null);
@@ -72,6 +73,7 @@ export default function CertificatesSearch({
 
       <div className="flex flex-wrap gap-2">
         <button
+          type="button"
           className={cn(
             activeTag === null ? "text-primary font-bold transition-all" : null,
           )}

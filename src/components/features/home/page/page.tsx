@@ -2,12 +2,17 @@ import PillSection from "@/components/features/home/components/pill-section";
 import Skills from "@/components/features/home/components/skills";
 import TranslatedHero from "@/components/features/common/translated-hero";
 import Image from "next/image";
-import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Home",
-  description: "Simón G. Flores - Full-Stack Developer",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("nav");
+
+  return {
+    title: t("home") || "Home",
+    description: "Simón G. Flores - Full-Stack Developer",
+  };
+}
 
 export default function Homepage() {
   return (
