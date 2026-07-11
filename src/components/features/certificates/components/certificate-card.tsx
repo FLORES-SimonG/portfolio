@@ -17,7 +17,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
   return (
     <Dialog>
       <DialogTrigger className="w-full">
-        <button
+        <div
           className=" cursor-pointer group relative block h-64 w-full overflow-hidden rounded-2xl border border-(--gray-800) bg-(--gradient-subtle) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
           aria-label={displayTitle}
         >
@@ -37,7 +37,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
           <div className="absolute bottom-0 left-0 right-0 p-5">
               <p className="text-lg font-semibold text-white">{displayTitle}</p>
           </div>
-        </button>
+        </div>
       </DialogTrigger>
 
       <DialogContent className="w-2xl h-fit p-7 flex flex-col justify-center items-center md:scale-150">
