@@ -1,6 +1,7 @@
 "use client";
 
 import { NextIntlClientProvider } from "next-intl";
+
 import NavigationMenu from "@/components/features/common/navigation-menu";
 import { Language } from "@/messages/interface";
 

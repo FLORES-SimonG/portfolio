@@ -1,12 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
+
 import CertificateCard from "@/components/features/certificates/components/certificate-card";
 import Grid from "@/components/features/common/grid";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
-import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 type CertificateSerializable = {
   title: string;
@@ -42,8 +43,9 @@ export default function CertificatesSearch({
       if (q) {
         let translated = c.title;
         try {
-          translated = t(`certificates.certificate.title.${c.title}`) || c.title;
-        } catch (e) {
+          translated =
+            t(`certificates.certificate.title.${c.title}`) || c.title;
+        } catch {
           translated = c.title;
         }
 
@@ -54,7 +56,9 @@ export default function CertificatesSearch({
       return acc;
     }, []);
 
-    return matched.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    return matched.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+    );
   }, [certificates, query, activeTag, t]);
 
   return (
@@ -113,7 +117,7 @@ export default function CertificatesSearch({
             <CertificateCard
               certificate={{
                 ...certificate,
-                date: new Date(certificate.date) as any,
+                date: new Date(certificate.date) as Date,
               }}
             />
           </li>

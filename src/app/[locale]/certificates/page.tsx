@@ -1,8 +1,10 @@
-import TranslatedHero from "@/components/features/common/translated-hero";
-import CertificatesSearch from "@/components/features/certificates/components/certificates-search";
-import { certificatesWithTags } from "@/lib/certificates";
-import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+import CertificatesSearch from "@/components/features/certificates/components/certificates-search";
+import TranslatedHero from "@/components/features/common/translated-hero";
+import { certificatesWithTags } from "@/lib/certificates";
+
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("certificates");

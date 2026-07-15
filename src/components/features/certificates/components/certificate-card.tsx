@@ -1,9 +1,10 @@
 "use client";
-import { ICertificate } from "@/lib/certificates";
 import Image from "next/image";
-import { encodeBase64 } from "@/lib/encoding";
 import { useTranslations } from "next-intl";
+
 import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import { ICertificate } from "@/lib/certificates";
+import { encodeBase64 } from "@/lib/encoding";
 
 interface CertificateCardProps {
   certificate: ICertificate | (ICertificate & { date?: string });

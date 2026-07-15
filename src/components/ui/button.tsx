@@ -1,5 +1,7 @@
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
+
 import { cn } from "@/lib/utils"
+
 import buttonVariants, { type ButtonVariants } from "./button.styles"
 
 function Button({

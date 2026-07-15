@@ -1,8 +1,9 @@
-import TranslatedHero from "@/components/features/common/translated-hero";
+import { Metadata } from "next";
+
 import CertificatesSearch from "@/components/features/certificates/components/certificates-search";
+import TranslatedHero from "@/components/features/common/translated-hero";
 import { certificatesWithTags } from "@/lib/certificates";
 
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Certificates",

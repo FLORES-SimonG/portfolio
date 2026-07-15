@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import ReactCountryFlag from "react-country-flag";
-import { Language, LANGUAGE_CODES } from "@/messages/interface";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import ReactCountryFlag from "react-country-flag";
+
+import { Language, LANGUAGE_CODES } from "@/messages/interface";
 
 interface LanguageSwitcherProps {
   current: Language;
@@ -56,6 +56,7 @@ function buildPathWithLang(pathname: string, lang: Language) {
 export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
   const t = useTranslations();
   const pathname = usePathname() ?? "/";
+  const router = useRouter();
 
   return (
     <div className="language-switcher language-inline flex gap-1">
@@ -63,16 +64,11 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
         const np = buildPathWithLang(pathname, s.code);
         const isCurrent = current === s.code;
         return (
-          <Link
+          <button
             key={s.code}
-            href={np}
             className={`lang-link p-px ${isCurrent ? "active" : ""}`}
             onClick={() => {
-              try {
-                localStorage.setItem("preferred-lang", s.code);
-              } catch (e) {
-                /* ignore */
-              }
+              router.push(np);
             }}
             aria-current={isCurrent ? "true" : undefined}
             title={t(s.labelKey)}
@@ -83,7 +79,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
               style={{ width: "1.1em", height: "1.1em" }}
               title={t(s.labelKey)}
             />
-          </Link>
+          </button>
         );
       })}
     </div>

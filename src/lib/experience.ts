@@ -1,8 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+
 import matter from "gray-matter";
-import { routing } from "../i18n/routing";
+
 import { Language } from "@/messages/interface";
+
+import { routing } from "../i18n/routing";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
 
@@ -93,7 +96,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   let slugBase = withoutExtension;
   let inferredLanguage: ExperienceEntry["language"] | undefined;
   const possibleLocale = parts[parts.length - 1];
-  if (Array.from(routing.locales).includes(possibleLocale as any)) {
+  if (Array.from(routing.locales).includes(possibleLocale as ExperienceEntry["language"])) {
     slugBase = parts.slice(0, parts.length - 1).join(".");
     inferredLanguage = possibleLocale as ExperienceEntry["language"];
   }

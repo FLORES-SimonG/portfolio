@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Grid from "@/components/features/common/grid";
-import TranslatedHero from "@/components/features/common/translated-hero";
-import { getExperienceEntries } from "@/lib/experience";
-import ExperienceCard from "@/components/features/experience/components/experience-card";
 import { getTranslations } from "next-intl/server";
 
-export async function generateMetadata(): Promise<Metadata> {
+import Grid from "@/components/features/common/grid";
+import TranslatedHero from "@/components/features/common/translated-hero";
+import ExperienceCard from "@/components/features/experience/components/experience-card";
+import { getExperienceEntries } from "@/lib/experience";
+
+async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("experience");
 
   return {
@@ -13,6 +14,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t("tagline"),
   };
 }
+
+export const metadata = generateMetadata();
 
 export default async function ExperiencePage({ locale }: { locale: string }) {
   const projects = await getExperienceEntries();

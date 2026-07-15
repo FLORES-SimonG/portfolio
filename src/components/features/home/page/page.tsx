@@ -1,9 +1,10 @@
-import PillSection from "@/components/features/home/components/pill-section";
-import Skills from "@/components/features/home/components/skills";
-import TranslatedHero from "@/components/features/common/translated-hero";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
+
+import TranslatedHero from "@/components/features/common/translated-hero";
+import PillSection from "@/components/features/home/components/pill-section";
+import Skills from "@/components/features/home/components/skills";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("nav");

@@ -1,11 +1,12 @@
 import "../globals.css";
-import { setRequestLocale } from "next-intl/server";
-import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import Footer from "@/components/features/common/footer";
+import { hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+
 import ContactCTA from "@/components/features/common/contact-CTA";
+import Footer from "@/components/features/common/footer";
 import LayoutWrapper from "@/components/features/common/layout-wrapper";
+import { routing } from "@/i18n/routing";
 
 type Props = {
   children: React.ReactNode;
@@ -19,7 +20,7 @@ export default async function LocaleLayout({ children, params, messages }: Props
     notFound();
   }
   setRequestLocale(locale);
-  let timeZone = 'Europe/Vienna';
+  const timeZone = 'Europe/Vienna';
 
   let messagesData = messages ?? {};
   if (!messagesData || Object.keys(messagesData).length === 0) {

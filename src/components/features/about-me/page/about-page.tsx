@@ -1,6 +1,7 @@
-import TranslatedHero from "@/components/features/common/translated-hero";
-import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+import TranslatedHero from "@/components/features/common/translated-hero";
 
 export const metadata: Metadata = {
   title: "About Me",

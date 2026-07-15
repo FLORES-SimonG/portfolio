@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import type { ExperienceEntry } from "@/lib/experience";
 
 interface ExperienceCardProps {
