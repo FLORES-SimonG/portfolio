@@ -38,8 +38,12 @@ function buildPathWithLang(pathname: string, lang: Language) {
       const last = segments[lastIndex];
       if (last) {
         // Replace existing suffix like -es, .es, _es or add -<lang> if none.
-        const newLast = last.replace(/([._-])?(en|es|de)$/i, `-${lang}`);
-        segments[lastIndex] = newLast === last ? `${last}-${lang}` : newLast;
+        const suffixRegex = /([._-])?(en|es|de)$/i;
+        if (suffixRegex.test(last)) {
+          segments[lastIndex] = last.replace(suffixRegex, `-${lang}`);
+        } else {
+          segments[lastIndex] = `${last}-${lang}`;
+        }
       }
     }
 
@@ -65,8 +69,9 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
         const isCurrent = current === s.code;
         return (
           <button
+            type="button"
             key={s.code}
-            className={`lang-link p-px ${isCurrent ? "active" : ""}`}
+            className={`lang-link cursor-pointer p-px ${isCurrent ? "active" : ""}`}
             onClick={() => {
               router.push(np);
             }}

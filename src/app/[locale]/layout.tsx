@@ -32,7 +32,7 @@ export default async function LocaleLayout({ children, params, messages }: Props
   }
 
   return (
-    <html lang={locale} suppressContentEditableWarning>
+    <html suppressContentEditableWarning>
       <body suppressContentEditableWarning>
         <LayoutWrapper locale={locale} messages={messagesData} timeZone={timeZone}>
           {children}
