@@ -1,12 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
+
 import CertificateCard from "@/components/features/certificates/components/certificate-card";
 import Grid from "@/components/features/common/grid";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
-import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
 type CertificateSerializable = {
   title: string;

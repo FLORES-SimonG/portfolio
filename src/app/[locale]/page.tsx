@@ -1,6 +1,7 @@
-import Homepage from "@/components/features/home/page/page";
-import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+import Homepage from "@/components/features/home/page/page";
 
 export default function HomePage() {
   return <Homepage />;

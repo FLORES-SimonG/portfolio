@@ -1,8 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+
 import matter from "gray-matter";
-import { routing } from "../i18n/routing";
+
 import { Language } from "@/messages/interface";
+
+import { routing } from "../i18n/routing";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/experience");
 

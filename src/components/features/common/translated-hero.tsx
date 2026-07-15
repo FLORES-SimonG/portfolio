@@ -1,5 +1,6 @@
 
 import { getTranslations } from "next-intl/server";
+
 import Hero from "./hero";
 
 

@@ -1,13 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import Hero from "@/components/features/common/hero";
+
 import Icon from "@/components/features/common/Icon";
-import { getExperienceBySlug } from "@/lib/experience";
+import Hero from "@/components/features/common/hero";
 import PillComponent from "@/components/features/common/pill-component";
+import { getExperienceBySlug } from "@/lib/experience";
 
 type Props = {
   params: Promise<{ slug: string[]; language: string }>;

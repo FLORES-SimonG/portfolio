@@ -1,5 +1,7 @@
-import Icon, { IconName } from "@/components/features/common/Icon";
 import { getTranslations } from "next-intl/server";
+
+import Icon, { IconName } from "@/components/features/common/Icon";
+
 import PillComponent from "../../common/pill-component";
 
 

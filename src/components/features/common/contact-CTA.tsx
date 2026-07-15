@@ -1,6 +1,7 @@
-import CallToAction from "./call-to-action";
-import Icon from "./Icon";
 import { getTranslations } from "next-intl/server";
+
+import Icon from "./Icon";
+import CallToAction from "./call-to-action";
 
 export default async function ContactCTA() {
   const t = await getTranslations();

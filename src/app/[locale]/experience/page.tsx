@@ -1,6 +1,7 @@
-import ExperiencePage from "@/components/features/experience/page/experience-page";
-import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+import ExperiencePage from "@/components/features/experience/page/experience-page";
 
 interface PageProps {
   params: Promise<{

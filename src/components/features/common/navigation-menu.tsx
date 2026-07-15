@@ -2,13 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import Icon from "./Icon";
-import ThemeToggle from "./theme-toggle";
-import LanguageSwitcher from "./language-switcher";;
-import type { iconPaths } from "./IconPaths";
-import { Language } from "@/messages/interface";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+
+import { Language } from "@/messages/interface";
+
+import Icon from "./Icon";
+import type { iconPaths } from "./IconPaths";
+import LanguageSwitcher from "./language-switcher";
+import ThemeToggle from "./theme-toggle";
+;
 
 interface NavProps {
   language: Language;

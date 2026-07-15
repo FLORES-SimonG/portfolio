@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
 import Grid from "@/components/features/common/grid";
 import TranslatedHero from "@/components/features/common/translated-hero";
-import { getExperienceEntries } from "@/lib/experience";
 import ExperienceCard from "@/components/features/experience/components/experience-card";
-import { getTranslations } from "next-intl/server";
+import { getExperienceEntries } from "@/lib/experience";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("experience");
