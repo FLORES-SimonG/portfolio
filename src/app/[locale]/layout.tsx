@@ -33,6 +33,9 @@ export default async function LocaleLayout({ children, params, messages }: Props
 
   return (
     <html suppressContentEditableWarning>
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body suppressContentEditableWarning>
         <LayoutWrapper locale={locale} messages={messagesData} timeZone={timeZone}>
           {children}
