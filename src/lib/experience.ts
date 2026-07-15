@@ -129,7 +129,8 @@ export async function getExperienceEntries(): Promise<ExperienceEntry[]> {
   return readExperienceEntries();
 }
 
-export async function getExperienceBySlug(slug: string[]) {
+export async function getExperienceBySlug(slug: string | string[]) {
   const entries = await getExperienceEntries();
-  return entries.find((entry) => entry.slug.join("/") === slug.join("/"));
+  const slugArray = Array.isArray(slug) ? slug : String(slug).split("/").filter(Boolean);
+  return entries.find((entry) => entry.slug.join("/") === slugArray.join("/"));
 }

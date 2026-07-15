@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import ReactCountryFlag from "react-country-flag";
 
@@ -38,8 +39,12 @@ function buildPathWithLang(pathname: string, lang: Language) {
       const last = segments[lastIndex];
       if (last) {
         // Replace existing suffix like -es, .es, _es or add -<lang> if none.
-        const newLast = last.replace(/([._-])?(en|es|de)$/i, `-${lang}`);
-        segments[lastIndex] = newLast === last ? `${last}-${lang}` : newLast;
+        const suffixRegex = /([._-])?(en|es|de)$/i;
+        if (suffixRegex.test(last)) {
+          segments[lastIndex] = last.replace(suffixRegex, `-${lang}`);
+        } else {
+          segments[lastIndex] = `${last}-${lang}`;
+        }
       }
     }
 
@@ -56,7 +61,6 @@ function buildPathWithLang(pathname: string, lang: Language) {
 export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
   const t = useTranslations();
   const pathname = usePathname() ?? "/";
-  const router = useRouter();
 
   return (
     <div className="language-switcher language-inline flex gap-1">
@@ -64,11 +68,16 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
         const np = buildPathWithLang(pathname, s.code);
         const isCurrent = current === s.code;
         return (
-          <button
+          <Link
             key={s.code}
+            href={np}
             className={`lang-link p-px ${isCurrent ? "active" : ""}`}
             onClick={() => {
-              router.push(np);
+              try {
+                localStorage.setItem("preferred-lang", s.code);
+              } catch  {
+                /* ignore */
+              }
             }}
             aria-current={isCurrent ? "true" : undefined}
             title={t(s.labelKey)}
@@ -79,7 +88,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
               style={{ width: "1.1em", height: "1.1em" }}
               title={t(s.labelKey)}
             />
-          </button>
+          </Link>
         );
       })}
     </div>
