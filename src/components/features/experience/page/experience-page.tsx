@@ -6,7 +6,7 @@ import TranslatedHero from "@/components/features/common/translated-hero";
 import ExperienceCard from "@/components/features/experience/components/experience-card";
 import { getExperienceEntries } from "@/lib/experience";
 
-export async function generateMetadata(): Promise<Metadata> {
+async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("experience");
 
   return {
@@ -14,6 +14,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t("tagline"),
   };
 }
+
+export const metadata = generateMetadata();
 
 export default async function ExperiencePage({ locale }: { locale: string }) {
   const projects = await getExperienceEntries();

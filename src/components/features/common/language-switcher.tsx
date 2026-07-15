@@ -71,7 +71,7 @@ export default function LanguageSwitcher({ current }: LanguageSwitcherProps) {
             onClick={() => {
               try {
                 localStorage.setItem("preferred-lang", s.code);
-              } catch (e) {
+              } catch  {
                 /* ignore */
               }
             }}

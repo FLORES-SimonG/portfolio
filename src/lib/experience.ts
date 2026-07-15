@@ -96,7 +96,7 @@ function parseExperienceEntry(filePath: string): ExperienceEntry {
   let slugBase = withoutExtension;
   let inferredLanguage: ExperienceEntry["language"] | undefined;
   const possibleLocale = parts[parts.length - 1];
-  if (Array.from(routing.locales).includes(possibleLocale as any)) {
+  if (Array.from(routing.locales).includes(possibleLocale as ExperienceEntry["language"])) {
     slugBase = parts.slice(0, parts.length - 1).join(".");
     inferredLanguage = possibleLocale as ExperienceEntry["language"];
   }
