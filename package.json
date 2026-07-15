@@ -8,10 +8,14 @@
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "doctor": "clear && npx react-doctor@latest --verbose"
+    "doctor": "clear && npx react-doctor@latest --verbose",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
+    "@opennextjs/cloudflare": "^1.20.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
@@ -45,7 +49,8 @@
     "postcss": "^8.5.19",
     "tailwindcss": "^4.3.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.64.0"
+    "typescript-eslint": "^8.64.0",
+    "wrangler": "^4.111.0"
   },
   "overrides": {
     "@types/react": "19.2.17",
