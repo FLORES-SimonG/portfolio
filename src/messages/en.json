@@ -111,7 +111,8 @@
 
   "contact": {
     "heading": "Interested in working together?",
-    "button": "Send Me a Message"
+    "button": "Send Me a Message",
+    "copied": "Copied"
   },
 
   "footer": {
