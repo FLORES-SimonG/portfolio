@@ -62,7 +62,7 @@ During the development of this project, I learned and strengthened my knowledge 
 - [x] **Frontend, API, and database integration.**
 - [x] **Developing reusable and scalable components.**
 
-### Responsibilities
+### Experiences
 
 - [x] **Frontend Development**
 - [x] **UI/UX Design**

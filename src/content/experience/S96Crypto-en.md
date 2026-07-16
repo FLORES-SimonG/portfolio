@@ -64,7 +64,7 @@ During the development of this project, I learned and strengthened my knowledge 
 - [x] **Using TypeScript to improve code quality and maintainability.**
 - [x] **Data management with PostgreSQL.**
 
-### Responsibilities
+### Experiences
 
 - [x] **Frontend Development**
 - [x] **Backend Development**

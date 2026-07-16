@@ -45,7 +45,7 @@ _Darstellung der Hauptoberfläche des Online-Shops._
 
 - **NextJS**: Eingesetzt zur Entwicklung einer skalierbaren und optimierten Anwendung unter Nutzung von Server-Side Rendering und verbesserter Performance.
 - **TypeScript**: Implementiert, um einen sichereren, strukturierten und wartbaren Code während des gesamten Entwicklungsprozesses zu gewährleisten.
-- **JavaScript**: Verwendet zur Entwicklung dynamischer Funktionen und clientseitiger Interaktionen.
+- **JavaScript**: Verwendet zur Entwicklung dynamischer Funktionen und klientseitiger Interaktionen.
 - **Tailwind CSS**: Eingesetzt zur Erstellung einer modernen, flexiblen und responsiven Benutzeroberfläche durch ein effizientes Styling-System.
 - **Figma**: Verwendet zur Gestaltung der Benutzeroberfläche und Erstellung von UI/UX-Prototypen vor der Implementierung.
 - **PostgreSQL**: Als Datenbanksystem verwendet aufgrund seiner Zuverlässigkeit und Fähigkeit, komplexe Abfragen und Transaktionen zu verarbeiten.
@@ -62,7 +62,7 @@ Während der Entwicklung dieses Projekts konnte ich meine Kenntnisse in folgende
 - [x] **Integration von Frontend, APIs und Datenbanken.**
 - [x] **Entwicklung wiederverwendbarer und skalierbarer Komponenten.**
 
-### Verantwortlichkeiten
+### Spezialisierung
 
 - [x] **Frontend-Entwicklung**
 - [x] **UI/UX-Design**

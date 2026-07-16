@@ -51,7 +51,7 @@ During the development of this project, I learned and strengthened my knowledge 
 - [x] **Route organization and request handling with Express.**
 - [x] **JavaScript best practices and DOM manipulation.**
 
-### Responsibilities
+### Experiences
 
 - [x] **Frontend Development**
 - [x] **Backend Development**

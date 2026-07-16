@@ -28,13 +28,6 @@ Para ello, participé en el desarrollo de una interfaz responsive utilizando **N
 
 Este proyecto representó mi primera experiencia profesional internacional trabajando de forma remota durante tres meses dentro de un equipo ágil, fortaleciendo tanto mis conocimientos técnicos como mis habilidades de comunicación en alemán dentro del entorno IT.
 
-Puedes ver el proyecto desplegado aquí:
-
-**https://alltagsautoexclusive.vercel.app/**
-
-Para el sitio principal de **Alltagsauto Group**, dedicado a la venta de vehículos de segunda mano:
-
-**https://alltagsauto.ch/de/**
 
 ### Características principales
 

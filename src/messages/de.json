@@ -102,7 +102,7 @@
 
   "hero": {
     "greeting": "Hallo, mein Name ist Simón G. Flores",
-    "tagline": "Ich bin FullStack Developer und freue mich, Sie kennenzulernen!"
+    "tagline": "Ich bin Fachinformatiker Anwendungsentwicklung und freue mich, Sie kennenzulernen!"
   },
 
   "experience": {
@@ -125,8 +125,8 @@
   "about": {
     "title": "Über mich",
     "firstParagraph": "Ich habe Erfahrung in der Softwareentwicklung, insbesondere in der Webentwicklung mit einem Fokus auf Frontend-Technologien. Seit August 2024 arbeite ich bei RefineIT in Recklinghausen als Teil des Frontend-Teams und konzentriere mich auf ReactJS/NextJS. Zuvor habe ich ein Praktikum als Softwareentwickler bei Alltagsauto.ch absolviert.",
-    "secondParagraph": "Von 03/2024 bis 06/2024 habe ich als Lehrassistent in dem Bereich gearbeitet, in dem ich studiert habe, und habe den Schülern geholfen, zu lernen und ihre Fähigkeiten zu verbessern.",
-    "thirdParagraph": "Bevor ich mit dem Programmieren begann, habe ich als Universitäts-Techniker in Chemie an der Universidad Tecnológica Nacional Villa María in Argentinien abgeschlossen. Dies war meine erste Erfahrung mit Technologie, durch Prozesssimulationen. Durch das Studium des Chemieingenieurwesens an der Universität habe ich ein solides Verständnis für Mathematik, Physik, Chemie, Algebra und Analysis gewonnen.",
+    "secondParagraph": "Von 03/2024 bis 06/2024 habe ich als Lehrassistent im Bereich Informatik gearbeitet, und habe den Schülern geholfen, zu Lernen und ihre Fähigkeiten zu verbessern.",
+    "thirdParagraph": "Bevor ich mit dem Programmieren begann, habe ich die Universidad Tecnológica Nacional Villa María in Argentinien als Universitäts-Techniker in Chemie abgeschlossen. Dies war meine erste Erfahrung mit Technologie durch Prozesssimulationen. Durch das Studium des Chemieingenieurwesens an der Universität habe ich ein solides Verständnis für Mathematik, Physik, Chemie, Algebra und Analysis gewonnen.",
     "fourthParagraph": "Ich lebe seit April 2021 in Gelsenkirchen. Meine Muttersprache ist Spanisch, ich habe ein C1-Niveau in Deutsch und ein B2-Niveau in Englisch und spreche fließend Portugiesisch."
   },
   "lang": {
@@ -144,11 +144,11 @@
   "skills": {
     "fullstack": {
       "title": "Full Stack",
-      "desc": "Ich habe Erfahrung mit JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS und Bootstrap, unter anderem."
+      "desc": "Ich habe Erfahrung mit JavaScript, Typescript, Angular, React.js, Vue.js, Next.js, Tailwind CSS und Bootstrap und anderen Technologien."
     },
     "leader": {
       "title": "Erfahrener Leiter",
-      "desc": "Ich war 5 Jahre Präsident, leitete Projekte und brachte die Organisation voran. Als Fußballtrainer für 2 Jahre verbesserte ich meine Teamführung und Kommunikationsfähigkeiten."
+      "desc": "Ich war 5 Jahre Vorsitzender einer Fußballfiliale, leitete Projekte und brachte die Organisation voran. Als Fußballtrainer für 2 Jahre verbesserte ich meine Teamführung und Kommunikationsfähigkeiten."
     },
     "growth": {
       "title": "Wachstum & Lernen",

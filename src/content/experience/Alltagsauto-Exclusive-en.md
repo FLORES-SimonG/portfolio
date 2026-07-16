@@ -28,13 +28,6 @@ To achieve this, I contributed to the development of a responsive interface usin
 
 This project represented my first international professional experience, working remotely for three months as part of an agile development team. During this time, I strengthened both my technical skills and my professional communication in German within an IT environment.
 
-You can view the deployed project here:
-
-**https://alltagsautoexclusive.vercel.app/**
-
-For the main **Alltagsauto Group** website, dedicated to used car sales, visit:
-
-**https://alltagsauto.ch/de/**
 
 ### Key Features
 
@@ -72,7 +65,7 @@ During the development of this project, I learned and strengthened my knowledge 
 - [x] **Optimizing and reusing components to reduce redundant code.**
 - [x] **Developing responsive user interfaces focused on user experience.**
 
-### Responsibilities
+### Experiences
 
 - [x] **Frontend Development**
 - [x] **API Integration**

@@ -47,7 +47,7 @@ Das Projekt wurde entwickelt, um die Entwicklung von Fullstack-Anwendungen zu ve
 
 - **ReactJS**: Eingesetzt zur Entwicklung einer dynamischen, wiederverwendbaren und interaktiven Benutzeroberfläche.
 - **TypeScript**: Implementiert, um die Codesicherheit durch statische Typisierung zu verbessern und die Wartbarkeit des Projekts zu erhöhen.
-- **JavaScript**: Verwendet zur Entwicklung zentraler Funktionen und clientseitiger Interaktionen.
+- **JavaScript**: Verwendet zur Entwicklung zentraler Funktionen und klientseitiger Interaktionen.
 - **PostgreSQL**: Als Datenbanksystem eingesetzt, um Benutzer- und Termininformationen zu speichern und zu verwalten.
 - **CSS Modules**: Verwendet zur Erstellung gekapselter Styles und zur Verbesserung der CSS-Code-Organisation.
 - **Styled Components**: Eingesetzt zur Entwicklung moderner visueller Komponenten und einer flexiblen Strukturierung der Styles.
@@ -64,7 +64,7 @@ Während der Entwicklung dieses Projekts konnte ich meine Kenntnisse in folgende
 - [x] **Verwendung von TypeScript zur Verbesserung der Codequalität und Wartbarkeit.**
 - [x] **Datenverwaltung mit PostgreSQL.**
 
-### Verantwortlichkeiten
+### Spezialisierung
 
 - [x] **Frontend-Entwicklung**
 - [x] **Backend-Entwicklung**
