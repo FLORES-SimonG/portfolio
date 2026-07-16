@@ -9,7 +9,8 @@ export default async function ContactCTA() {
   return (
     <aside className="contact-cta">
       <h2>{t("contact.heading")}</h2>
-      <CallToAction href="mailto:kuehn.flores@gmail.com">
+
+      <CallToAction href="https://www.linkedin.com/in/simongf94/" target="_blank">
         {t("contact.button")}
         <Icon icon="paper-plane-tilt" size="1.2em" />
       </CallToAction>

@@ -110,7 +110,8 @@
 
   "contact": {
     "heading": "¿Interesado en trabajar juntos?",
-    "button": "Envíame un mensaje"
+    "button": "Envíame un mensaje",
+    "copied": "Copiado"
   },
 
   "footer": {

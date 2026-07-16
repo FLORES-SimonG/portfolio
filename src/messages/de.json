@@ -112,7 +112,8 @@
 
   "contact": {
     "heading": "Interessiert an einer Zusammenarbeit?",
-    "button": "Schreib mir eine Nachricht"
+    "button": "Schreib mir eine Nachricht",
+    "copied": "Kopiert"
   },
 
   "footer": {
