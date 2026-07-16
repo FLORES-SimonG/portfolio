@@ -84,7 +84,7 @@ During my experience at RefineIT, I have strengthened and expanded my knowledge 
 
 This experience has allowed me to understand how professional applications are developed and maintained in a real enterprise environment. In addition to strengthening my technical skills, I have significantly improved my professional German communication by participating daily in SCRUM meetings, technical refinements, code reviews, and architectural discussions entirely in German.
 
-### Responsibilities
+### Experiences
 
 - [x] **Frontend Development**
 - [x] **Fullstack Development**

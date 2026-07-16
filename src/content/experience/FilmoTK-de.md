@@ -17,7 +17,7 @@ tags:
 
 Im Projekt **„FilmoTK“** habe ich Technologien wie **JavaScript**, **HTML**, **CSS**, **Bootstrap** und **Express** eingesetzt. Das Hauptziel bestand darin, eine Anwendung mit nativen Webtechnologien zu entwickeln, um mein Verständnis für die Webentwicklung ohne Frameworks zu vertiefen.
 
-Dazu implementierte ich eine responsive Benutzeroberfläche mit **Bootstrap**, entwickelte die Anwendungslogik mit **JavaScript**, strukturierte den Inhalt mit **HTML** und **CSS** und nutzte **Express**, um den Server zu erstellen und die Kommunikation zwischen Client und Anwendung zu verwalten.
+Dazu implementierte ich eine responsive Benutzeroberfläche mit **Bootstrap**, entwickelte die Anwendungslogik mit **JavaScript**, strukturierte den Inhalt mit **HTML** und **CSS** und nutzte **Express**, um den Server zu erstellen und die Kommunikation zwischen Klient und Anwendung zu verwalten.
 
 ### Projektbeschreibung
 
@@ -51,7 +51,7 @@ Während der Entwicklung dieses Projekts konnte ich meine Kenntnisse in folgende
 - [x] **Organisation von Routen und Verarbeitung von HTTP-Anfragen mit Express.**
 - [x] **Best Practices in JavaScript und DOM-Manipulation.**
 
-### Verantwortlichkeiten
+### Spezialisierung
 
 - [x] **Frontend-Entwicklung**
 - [x] **Backend-Entwicklung**

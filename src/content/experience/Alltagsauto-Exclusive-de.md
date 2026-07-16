@@ -28,14 +28,6 @@ Dazu arbeitete ich an der Entwicklung einer responsiven Benutzeroberfläche mit 
 
 Dieses Projekt stellte meine erste internationale Berufserfahrung dar. Ich arbeitete drei Monate remote als Teil eines agilen Entwicklungsteams und konnte dabei sowohl meine technischen Fähigkeiten als auch meine professionelle Kommunikation auf Deutsch im IT-Umfeld weiterentwickeln.
 
-Das veröffentlichte Projekt ist hier verfügbar:
-
-**https://alltagsautoexclusive.vercel.app/**
-
-Die Hauptwebsite der **Alltagsauto Group**, die sich auf den Verkauf von Gebrauchtwagen spezialisiert, finden Sie unter:
-
-**https://alltagsauto.ch/de/**
-
 ### Hauptfunktionen
 
 - **Premium-Fahrzeugkatalog**: Benutzer können exklusive Fahrzeuge durchsuchen und detaillierte Informationen zu jedem Modell einsehen.
@@ -54,7 +46,7 @@ Die Hauptwebsite der **Alltagsauto Group**, die sich auf den Verkauf von Gebrauc
 
 - **NextJS**: Eingesetzt zur Entwicklung einer modernen, skalierbaren und performanten Anwendung unter Nutzung von Server-Side Rendering (SSR).
 - **TypeScript**: Implementiert, um einen sicheren, stark typisierten und wartbaren Code zu gewährleisten.
-- **JavaScript**: Verwendet zur Entwicklung dynamischer Funktionen und clientseitiger Interaktionen.
+- **JavaScript**: Verwendet zur Entwicklung dynamischer Funktionen und klientseitiger Interaktionen.
 - **Tailwind CSS**: Eingesetzt zur Erstellung einer modernen, flexiblen und vollständig responsiven Benutzeroberfläche.
 - **Figma**: Verwendet zur Umsetzung der vorgegebenen UI/UX-Designs während der Entwicklung.
 - **PostgreSQL**: Als Datenbanksystem eingesetzt, um die Informationen der Plattform zu verwalten.
@@ -72,7 +64,7 @@ Während der Entwicklung dieses Projekts konnte ich meine Kenntnisse in folgende
 - [x] **Optimierung und Wiederverwendung von Komponenten zur Reduzierung redundanten Codes.**
 - [x] **Entwicklung responsiver Benutzeroberflächen mit Fokus auf die User Experience.**
 
-### Verantwortlichkeiten
+### Spezialisierung
 
 - [x] **Frontend-Entwicklung**
 - [x] **API-Integration**

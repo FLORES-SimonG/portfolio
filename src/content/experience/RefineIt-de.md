@@ -21,7 +21,7 @@ tags:
 
 Bei **RefineIT**, einem Softwareentwicklungsunternehmen mit Sitz in **Recklinghausen (Deutschland)**, bin ich seit 2024 Teil des **Frontend-Teams**. Mein Schwerpunkt liegt auf der Entwicklung moderner Webanwendungen mit **NextJS**, **TypeScript**, **JavaScript**, **Tailwind CSS**, **Storybook**, **Figma** und **Azure DevOps**. Dabei arbeite ich nach der **SCRUM**-Methodik und orientiere mich an professionellen Standards der Softwareentwicklung.
 
-Während meiner Tätigkeit bei RefineIT habe ich sowohl an internen Produkten des Unternehmens als auch an verschiedenen Projekten für externe Kunden mitgearbeitet. Dabei konnte ich mich an unterschiedliche Anforderungen, Architekturen und Geschäftsanforderungen anpassen.
+Während meiner Tätigkeit bei RefineIT habe ich sowohl an internen Produkten des Unternehmens als auch an verschiedenen Projekten für externe Kunden mitgearbeitet. Dabei konnte ich mich an unterschiedliche Anforderungen, Architekturen der Software und Geschäftsanforderungen anpassen.
 
 Aktuell arbeite ich aktiv an der Entwicklung eines **groß angelegten Enterprise-CRM-Systems** mit. Dabei implementiere ich neue Funktionen, integriere **KI-Agenten**, binde APIs an, entwickle wiederverwendbare Komponenten und unterstütze eine skalierbare sowie wartbare Architektur. Zusätzlich beteilige ich mich an **Pull-Request-Reviews**, technischer Dokumentation und der kontinuierlichen Verbesserung der Codequalität durch die Anwendung von **Clean-Code-Prinzipien** und professionellen Entwicklungsstandards.
 
@@ -59,7 +59,7 @@ Zusätzlich habe ich an verschiedenen Kundenprojekten mitgewirkt und dabei unter
 
 - **NextJS**: Eingesetzt zur Entwicklung moderner, skalierbarer und optimierter Webanwendungen.
 - **TypeScript**: Verwendet zur Sicherstellung von typsicherem, wartbarem und robustem Code.
-- **JavaScript**: Eingesetzt für dynamische Funktionen und clientseitige Interaktionen.
+- **JavaScript**: Eingesetzt für dynamische Funktionen und klientseitige Interaktionen.
 - **Tailwind CSS**: Verwendet zur Erstellung moderner und vollständig responsiver Benutzeroberflächen.
 - **Storybook**: Eingesetzt zur Entwicklung und Dokumentation wiederverwendbarer Komponenten.
 - **Figma**: Verwendet zur Umsetzung der vom Design-Team bereitgestellten UI/UX-Entwürfe.
@@ -84,7 +84,7 @@ Während meiner Tätigkeit bei RefineIT konnte ich meine Kenntnisse in folgenden
 
 Diese Erfahrung hat mir ermöglicht, ein tiefes Verständnis dafür zu entwickeln, wie professionelle Anwendungen in realen Unternehmensumgebungen entwickelt und gewartet werden. Neben der Weiterentwicklung meiner technischen Fähigkeiten konnte ich auch meine berufliche Kommunikation auf Deutsch deutlich verbessern, da ich täglich an SCRUM-Meetings, technischen Refinements, Code Reviews und Architekturgesprächen vollständig auf Deutsch teilnehme.
 
-### Verantwortlichkeiten
+### Spezialisierung
 
 - [x] **Frontend-Entwicklung**
 - [x] **Fullstack-Entwicklung**
