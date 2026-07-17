@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sgfloreskuehn.de/sitemap.xml
