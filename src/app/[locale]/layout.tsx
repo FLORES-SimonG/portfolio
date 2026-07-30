@@ -41,7 +41,7 @@ export default async function LocaleLayout({ children, params, messages }: Props
         <meta name="description" content={DEFAULT_DESCRIPTION} />
         <meta property="og:site_name" content="Simón G. Flores" />
         <meta property="og:description" content={DEFAULT_DESCRIPTION} />
-        <meta property="og:image" content={`${DOMAIN}/assets/FloresSimonG.png`} />
+        <meta property="og:image" content={`${DOMAIN}/assets/SimonGF.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* hreflang links for locales */}
