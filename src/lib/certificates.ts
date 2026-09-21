@@ -1,6 +1,7 @@
 export type ICertificate = {
   title: string;
   src: string;
+  alternativeLink?: string;
   date: Date;
   type: "learningPath" | "course";
 };
@@ -474,6 +475,20 @@ export const certificates: ICertificate[] = [
     src: "https://platzi.com/simonflores_10/curso/1050-course/diploma-og/og.jpeg",
     date: new Date("2022-06-27"),
     type: "course",
+  },
+  {
+    title: "CursoSQL",
+    src: "/assets/sql.png",
+    date: new Date("2026-09-08"),
+    type: "course",
+    alternativeLink: "https://www.aprendesql.dev/certificado/9d78d298-2d02-478f-8f80-c3d8c2a1ee39",
+  },
+  {
+    title: "InglesB2",
+    src: "/assets/efset.png",
+    date: new Date("2024-06-24"),
+    type: "course",
+    alternativeLink: "https://cert.efset.org/Jz6G7L",
   },
 ];
 

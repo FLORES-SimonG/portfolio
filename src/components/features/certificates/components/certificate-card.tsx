@@ -11,10 +11,16 @@ interface CertificateCardProps {
 }
 
 export default function CertificateCard({ certificate }: CertificateCardProps) {
+  const alternativeLink = certificate.alternativeLink;
   const t = useTranslations();
   const typeTranslation = t("certificates.certificate." + certificate.type);
   const rawTitle = t(`certificates.certificate.title.${certificate.title}`);
-  const displayTitle = typeof rawTitle === "string" ? rawTitle : certificate.title;
+  const displayTitle =
+    typeof rawTitle === "string" ? rawTitle : certificate.title;
+  const isExternal = /^https?:\/\//.test(certificate.src);
+  const imageSrc = isExternal
+    ? `/api/image-proxy/${encodeBase64(certificate.src)}`
+    : certificate.src;
   return (
     <Dialog>
       <DialogTrigger className="w-full">
@@ -23,7 +29,7 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
           aria-label={displayTitle}
         >
           <Image
-            src={`/api/image-proxy/${encodeBase64(certificate.src)}`}
+            src={imageSrc}
             alt={certificate.title}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
@@ -36,14 +42,14 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
             {typeTranslation}
           </span>
           <div className="absolute bottom-0 left-0 right-0 p-5">
-              <p className="text-lg font-semibold text-white">{displayTitle}</p>
+            <p className="text-lg font-semibold text-white">{displayTitle}</p>
           </div>
         </div>
       </DialogTrigger>
 
       <DialogContent className="w-2xl h-fit p-7 flex flex-col justify-center items-center md:scale-150">
         <Image
-          src={`/api/image-proxy/${encodeBase64(certificate.src)}`}
+          src={imageSrc}
           alt={certificate.title}
           width={1600}
           height={1000}
@@ -51,7 +57,23 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
         />
         <div className="text-right text-sm text-muted-foreground w-full">
           <p>{displayTitle}</p>
-          <p>{certificate.src.includes("platzi") ? <a href="https://platzi.com/p/simonflores_10/" target="_blank" rel="noreferrer">Platzi</a> : "Other"}</p>
+          <p>
+            {certificate.src.includes("platzi") ? (
+              <a
+                href="https://platzi.com/p/simonflores_10/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Platzi
+              </a>
+            ) : alternativeLink ? (
+              <a href={alternativeLink} target="_blank" rel="noreferrer">
+                Link
+              </a>
+            ) : (
+              "Other"
+            )}
+          </p>
         </div>
       </DialogContent>
     </Dialog>
