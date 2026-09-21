@@ -22,6 +22,8 @@
       "course": "Course",
       "learningPath": "Learning Path",
       "title": {
+        "InglesB2": "English B2",
+        "CursoSQL": "SQL Course",
         "CursoDeIntroduccionAReactNative": "Introduction to React Native",
         "CursoDeSupabase": "Supabase Course",
         "FullStackDeveloperconJavaScript": "FullStack Developer with JavaScript",

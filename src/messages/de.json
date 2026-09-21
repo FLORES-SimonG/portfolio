@@ -18,6 +18,8 @@
       "learningPath": "Lernpfad",
       "course": "Kurs",
       "title": {
+        "InglesB2": "Englisch B2",
+        "CursoSQL": "SQL Kurs",
         "CursoDeIntroduccionAReactNative": "Einführung in React Native",
         "CursoDeSupabase": "Supabase Kurs",
         "FullStackDeveloperconJavaScript": "FullStack-Entwickler mit JavaScript",
